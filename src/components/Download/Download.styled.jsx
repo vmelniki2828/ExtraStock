@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 export const DownloadContainer = styled.div`
   display: flex;
@@ -18,8 +19,19 @@ export const DownloadLeftMaintitle = styled.h4`
   font-size: 56px;
   line-height: 56px;
   width: 574px;
+  margin-bottom: 30px;
 
   color: #000000;
+`;
+
+export const DownloadLeftSubtitle = styled.h4`
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 0 21px 0;
+  color: #7a7a7a;
 `;
 
 export const DownloadRightConatiner = styled.div``;
@@ -44,3 +56,62 @@ export const StyledIframe = styled.iframe`
 
   border: none; /* Убираем стандартную границу iframe */
 `;
+
+export const FormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+`;
+
+export const InputField = styled.input`
+  width: 428px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border: 1px solid #868686;
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  color: #666;
+
+  &:focus {
+    outline: none;
+    border-color: #ffc107;
+  }
+
+  &::placeholder {
+    color: #c9c9c9;
+  }
+`;
+
+export const SubmitButton = styled.button`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 231px;
+  height: 66px;
+  padding: 12px 36px;
+  background: #ffc400;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  border: none;
+
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 14px;
+
+  &:hover {
+    background-color: #e6a800;
+  }
+`;
+
+export const BenArrowRight = styled(IoArrowForwardOutline)`
+    width:22px;
+    height:22px;
+`

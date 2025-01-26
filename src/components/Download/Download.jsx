@@ -1,24 +1,33 @@
-import { useState } from 'react';
 import {
+  BenArrowRight,
   DownloadContainer,
   DownloadLeftConatiner,
   DownloadLeftMaintitle,
+  DownloadLeftSubtitle,
   DownloadRightConatiner,
+  FormContainer,
+  InputField,
   StyledIframe,
+  SubmitButton,
   VideoContainer,
 } from './Download.styled';
 
 const Download = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handlePlay = () => {
-    setIsPlaying(true);
-  };
-
   return (
     <DownloadContainer>
       <DownloadLeftConatiner>
         <DownloadLeftMaintitle>Секонд-хенд и СТОК оптом.</DownloadLeftMaintitle>
+        <DownloadLeftSubtitle>
+          Огромный выбор позиций. <br />
+          Лучшее для Вашего магазина по низким ценам.
+        </DownloadLeftSubtitle>
+        <FormContainer>
+          <InputField type="email" placeholder="Электронная почта:" />
+          <InputField type="tel" placeholder="Мобильный телефон:" />
+          <SubmitButton>
+            Скачать прайс <BenArrowRight />
+          </SubmitButton>
+        </FormContainer>
       </DownloadLeftConatiner>
       <DownloadRightConatiner>
         <VideoContainer>
