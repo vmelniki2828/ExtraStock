@@ -1,4 +1,5 @@
 import {
+    CircleGradient,
   DarkContainer,
   DownArrow,
   DownloadButton,
@@ -47,6 +48,7 @@ const Success = () => {
           <DownArrow />
         </DownloadButton>
       </DarkContainer>
+      <CircleGradient />
     </SuccessContainer>
   );
 };

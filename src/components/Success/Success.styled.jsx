@@ -6,6 +6,8 @@ export const SuccessContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
+  margin-bottom: 120px;
+  position: relative;
 `;
 
 export const SuccessMainTitle = styled.h3`
@@ -131,6 +133,7 @@ export const DownloadButton = styled.div`
 
   color: #ffffff;
   margin-bottom: 77px;
+  cursor: pointer;
 `;
 
 export const DownArrow = styled(IoIosArrowRoundDown)`
@@ -140,4 +143,21 @@ export const DownArrow = styled(IoIosArrowRoundDown)`
   width: 73px;
   height: 73px;
   margin-right: -4px;
+`;
+
+export const CircleGradient = styled.div`
+  /* Rectangle 4450 */
+
+  position: absolute;
+  width: 1440px;
+  height: 1008px;
+  left: 0px;
+bottom: 0;
+
+  background: radial-gradient(
+      60.49% 80.08% at 0.99% 100.5%,
+      rgba(156, 40, 255, 0.13) 0%,
+      rgba(156, 40, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 `;
