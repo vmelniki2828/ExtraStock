@@ -1,7 +1,12 @@
 import {
-  GrayText,
+  GrayTextInst,
+  GrayTextTg,
+  GrayTextViber,
+  GrayTextYouTube,
   InstImg,
-  ItemContainer,
+  ItemContainerInst,
+  ItemContainerTg,
+  ItemContainerViber,
   ItemContainerYouTube,
   PurpleText,
   SocialContainer,
@@ -29,23 +34,29 @@ const Social = () => {
         <ItemContainerYouTube>
           <YouTubeImg src={youtube} alt="youtube" />
           <PurpleText>YouTube</PurpleText>
-          <GrayText>все видео обзоры наших товаров</GrayText>
+          <GrayTextYouTube>все видео обзоры наших товаров</GrayTextYouTube>
         </ItemContainerYouTube>
-        <ItemContainerYouTube>
+        <ItemContainerViber>
           <ViberImg src={viber} alt="viber" />
+          <PurpleText>Viber</PurpleText>
+          <GrayTextViber>
+            - всегда свежий прайс <br />- горячие, акционные позиции <br /> -
+            актуальная информация о наличии товара
+          </GrayTextViber>
+        </ItemContainerViber>
+        <ItemContainerTg>
+          <TgImg src={tg} alt="tg" />
+          <PurpleText>Telegram</PurpleText>
+          <GrayTextTg>
+            - возможность увидеть отзывы о товаре и оперативно общаться с
+            поставщиком. <br />- информация о свежих видео обзорах на новинки
+          </GrayTextTg>
+        </ItemContainerTg>
+        <ItemContainerInst>
+          <InstImg src={inst} alt="inst" />
           <PurpleText>YouTube</PurpleText>
-          <GrayText>все видео обзоры наших товаров</GrayText>
-        </ItemContainerYouTube>
-        <ItemContainerYouTube>
-          <YouTubeImg src={youtube} alt="youtube" />
-          <PurpleText>YouTube</PurpleText>
-          <GrayText>все видео обзоры наших товаров</GrayText>
-        </ItemContainerYouTube>
-        <ItemContainerYouTube>
-          <YouTubeImg src={youtube} alt="youtube" />
-          <PurpleText>YouTube</PurpleText>
-          <GrayText>все видео обзоры наших товаров</GrayText>
-        </ItemContainerYouTube>
+          <GrayTextInst>свежие фото горячих позиций</GrayTextInst>
+        </ItemContainerInst>
       </SocialSmallContainers>
     </SocialContainer>
   );

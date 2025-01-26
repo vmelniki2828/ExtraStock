@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import long_bd from '../images/long_bg.png'
+import cat from '../images/cat.png'
 
 export const MainBg = styled.div`
-  background-image: url(${long_bd}); // Укажите путь к картинке
-  background-size: cover; // Картинка будет покрывать весь фон
-  background-repeat: no-repeat; // Избегает повторения изображения
-  background-position: center; // Центрирует картинку
-  width: 100%; // Занимает всю ширину окна
-  height: 100%; // Занимает всю высоту окна
+  background-image: url(${cat}); /* Укажите путь к картинке */
+  background-size: 100% auto; /* Растягивает картинку на всю ширину, а высота подстраивается */
+  background-repeat: repeat-y; /* Повтор по вертикали */
+  background-position: top center; /* Центрирует картинку горизонтально, привязывая к верху */
+  width: 100%; /* Занимает всю ширину окна */
+  height: 100%; /* Занимает всю высоту окна */
 `;
+

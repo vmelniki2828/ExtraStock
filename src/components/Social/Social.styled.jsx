@@ -6,6 +6,7 @@ export const SocialContainer = styled.div`
   aligh-items: center;
   justify-content: center;
   text-align: center;
+  padding-bottom:200px;
 `;
 
 export const SocialMainText = styled.h3`
@@ -59,10 +60,24 @@ export const ItemContainerViber = styled.div`
   border-radius: 24px;
 `;
 
-export const YouTubeImg = styled.img`
-  width: 110px;
-  height: 82px;
-  margin-bottom: 51px;
+export const ItemContainerTg = styled.div`
+  padding: 21px 22px 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 24px;
+`;
+
+export const ItemContainerInst = styled.div`
+  padding: 55px 21.85px 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 24px;
 `;
 
 export const PurpleText = styled.p`
@@ -78,7 +93,7 @@ export const PurpleText = styled.p`
   color: #9c28ff;
 `;
 
-export const GrayText = styled.p`
+export const GrayTextYouTube = styled.p`
   font-family: 'Geologica', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -90,6 +105,48 @@ export const GrayText = styled.p`
   color: #767676;
 `;
 
+export const GrayTextViber = styled.p`
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: center;
+  margin: 0;
+  width: 231.31px;
+  color: #767676;
+`;
+
+export const GrayTextTg = styled.p`
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+  width: 231.31px;
+  color: #767676;
+`;
+
+export const GrayTextInst = styled.p`
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  margin: 0;
+  width: 231.31px;
+  color: #767676;
+`;
+
+export const YouTubeImg = styled.img`
+  width: 110px;
+  height: 82px;
+  margin-bottom: 51px;
+`;
+
 export const ViberImg = styled.img`
   width: 110px;
   height: 128px;
@@ -99,9 +156,11 @@ export const ViberImg = styled.img`
 export const TgImg = styled.img`
   width: 110px;
   height: 110px;
+  margin-bottom: 25px;
 `;
 
 export const InstImg = styled.img`
   width: 110px;
   height: 110px;
+  margin-bottom: 38px;
 `;
