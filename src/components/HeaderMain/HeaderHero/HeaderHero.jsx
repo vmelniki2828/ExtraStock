@@ -1,5 +1,6 @@
 import {
-    HeaderButton,
+  ArrowImg,
+  HeaderButton,
   HeaderHeroContainer,
   HeaderHeroContainerLeft,
   HeaderHeroContainerRight,
@@ -26,7 +27,9 @@ const HeaderHero = () => {
           <br /> Еженедельные обновления
           <br /> Объем от 10кг
         </HeaderHeroSubTitle>
-        <HeaderButton>замовити</HeaderButton>
+        <HeaderButton>
+          замовити <ArrowImg />
+        </HeaderButton>
       </HeaderHeroContainerLeft>
       <HeaderHeroContainerRight>
         <HeaderImgTshorts src={header_tshorts} alt={header_tshorts} />

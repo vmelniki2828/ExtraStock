@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export const HeaderHeroContainer = styled.div`
   width: 1320px;
@@ -36,8 +37,7 @@ export const HeaderHeroSubTitle = styled.p`
 export const HeaderHeroContainerRight = styled.div``;
 
 export const HeaderImgTshorts = styled.img`
-  width: 655px;
-  height: 479px;
+  margin-right:-50px;
 `;
 
 export const StrongSpan = styled.span`
@@ -53,11 +53,17 @@ export const PurpleSpan = styled.span`
 `;
 
 export const HeaderButton = styled.button`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 258px;
   height: 65px;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 32.5px;
+  padding-left:24px;
+  padding-right:7px;
 
   font-family: 'Geologica', sans-serif;
   font-style: normal;
@@ -65,6 +71,14 @@ export const HeaderButton = styled.button`
   font-size: 34px;
   line-height: 95%;
   /* or 32px */
-
+  cursor: pointer;
   color: #ffffff;
+`;
+
+export const ArrowImg = styled(IoIosArrowRoundForward)`
+  background-color: #ffc300;
+  width: 49px;
+  height:49px;
+  border-radius: 32.5px;
+  color: black;
 `;

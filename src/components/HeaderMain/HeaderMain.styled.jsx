@@ -6,4 +6,5 @@ export const HeaderMainContainer = styled.div`
   background-size: cover;
   background-position: center;
   height: 750px;
+  overflow: hidden;
 `;

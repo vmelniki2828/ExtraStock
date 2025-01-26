@@ -7,7 +7,7 @@ export const HeaderMainMenu = styled.header`
   width: 1320px;
   margin: 0 auto;
   padding-top: 36px;
-  padding-bottom: 103px;
+
 `;
 
 export const HeaderLogo = styled.img`
