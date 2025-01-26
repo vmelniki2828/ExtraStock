@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ExtraStock/static/css/main.7acaea2f.css",
-    "main.js": "/ExtraStock/static/js/main.284efdd1.js",
-    "static/media/long_bg.png": "/ExtraStock/static/media/long_bg.0a4da79fd38714ea4d2c.png",
+    "main.js": "/ExtraStock/static/js/main.475332ae.js",
+    "static/media/cat.png": "/ExtraStock/static/media/cat.552d4cf5ed6666669c11.png",
     "static/media/header_tshorts.png": "/ExtraStock/static/media/header_tshorts.28b2118b5d8d01b46c10.png",
     "static/media/header_bg.png": "/ExtraStock/static/media/header_bg.3f754aab1b6c609a562c.png",
     "index.html": "/ExtraStock/index.html",
     "main.7acaea2f.css.map": "/ExtraStock/static/css/main.7acaea2f.css.map",
-    "main.284efdd1.js.map": "/ExtraStock/static/js/main.284efdd1.js.map"
+    "main.475332ae.js.map": "/ExtraStock/static/js/main.475332ae.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.284efdd1.js"
+    "static/js/main.475332ae.js"
   ]
 }
