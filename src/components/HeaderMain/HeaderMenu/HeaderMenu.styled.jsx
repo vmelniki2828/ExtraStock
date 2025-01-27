@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoClose } from 'react-icons/io5';
+
+export const CloseImg = styled(IoClose)``;
 
 export const HeaderMainMenu = styled.header`
   display: flex;
@@ -73,6 +76,14 @@ export const HeaderLogo = styled.img`
   }
 `;
 
+export const HeaderLogoMenu = styled.img`
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 50px;
+  height: 50px;
+`;
+
 export const HeaderList = styled.ul`
   display: flex;
   gap: 145px;
@@ -104,4 +115,71 @@ export const HeaderList = styled.ul`
   //   font-size: 16px; /* Smallest font size */
   //   align-items: center; /* Center align for small screens */
   // }
+`;
+
+export const Menu = styled.ul`
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    background: #fff;
+    margin-left: -16px;
+    list-style: none;
+    padding: 70px 0 0 0;
+    border-radius: 0 0 10px 10px;
+    background: rgb(155, 124, 2);
+  }
+`;
+
+export const MenuItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid black;
+  background: #fff;
+  cursor:pointer;
+  &:hover {
+    background-color: #ffcc00;
+  }
+`;
+
+export const CloseBtn = styled.button`
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffcc00; /* Желтый цвет */
+  border: none;
+  border-radius: 50%; /* Круглая форма */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Тень для визуального объема */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1); /* Легкое увеличение при наведении */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    color: #fff; /* Цвет иконки внутри кнопки */
+    font-size: 1.5rem;
+  }
 `;

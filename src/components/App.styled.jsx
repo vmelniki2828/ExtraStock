@@ -8,5 +8,6 @@ export const MainBg = styled.div`
   background-position: top center; /* Центрирует картинку горизонтально, привязывая к верху */
   width: 100%; /* Занимает всю ширину окна */
   height: 100%; /* Занимает всю высоту окна */
+  overflow:hidden;
 `;
 
