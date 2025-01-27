@@ -44,6 +44,12 @@ export const BigCard = styled.div`
   width: 282px;
   border-radius: 15px;
   padding: 75px 0 47px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+
+  &:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to create a "lifting" effect */
+  }
 `;
 
 export const BigCardIcon = styled.img`
@@ -95,6 +101,12 @@ export const SmallCardDark = styled.div`
   background: #151515;
   border: 1px solid #868686;
   border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+
+  &:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to create a "lifting" effect */
+  }
 `;
 
 export const SmallCardDarkText = styled.h3`
@@ -125,6 +137,12 @@ export const SmallCardLight = styled.div`
   background: #ffffff;
   border: 1px solid #9c28ff;
   border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+
+  &:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to create a "lifting" effect */
+  }
 `;
 
 export const SmallCardLightText = styled.h3`
@@ -134,7 +152,7 @@ export const SmallCardLightText = styled.h3`
   font-size: 20px;
   line-height: 20px;
   width: 224px;
-  color: #9C28FF;
+  color: #9c28ff;
   margin: 0 0 6px 0;
 `;
 
@@ -146,7 +164,7 @@ export const SmallCardLightSubText = styled.p`
   font-size: 16px;
   line-height: 20px;
   width: 224px;
-  color: #B58ADA;
+  color: #b58ada;
 `;
 
 export const SmallIcon = styled.div`

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   BenArrowRight,
   DownloadContainer,
@@ -7,12 +8,17 @@ import {
   DownloadRightConatiner,
   FormContainer,
   InputField,
+  PlayButton,
   StyledIframe,
   SubmitButton,
+  Thumbnail,
   VideoContainer,
 } from './Download.styled';
+import imagePlaceholder from '../../images/imagePlaceholder.png';
 
 const Download = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
     <DownloadContainer>
       <DownloadLeftConatiner>
@@ -31,12 +37,23 @@ const Download = () => {
       </DownloadLeftConatiner>
       <DownloadRightConatiner>
         <VideoContainer>
-          <StyledIframe
-            src={`https://www.youtube.com/embed/JcCZmNKVj_0`} // Используйте "embed" вместо "watch"
-            title="YouTube video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+          {!isPlaying ? (
+            <>
+              <Thumbnail src={imagePlaceholder} alt="Видео превью" />
+              <PlayButton onClick={() => setIsPlaying(true)}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </PlayButton>
+            </>
+          ) : (
+            <StyledIframe
+              src="https://www.youtube.com/embed/JcCZmNKVj_0?autoplay=1"
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          )}
         </VideoContainer>
       </DownloadRightConatiner>
     </DownloadContainer>

@@ -6,7 +6,7 @@ export const SocialContainer = styled.div`
   aligh-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom:200px;
+  padding-bottom: 200px;
 `;
 
 export const SocialMainText = styled.h3`
@@ -48,6 +48,13 @@ export const ItemContainerYouTube = styled.div`
   background: #ffffff;
   border: 1px solid #000000;
   border-radius: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to create a "lifting" effect */
+  }
 `;
 
 export const ItemContainerViber = styled.div`
@@ -58,6 +65,13 @@ export const ItemContainerViber = styled.div`
   background: #ffffff;
   border: 1px solid #000000;
   border-radius: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to create a "lifting" effect */
+  }
 `;
 
 export const ItemContainerTg = styled.div`
@@ -68,6 +82,13 @@ export const ItemContainerTg = styled.div`
   background: #ffffff;
   border: 1px solid #000000;
   border-radius: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to create a "lifting" effect */
+  }
 `;
 
 export const ItemContainerInst = styled.div`
@@ -78,6 +99,12 @@ export const ItemContainerInst = styled.div`
   background: #ffffff;
   border: 1px solid #000000;
   border-radius: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to create a "lifting" effect */
+  }
 `;
 
 export const PurpleText = styled.p`

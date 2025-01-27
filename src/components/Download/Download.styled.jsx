@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IoArrowForwardOutline } from "react-icons/io5";
+import { IoArrowForwardOutline } from 'react-icons/io5';
 
 export const DownloadContainer = styled.div`
   display: flex;
@@ -49,12 +49,45 @@ export const VideoContainer = styled.div`
   padding: 13px;
 `;
 
+export const Thumbnail = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Масштабирование картинки */
+`;
+
+// Кнопка Play
+export const PlayButton = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000; /* Полупрозрачный чёрный фон */
+  border-radius: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+  width: 116px;
+  height: 116px;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Увеличение кнопки при наведении */
+  }
+
+  svg {
+    width: 70px;
+    height: 70px;
+    fill: white; /* Белая иконка Play */
+  }
+`;
+
+// Iframe с видео
 export const StyledIframe = styled.iframe`
   width: 100%;
   height: 100%;
-  border-radius: 43px;
-
-  border: none; /* Убираем стандартную границу iframe */
+  border: none;
+  border-radius: 30px;
 `;
 
 export const FormContainer = styled.div`
@@ -100,7 +133,6 @@ export const SubmitButton = styled.button`
   font-size: 16px;
   font-family: 'Arial', sans-serif;
   border: none;
-
   border-radius: 40px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -108,10 +140,19 @@ export const SubmitButton = styled.button`
 
   &:hover {
     background-color: #e6a800;
+    transform: scale(1.05); /* Subtle scaling on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding a shadow to lift the button */
   }
 `;
 
 export const BenArrowRight = styled(IoArrowForwardOutline)`
-    width:22px;
-    height:22px;
-`
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease; /* Smooth transition for the arrow movement */
+
+  ${SubmitButton}:hover & {
+    transform: translateX(
+      8px
+    ); /* Arrow moves slightly to the right when button is hovered */
+  }
+`;

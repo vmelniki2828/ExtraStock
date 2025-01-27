@@ -124,17 +124,23 @@ export const DownloadButton = styled.div`
   align-items: center;
   border: 1px solid #ffc400;
   border-radius: 43.5px;
-
   font-family: 'Geologica', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 33px;
   line-height: 18px;
   padding-left: 18px;
-
   color: #ffffff;
   margin-bottom: 77px;
   cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+
+  &:hover {
+    background-color: #ffc400; /* Change background to yellow */
+    border-color: #ffc400; /* Border turns yellow on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for a floating effect */
+  }
 `;
 
 export const DownArrow = styled(IoIosArrowRoundDown)`

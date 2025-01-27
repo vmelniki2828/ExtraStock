@@ -14,7 +14,7 @@ export const App = () => {
         <Benefits />
         <Download />
         <Success />
-        <FAQ/>
+        <FAQ />
         <Social />
       </MainBg>
     </div>
