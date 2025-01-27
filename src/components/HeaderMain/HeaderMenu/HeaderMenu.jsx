@@ -1,10 +1,16 @@
-import { HeaderList, HeaderLogo, HeaderMainMenu } from './HeaderMenu.styled';
+import {
+  BurgerMenu,
+  HeaderList,
+  HeaderLogo,
+  HeaderMainMenu,
+} from './HeaderMenu.styled';
 import logo from '../../../images/logo.png';
 
 const HeaderMenu = () => {
   return (
     <HeaderMainMenu>
-      <HeaderLogo src={logo} alt='Logo'/>
+      <HeaderLogo src={logo} alt="Logo" />
+      <BurgerMenu />
       <HeaderList>
         <li>ДОСТАВКА</li>
         <li>FAQ</li>
