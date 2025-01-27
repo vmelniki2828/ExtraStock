@@ -8,6 +8,7 @@ export const SuccessContainer = styled.div`
   padding-top: 120px;
   margin-bottom: 120px;
   position: relative;
+  z-index: 1;
 `;
 
 export const SuccessMainTitle = styled.h3`
@@ -152,7 +153,8 @@ export const CircleGradient = styled.div`
   width: 1440px;
   height: 1008px;
   left: 0px;
-bottom: 0;
+  bottom: 0;
+  pointer-events: none;
 
   background: radial-gradient(
       60.49% 80.08% at 0.99% 100.5%,

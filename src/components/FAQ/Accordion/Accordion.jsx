@@ -3,8 +3,10 @@ import {
   AccordionContainer,
   AccordionItem,
   Answer,
+  Cross,
   Icon,
   Number,
+  Plus,
   Question,
   Text,
 } from './Accordion.styled';
@@ -73,7 +75,7 @@ const Accordion = () => {
           <Question onClick={() => toggleItem(index)}>
             <Number>{String(index + 1).padStart(2, '0')}</Number>
             <Text>{item.question}</Text>
-            <Icon>{openItem === index ? '✕' : '+'}</Icon>
+            <Icon>{openItem === index ? <Cross/> : <Plus/>}</Icon>
           </Question>
           {openItem === index && <Answer>{item.answer}</Answer>}
         </AccordionItem>

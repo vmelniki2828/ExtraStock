@@ -1,4 +1,20 @@
 import styled from 'styled-components';
+import { FiPlus } from 'react-icons/fi';
+import { RxCross2 } from 'react-icons/rx';
+
+export const Plus = styled(FiPlus)`
+  height: 30px;
+  width: 30px;
+  color: #9c28ff;
+  transition: transform 0.3s ease;
+`;
+
+export const Cross = styled(RxCross2)`
+  height: 30px;
+  width: 30px;
+  color: #9F9F9F;
+  transition: transform 0.3s ease;
+`;
 
 export const AccordionContainer = styled.div`
   max-width: 1220px;
@@ -44,12 +60,7 @@ export const Text = styled.p`
   color: #131313;
 `;
 
-export const Icon = styled.span`
-  font-size: 24px;
-  font-weight: bold;
-  color: #9c28ff;
-  transition: transform 0.3s ease;
-`;
+export const Icon = styled.span``;
 
 export const Answer = styled.div`
   margin-top: 54px;
