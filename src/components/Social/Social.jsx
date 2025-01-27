@@ -54,7 +54,7 @@ const Social = () => {
         </ItemContainerTg>
         <ItemContainerInst>
           <InstImg src={inst} alt="inst" />
-          <PurpleText>YouTube</PurpleText>
+          <PurpleText>Instagram</PurpleText>
           <GrayTextInst>свежие фото горячих позиций</GrayTextInst>
         </ItemContainerInst>
       </SocialSmallContainers>
