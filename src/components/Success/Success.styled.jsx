@@ -9,6 +9,21 @@ export const SuccessContainer = styled.div`
   margin-bottom: 120px;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 1024px) {
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
 `;
 
 export const SuccessMainTitle = styled.h3`
@@ -22,6 +37,23 @@ export const SuccessMainTitle = styled.h3`
   margin: 0 0 60px 0;
   text-transform: uppercase;
   color: #000000;
+
+  @media (max-width: 1024px) {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
 `;
 
 export const SuccessPurple = styled.span`
@@ -32,6 +64,21 @@ export const SuccessPurple = styled.span`
   line-height: 58px;
   text-transform: uppercase;
   color: #9c28ff;
+
+  @media (max-width: 1024px) {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+    line-height: 40px;
+  }
 `;
 
 export const SuccessBlackText = styled.p`
@@ -45,18 +92,25 @@ export const SuccessBlackText = styled.p`
   text-transform: uppercase;
   margin: 0;
   color: #000000;
+
+  @media (max-width: 1200px) {
+    width: 85%;
+    font-size: 70px;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 36px;
+    line-height: 45px;
+  }
 `;
 
-export const SuccessWhiteText = styled.p`
-  width: 1338px;
-  font-family: 'Geologica', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 84px;
-  line-height: 75px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
+export const SuccessWhiteText = styled(SuccessBlackText)`
   color: #ffffff;
 `;
 
@@ -66,6 +120,15 @@ export const DarkContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background: black;
+  padding: 40px 0;
+
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 0;
+  }
 `;
 
 export const SuccessWhiteSubText = styled.p`
@@ -81,6 +144,22 @@ export const SuccessWhiteSubText = styled.p`
   text-transform: uppercase;
 
   color: #ffffff;
+
+  @media (max-width: 1200px) {
+    width: 90%;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 22px;
+    line-height: 35px;
+  }
 `;
 
 export const SuccessWhiteSubTextStrong = styled.span`
@@ -93,6 +172,13 @@ export const InputContainer = styled.div`
   margin-top: 50px;
   margin-bottom: 80px;
   gap: 30px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+  }
 `;
 
 export const SuccessInput = styled.input`
@@ -111,6 +197,18 @@ export const SuccessInput = styled.input`
   text-transform: lowercase;
 
   color: #9c9c9c;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    height: 70px;
+    font-size: 22px;
+  }
+
+  @media (max-width: 480px) {
+    width: 50%;
+    font-size: 18px;
+    height: 60px;
+  }
 `;
 
 export const DownloadButton = styled.div`
@@ -133,13 +231,32 @@ export const DownloadButton = styled.div`
   color: #ffffff;
   margin-bottom: 77px;
   cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition for all properties */
+  transition: all 0.3s ease;
 
   &:hover {
-    background-color: #ffc400; /* Change background to yellow */
-    border-color: #ffc400; /* Border turns yellow on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for a floating effect */
+    background-color: #ffc400;
+    border-color: #ffc400;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 1024px) {
+    width: 350px;
+    height: 80px;
+    font-size: 28px;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 50%;
+    height: 70px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    height: 60px;
+    font-size: 10px;
   }
 `;
 
@@ -150,11 +267,19 @@ export const DownArrow = styled(IoIosArrowRoundDown)`
   width: 73px;
   height: 73px;
   margin-right: -4px;
+
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (max-width: 480px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const CircleGradient = styled.div`
-  /* Rectangle 4450 */
-
   position: absolute;
   width: 1440px;
   height: 1008px;
@@ -163,9 +288,18 @@ export const CircleGradient = styled.div`
   pointer-events: none;
 
   background: radial-gradient(
-      60.49% 80.08% at 0.99% 100.5%,
-      rgba(156, 40, 255, 0.13) 0%,
-      rgba(156, 40, 255, 0) 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    60.49% 80.08% at 0.99% 100.5%,
+    rgba(156, 40, 255, 0.13) 0%,
+    rgba(156, 40, 255, 0) 100%
+  );
+
+  @media (max-width: 768px) {
+    width: 1000px;
+    height: 800px;
+  }
+
+  @media (max-width: 480px) {
+    width: 700px;
+    height: 600px;
+  }
 `;

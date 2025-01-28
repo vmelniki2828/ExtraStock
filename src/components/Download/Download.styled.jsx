@@ -6,11 +6,34 @@ export const DownloadContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 68px;
   padding-top: 120px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 80px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 30px;
+    padding-top: 60px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 20px;
+    padding-top: 40px;
+  }
 `;
 
-export const DownloadLeftConatiner = styled.div``;
+export const DownloadLeftConatiner = styled.div`
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+`;
 
 export const DownloadLeftMaintitle = styled.h4`
   font-family: 'Geologica', sans-serif;
@@ -20,8 +43,24 @@ export const DownloadLeftMaintitle = styled.h4`
   line-height: 56px;
   width: 574px;
   margin-bottom: 30px;
-
   color: #000000;
+
+  @media (max-width: 1024px) {
+    font-size: 48px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const DownloadLeftSubtitle = styled.h4`
@@ -32,36 +71,85 @@ export const DownloadLeftSubtitle = styled.h4`
   line-height: 30px;
   margin: 0 0 21px 0;
   color: #7a7a7a;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
 `;
 
-export const DownloadRightConatiner = styled.div``;
+export const DownloadRightConatiner = styled.div`
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+`;
 
 export const VideoContainer = styled.div`
   position: relative;
   width: 564.88px;
   height: 557px;
-  max-width: 560px; /* Максимальная ширина видео */
-  aspect-ratio: 16 / 9; /* Соотношение сторон для видео */
-  border: 1px solid #9c28ff; /* Цвет и толщина бордера */
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid #9c28ff;
   border-radius: 43px;
-  overflow: hidden; /* Обрезает содержимое, чтобы бордер выглядел аккуратно */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень вокруг бордера */
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   padding: 13px;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px;
+    border-radius: 20px;
+  }
 `;
 
 export const Thumbnail = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Масштабирование картинки */
+  object-fit: cover;
+
+  @media (max-width: 1024px) {
+    border-radius: 43px;
+  }
+
+  @media (max-width: 768px) {
+    border-radius: 43px;
+  }
+
+  @media (max-width: 480px) {
+    border-radius: 20px;
+  }
 `;
 
-// Кнопка Play
 export const PlayButton = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #000000; /* Полупрозрачный чёрный фон */
+  background-color: #000000;
   border-radius: 18px;
   cursor: pointer;
   display: flex;
@@ -72,22 +160,45 @@ export const PlayButton = styled.div`
   height: 116px;
 
   &:hover {
-    transform: translate(-50%, -50%) scale(1.1); /* Увеличение кнопки при наведении */
+    transform: translate(-50%, -50%) scale(1.1);
   }
 
   svg {
     width: 70px;
     height: 70px;
-    fill: white; /* Белая иконка Play */
+    fill: white;
+  }
+
+  @media (max-width: 768px) {
+    width: 90px;
+    height: 90px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 70px;
+    height: 70px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
   }
 `;
 
-// Iframe с видео
 export const StyledIframe = styled.iframe`
   width: 100%;
   height: 100%;
   border: none;
   border-radius: 30px;
+
+  @media (max-width: 480px) {
+    border-radius: 15px;
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -97,6 +208,14 @@ export const FormContainer = styled.div`
   gap: 16px;
   width: 100%;
   max-width: 400px;
+
+  @media (max-width: 1200px) {
+    align-items: center;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 80%;
+  }
 `;
 
 export const InputField = styled.input`
@@ -116,6 +235,11 @@ export const InputField = styled.input`
 
   &::placeholder {
     color: #c9c9c9;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 10px 12px;
   }
 `;
 
@@ -140,19 +264,34 @@ export const SubmitButton = styled.button`
 
   &:hover {
     background-color: #e6a800;
-    transform: scale(1.05); /* Subtle scaling on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding a shadow to lift the button */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 56px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    width: 180px;
+    height: 48px;
+    font-size: 12px;
   }
 `;
 
 export const BenArrowRight = styled(IoArrowForwardOutline)`
   width: 22px;
   height: 22px;
-  transition: transform 0.3s ease; /* Smooth transition for the arrow movement */
+  transition: transform 0.3s ease;
 
   ${SubmitButton}:hover & {
-    transform: translateX(
-      8px
-    ); /* Arrow moves slightly to the right when button is hovered */
+    transform: translateX(8px);
+  }
+
+  @media (max-width: 480px) {
+    width: 18px;
+    height: 18px;
   }
 `;
