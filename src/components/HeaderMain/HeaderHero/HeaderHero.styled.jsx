@@ -190,6 +190,7 @@ export const HeaderButton = styled.button`
   font-size: 18px;
   line-height: 18px;
   text-align: center;
+  cursor: pointer;
 
   color: #000000;
 `;

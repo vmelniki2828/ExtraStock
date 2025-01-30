@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-import { IoIosArrowRoundDown } from 'react-icons/io';
 
 export const SuccessContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 107px;
   position: relative;
   z-index: 1;
 
@@ -23,61 +21,6 @@ export const SuccessContainer = styled.div`
   @media (max-width: 480px) {
     padding-top: 60px;
     margin-bottom: 60px;
-  }
-`;
-
-export const SuccessMainTitle = styled.h3`
-  width: 690px;
-  text-align: center;
-  font-family: 'Geologica', sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 43px;
-  line-height: 58px;
-  margin: 0 0 60px 0;
-  text-transform: uppercase;
-  color: #000000;
-
-  @media (max-width: 1024px) {
-    font-size: 38px;
-    line-height: 50px;
-  }
-
-  @media (max-width: 768px) {
-    width: 90%;
-    font-size: 32px;
-    line-height: 45px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 40px;
-  }
-`;
-
-export const SuccessPurple = styled.span`
-  font-family: 'Geologica', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 43px;
-  line-height: 58px;
-  text-transform: uppercase;
-  color: #9c28ff;
-
-  @media (max-width: 1024px) {
-    font-size: 38px;
-    line-height: 50px;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 32px;
-    line-height: 45px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 28px;
-    line-height: 40px;
   }
 `;
 
@@ -120,7 +63,7 @@ export const DarkContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background: black;
-  padding: 40px 0;
+  padding: 0 0 100px 0;
 
   @media (max-width: 768px) {
     padding: 30px 0;
@@ -132,14 +75,14 @@ export const DarkContainer = styled.div`
 `;
 
 export const SuccessWhiteSubText = styled.p`
-  margin: 0;
-  width: 1260px;
+  margin: 0 0 112px 0;
+  width: 1252px;
   margin-top: 60px;
   font-family: 'Geologica', sans-serif;
   font-style: normal;
-  font-weight: 200;
-  font-size: 43px;
-  line-height: 58px;
+  font-weight: 250;
+  font-size: 35px;
+  line-height: 65px;
   text-align: center;
   text-transform: uppercase;
 
@@ -162,6 +105,19 @@ export const SuccessWhiteSubText = styled.p`
   }
 `;
 
+export const DownloadYellowText = styled.h3`
+  margin: 0;
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 84px;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffc400;
+`;
+
 export const SuccessWhiteSubTextStrong = styled.span`
   font-weight: 500;
 `;
@@ -169,16 +125,9 @@ export const SuccessWhiteSubTextStrong = styled.span`
 export const InputContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 50px;
-  margin-bottom: 80px;
   gap: 30px;
-
-  @media (max-width: 1200px) {
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    gap: 20px;
-  }
 `;
 
 export const SuccessInput = styled.input`
@@ -212,13 +161,14 @@ export const SuccessInput = styled.input`
 `;
 
 export const DownloadButton = styled.div`
+  padding: 0 7px 0 34px;
   margin: 0 auto;
   color: #fff;
-  width: 395px;
-  height: 87px;
+  width: 370px;
+  height: 85px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border: 1px solid #ffc400;
   border-radius: 43.5px;
@@ -227,9 +177,7 @@ export const DownloadButton = styled.div`
   font-weight: 500;
   font-size: 33px;
   line-height: 18px;
-  padding-left: 18px;
   color: #ffffff;
-  margin-bottom: 77px;
   cursor: pointer;
   transition: all 0.3s ease;
 
@@ -260,25 +208,6 @@ export const DownloadButton = styled.div`
   }
 `;
 
-export const DownArrow = styled(IoIosArrowRoundDown)`
-  background: transparent;
-  border-radius: 43.5px;
-  border: 1px solid #ffc300;
-  width: 73px;
-  height: 73px;
-  margin-right: -4px;
-
-  @media (max-width: 768px) {
-    width: 60px;
-    height: 60px;
-  }
-
-  @media (max-width: 480px) {
-    width: 50px;
-    height: 50px;
-  }
-`;
-
 export const CircleGradient = styled.div`
   position: absolute;
   width: 1440px;
@@ -302,4 +231,20 @@ export const CircleGradient = styled.div`
     width: 700px;
     height: 600px;
   }
+`;
+
+export const DownloadButtonArrow = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 73px;
+  height: 73px;
+  background: linear-gradient(
+    148.15deg,
+    rgba(2, 1, 4, 0.66) -255.09%,
+    rgba(255, 196, 0, 0) 88.45%
+  );
+  border: 1px solid #ffc400;
+  border-radius: 43.5px;
 `;

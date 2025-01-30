@@ -1,52 +1,43 @@
 import {
-    CircleGradient,
+  CircleGradient,
   DarkContainer,
-  DownArrow,
   DownloadButton,
+  DownloadButtonArrow,
+  DownloadYellowText,
   InputContainer,
   SuccessBlackText,
   SuccessContainer,
   SuccessInput,
-  SuccessMainTitle,
-  SuccessPurple,
   SuccessWhiteSubText,
-  SuccessWhiteSubTextStrong,
   SuccessWhiteText,
 } from './Success.styled';
+import whiteArrow from '../../images/whiteArrow.png';
 
 const Success = () => {
   return (
     <SuccessContainer>
-      <SuccessMainTitle>
-        Хотите открыть <SuccessPurple>успешный магазин</SuccessPurple>{' '}
-        секонд-хенд?
-      </SuccessMainTitle>
-      <SuccessBlackText>Бесплатный чек-лист по</SuccessBlackText>
+      <SuccessBlackText>Безкоштовна допомога</SuccessBlackText>
       <DarkContainer>
-        <SuccessWhiteText>открытию магазина секонд-хенд</SuccessWhiteText>
+        <SuccessWhiteText>
+          по торгівлі онлайн та магазину секонд-хенд.
+        </SuccessWhiteText>
         <SuccessWhiteSubText>
-          100% рецепта успеха в бизнесе не существует,
-          <SuccessWhiteSubTextStrong>
-            {' '}
-            но сократить до минимума риски, понять как правильно делать то или
-            иное жизнено важно.
-          </SuccessWhiteSubTextStrong>{' '}
-          Мы бесплатно отправим Вам чек-лист открытия{' '}
-          <SuccessWhiteSubTextStrong>
-            Успешного магазина секонд-хенд
-          </SuccessWhiteSubTextStrong>
-          . В нем перечислен ряд вопросов которые мы обсуждаем на наших
-          вебинирах.
+          Зрозуміти як правильно зробити, і На що дуже важливо звернути увагу
+          при торгівлі секонд-хенд і Сток. Ми безкоштовно відповімо на всі Ваші
+          питання і підскажемо в якому напрямку потрібно рухатись при продажі
+          для успішного розвитку та росту саме вашого магазину.
         </SuccessWhiteSubText>
+        <DownloadYellowText>Замовити консультацію</DownloadYellowText>
         <InputContainer>
-          <SuccessInput placeholder="ИМЯ..." />
-          <SuccessInput placeholder="ЕЛЕКТРОННАЯ ПОЧТА..." />
-          <SuccessInput placeholder="НОМЕР ТЕЛЕФОНА..." />
+          <SuccessInput placeholder="ім’я..." />
+          <SuccessInput placeholder="номер телефону..." />
+          <DownloadButton>
+            Надіслати запит
+            <DownloadButtonArrow>
+              <img src={whiteArrow} alt="dsad" />
+            </DownloadButtonArrow>
+          </DownloadButton>
         </InputContainer>
-        <DownloadButton>
-          Скачать чек-лист
-          <DownArrow />
-        </DownloadButton>
       </DarkContainer>
       <CircleGradient />
     </SuccessContainer>

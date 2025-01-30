@@ -1,5 +1,6 @@
 import { MainBg } from './App.styled';
 import Benefits from './Benefits/Benefits';
+import Delivery from './Delivery/Delivery';
 import Download from './Download/Download';
 import FAQ from './FAQ/FAQ';
 import HeaderMain from './HeaderMain/HeaderMain';
@@ -14,6 +15,7 @@ export const App = () => {
       <MainBg>
         <Download />
         <Success />
+        <Delivery />
         <FAQ />
         <Social />
       </MainBg>

@@ -1,61 +1,73 @@
-import { useState } from 'react';
 import {
-  BenArrowRight,
+  BigContainer,
+  ContainerImg,
+  DownloadButton,
   DownloadContainer,
-  DownloadLeftConatiner,
-  DownloadLeftMaintitle,
-  DownloadLeftSubtitle,
-  DownloadRightConatiner,
-  FormContainer,
-  InputField,
-  PlayButton,
-  StyledIframe,
-  SubmitButton,
-  Thumbnail,
-  VideoContainer,
+  DownloadInput,
+  DownloadInputContainer,
+  DownloadMainSubTitle,
+  DownloadMainTitle,
+  DownloadPurpleSpan,
+  MainBlockContainer,
+  SmallCont,
+  SmallContainers,
+  SmallTextBox,
+  TextBox,
 } from './Download.styled';
-import imagePlaceholder from '../../images/imagePlaceholder.png';
+import vp from '../../images/imagePlaceholder.png';
+import headerArrow from '../../images/headerArrow.png';
+
 
 const Download = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-
   return (
     <DownloadContainer>
-      <DownloadLeftConatiner>
-        <DownloadLeftMaintitle>Секонд-хенд и СТОК оптом.</DownloadLeftMaintitle>
-        <DownloadLeftSubtitle>
-          Огромный выбор позиций. <br />
-          Лучшее для Вашего магазина по низким ценам.
-        </DownloadLeftSubtitle>
-        <FormContainer>
-          <InputField type="email" placeholder="Электронная почта:" />
-          <InputField type="tel" placeholder="Мобильный телефон:" />
-          <SubmitButton>
-            Скачать прайс <BenArrowRight />
-          </SubmitButton>
-        </FormContainer>
-      </DownloadLeftConatiner>
-      <DownloadRightConatiner>
-        <VideoContainer>
-          {!isPlaying ? (
-            <>
-              <Thumbnail src={imagePlaceholder} alt="Видео превью" />
-              <PlayButton onClick={() => setIsPlaying(true)}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </PlayButton>
-            </>
-          ) : (
-            <StyledIframe
-              src="https://www.youtube.com/embed/JcCZmNKVj_0?autoplay=1"
-              title="YouTube video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          )}
-        </VideoContainer>
-      </DownloadRightConatiner>
+      <DownloadMainTitle>Секонд-хенд і Сток оптом.</DownloadMainTitle>
+      <DownloadMainSubTitle>
+        Великий вибір товару.{' '}
+        <DownloadPurpleSpan>
+          Найкращі ціни для торгівлі в онлайн та магазині.{' '}
+        </DownloadPurpleSpan>
+        Отримаєте саме той товар
+        <DownloadPurpleSpan>який Ви швидко продасте.</DownloadPurpleSpan>
+      </DownloadMainSubTitle>
+
+      <MainBlockContainer>
+        <BigContainer>
+          <ContainerImg src={vp} alt="dsad" />
+          <TextBox>
+            <strong>СОРТОВКА ОПТОМ:</strong>
+            <p>
+              Кросівки. Жилетка дута. Спорт штани. Фліс. Худі. Футболки. Шорти.
+              Куртка. Роба. Карго. Та багато іншого
+            </p>
+          </TextBox>
+        </BigContainer>
+        <SmallContainers>
+          <SmallCont>
+            <ContainerImg src={vp} alt="dsad" />
+            <SmallTextBox>
+              <strong>Сток Оптом:</strong>
+              <p>Дорослий. Дитячий. Взуття. Домашні вжиток</p>
+            </SmallTextBox>
+          </SmallCont>
+          <SmallCont>
+            <ContainerImg src={vp} alt="dsad" />
+            <SmallTextBox>
+              <strong>Оригінал Оптом:</strong>
+              <p>Актуальні бренди, останні колекції, висока якість</p>
+            </SmallTextBox>
+          </SmallCont>
+        </SmallContainers>
+      </MainBlockContainer>
+
+      <DownloadInputContainer>
+        <DownloadInput placeholder="Ім’я:" />
+        <DownloadInput placeholder="Мобільний телефон:" />
+      </DownloadInputContainer>
+
+      <DownloadButton>
+        Скачать прайс <img src={headerArrow} alt="headerArrow" />
+      </DownloadButton>
     </DownloadContainer>
   );
 };

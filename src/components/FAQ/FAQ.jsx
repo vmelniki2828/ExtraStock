@@ -4,7 +4,7 @@ import { FAQMainContainer, FAQMainText } from './FAQ.styled';
 const FAQ = () => {
   return (
     <FAQMainContainer>
-      <FAQMainText>FAQ. Справочная информация. Все о секонд-хенде.</FAQMainText>
+      <FAQMainText>FAQ. Довідкова інформація. Все про секонд-хенд.</FAQMainText>
       <Accordion />
     </FAQMainContainer>
   );

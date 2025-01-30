@@ -25,10 +25,10 @@ import inst from '../../images/insta.png';
 const Social = () => {
   return (
     <SocialContainer>
-      <SocialMainText>Мы в социальных сетях</SocialMainText>
+      <SocialMainText>Ми в соціальних мережах</SocialMainText>
       <SocialMainSubText>
-        Присоединяйтесь к нашему сообществу в <br />
-        Вайбере и  Телеграмм
+        Приєднуйтесь до нашої спільноти в <br />
+        Вайбері та Телеграм
       </SocialMainSubText>
       <SocialSmallContainers>
         <ItemContainerYouTube>
