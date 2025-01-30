@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/ExtraStock/static/css/main.2fc308a2.css",
-    "main.js": "/ExtraStock/static/js/main.8706ea57.js",
+    "main.js": "/ExtraStock/static/js/main.0b7399f0.js",
     "static/media/cat.png": "/ExtraStock/static/media/cat.552d4cf5ed6666669c11.png",
     "static/media/header_bg.png": "/ExtraStock/static/media/header_bg.4720796946a34cc0d79b.png",
     "static/media/imagePlaceholder.png": "/ExtraStock/static/media/imagePlaceholder.918996425f52cb3922ca.png",
     "static/media/header_tshorts.png": "/ExtraStock/static/media/header_tshorts.2742e2733e302a8c0659.png",
     "static/media/GEOLOGICA-VARIABLEFONT_CRSV,SHRP,SLNT,WGHT.TTF": "/ExtraStock/static/media/GEOLOGICA-VARIABLEFONT_CRSV,SHRP,SLNT,WGHT.f3e3fbc9355fd9e0c193.TTF",
+    "static/media/bus.png": "/ExtraStock/static/media/bus.a67236aedc647fd2a8d6.png",
     "static/media/ALEGRESANS-REGULAR.TTF": "/ExtraStock/static/media/ALEGRESANS-REGULAR.c1e01da92d3f0ffb7f66.TTF",
     "index.html": "/ExtraStock/index.html",
     "main.2fc308a2.css.map": "/ExtraStock/static/css/main.2fc308a2.css.map",
-    "main.8706ea57.js.map": "/ExtraStock/static/js/main.8706ea57.js.map"
+    "main.0b7399f0.js.map": "/ExtraStock/static/js/main.0b7399f0.js.map"
   },
   "entrypoints": [
     "static/css/main.2fc308a2.css",
-    "static/js/main.8706ea57.js"
+    "static/js/main.0b7399f0.js"
   ]
 }
