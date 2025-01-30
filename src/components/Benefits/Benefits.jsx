@@ -62,18 +62,18 @@ const Benefits = () => {
             <SmallCardLightText>
               Зашиті мішки які не вскривались в Україні{' '}
             </SmallCardLightText>
-            <SmallCardDarkSubText>
+            <SmallCardLightSubText>
               Товар, який був відкритим тільки для вас.
-            </SmallCardDarkSubText>
+            </SmallCardLightSubText>
           </SmallCardLight>
         </SmallCardsContainer>
         <SmallCardsContainer>
           <SmallCardLight>
             <SmallIcon src={mask} alt="mask" />
             <SmallCardLightText>Речі з біркою </SmallCardLightText>
-            <SmallCardDarkSubText>
+            <SmallCardLightSubText>
               Оригінальні речі з бірками – жодних компромісів!{' '}
-            </SmallCardDarkSubText>
+            </SmallCardLightSubText>
           </SmallCardLight>
           <SmallCardDark>
             <SmallIcon src={earth} alt="earth" />
@@ -94,18 +94,18 @@ const Benefits = () => {
           <SmallCardLight>
             <SmallIcon src={house} alt="house" />
             <SmallCardLightText>Можна приїхати на склад </SmallCardLightText>
-            <SmallCardDarkSubText>
+            <SmallCardLightSubText>
               Можливість особисто відвідати склад для огляду товару.{' '}
-            </SmallCardDarkSubText>
+            </SmallCardLightSubText>
           </SmallCardLight>
         </SmallCardsContainer>
         <SmallCardsContainer>
           <SmallCardLight>
             <SmallIcon src={camera} alt="camera" />
             <SmallCardLightText>Відеоогляд</SmallCardLightText>
-            <SmallCardDarkSubText>
+            <SmallCardLightSubText>
               Відеоогляди товарів для детального ознайомлення.{' '}
-            </SmallCardDarkSubText>
+            </SmallCardLightSubText>
           </SmallCardLight>
           <SmallCardDark>
             <SmallIcon src={cp} alt="cp" />
