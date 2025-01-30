@@ -1,5 +1,4 @@
 import {
-  ArrowImg,
   HeaderButton,
   HeaderHeroContainer,
   HeaderHeroContainerLeft,
@@ -7,28 +6,36 @@ import {
   HeaderHeroMainTitle,
   HeaderHeroSubTitle,
   HeaderImgTshorts,
+  HeaderInput,
+  HeaderInputContainer,
   PurpleSpan,
   StrongSpan,
 } from './HeaderHero.styled';
 import header_tshorts from '../../../images/header_tshorts.png';
+import headerArrow from '../../../images/headerArrow.png';
 
 const HeaderHero = () => {
   return (
     <HeaderHeroContainer>
       <HeaderHeroContainerLeft>
         <HeaderHeroMainTitle>
-          ОДЕЖДА СЕКОНД-ХЕНД{' '}
+          Секонд-хенд і сток оптом
+          <br />
           <StrongSpan>
-            ОПТОМ ОТ <PurpleSpan>1€/КГ</PurpleSpan>
+            <PurpleSpan>від 1€/КГ</PurpleSpan>
           </StrongSpan>
         </HeaderHeroMainTitle>
         <HeaderHeroSubTitle>
-          От ведущей английской фабрики <br />В наличии 40тонн на складе
-          <br /> Еженедельные обновления
-          <br /> Объем от 10кг
+          Від кращих фабрик! <br />
+          Щотижневе оновлення!
         </HeaderHeroSubTitle>
+        <HeaderInputContainer>
+          <HeaderInput placeholder="Ім’я:" />
+          <HeaderInput placeholder="Мобільний телефон:" />
+        </HeaderInputContainer>
+
         <HeaderButton>
-          замовити <ArrowImg />
+          Скачать прайс <img src={headerArrow} alt="headerArrow" />
         </HeaderButton>
       </HeaderHeroContainerLeft>
       <HeaderHeroContainerRight>

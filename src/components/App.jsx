@@ -10,8 +10,8 @@ export const App = () => {
   return (
     <div>
       <HeaderMain />
+      <Benefits />
       <MainBg>
-        <Benefits />
         <Download />
         <Success />
         <FAQ />

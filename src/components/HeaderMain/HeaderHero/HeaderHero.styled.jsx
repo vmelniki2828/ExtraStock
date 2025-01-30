@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export const HeaderHeroContainer = styled.div`
   width: 1320px;
@@ -25,6 +24,30 @@ export const HeaderHeroContainer = styled.div`
     width: 100%;
     padding: 0 8px;
   }
+`;
+
+export const HeaderInputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+`;
+
+export const HeaderInput = styled.input`
+  width: 390px;
+  height: 40px;
+  padding: 0 22px 0 16px;
+  background: rgba(0, 0, 0, 0.36);
+  border: 1px solid #ffc300;
+  border-radius: 41px;
+
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #c9c9c9;
 `;
 
 export const HeaderHeroContainerLeft = styled.div`
@@ -65,9 +88,9 @@ export const HeaderHeroSubTitle = styled.p`
   font-style: normal;
   font-weight: 200;
   font-size: 41px;
-  line-height: 34px;
+  line-height: 50px;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -86,6 +109,10 @@ export const HeaderHeroSubTitle = styled.p`
     line-height: 24px;
     margin-bottom: 20px;
   }
+`;
+
+export const LogoSpan = styled.span`
+  color: #ae4fff;
 `;
 
 export const HeaderHeroContainerRight = styled.div`
@@ -142,69 +169,27 @@ export const HeaderButton = styled.button`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 258px;
-  height: 65px;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  border-radius: 32.5px;
-  padding-left: 24px;
-  padding-right: 7px;
+  padding: 24px 36px;
+  gap: 8px;
+
+  width: 231px;
+  height: 66px;
+
+  background: #ffc400;
+  border-radius: 40px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: none;
+
   font-family: 'Geologica', sans-serif;
   font-style: normal;
-  font-weight: 200;
-  font-size: 34px;
-  line-height: 95%;
-  cursor: pointer;
-  color: #ffffff;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s, border 0.3s;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
 
-  &:hover {
-    background-color: #ffc300;
-    color: #333333;
-    border-color: #ffc300;
-    transform: scale(1.05);
-  }
-
-  @media (max-width: 1024px) {
-    font-size: 28px;
-    width: 220px;
-    height: 55px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 24px;
-    width: 200px;
-    height: 50px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 18px;
-    width: 180px;
-    height: 45px;
-  }
-`;
-
-export const ArrowImg = styled(IoIosArrowRoundForward)`
-  background-color: #ffc300;
-  width: 49px;
-  height: 49px;
-  border-radius: 32.5px;
-  color: black;
-
-  @media (max-width: 1024px) {
-    width: 40px;
-    height: 40px;
-  }
-
-  @media (max-width: 768px) {
-    width: 35px;
-    height: 35px;
-  }
-
-  @media (max-width: 480px) {
-    width: 30px;
-    height: 30px;
-  }
+  color: #000000;
 `;

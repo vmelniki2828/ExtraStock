@@ -7,7 +7,6 @@ export const CloseImg = styled(IoClose)``;
 export const HeaderMainMenu = styled.header`
   display: flex;
   flex-direction: row;
-
   justify-content: space-between;
   align-items: center;
   max-width: 1320px;
@@ -36,6 +35,34 @@ export const HeaderMainMenu = styled.header`
     padding-left: 8px;
     padding-right: 8px;
   }
+`;
+
+export const HeaderSocialList = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+`;
+
+export const HeaderImg = styled.img`
+  width: 40px;
+  height: 40px;
+`;
+
+export const LogoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15.4px;
+`;
+
+export const LogoText = styled.p`
+  margin: 0;
+  font-family: 'Alegre Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 61px;
+  color: #ffffff;
 `;
 
 export const BurgerMenu = styled(GiHamburgerMenu)`
@@ -100,6 +127,10 @@ export const HeaderList = styled.ul`
   color: #ffffff;
   transform: rotate(0.39deg);
 
+  li {
+    cursor: pointer;
+  }
+
   @media (max-width: 1024px) {
     gap: 100px; /* Reduce gap for medium screens */
     font-size: 20px; /* Slightly smaller font */
@@ -147,7 +178,7 @@ export const MenuItem = styled.li`
   width: 100%;
   border-top: 1px solid black;
   background: #fff;
-  cursor:pointer;
+  cursor: pointer;
   &:hover {
     background-color: #ffcc00;
   }

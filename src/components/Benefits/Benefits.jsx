@@ -7,7 +7,6 @@ import {
   BigCardIcon,
   BigCardSubText,
   BigCardText,
-  BigCardTextSpan,
   CardContainer,
   SmallCardDark,
   SmallCardDarkSubText,
@@ -17,82 +16,106 @@ import {
   SmallCardLightText,
   SmallCardsContainer,
   SmallIcon,
+  YellowSpan,
 } from './Benefits.styled';
 import handshake from '../../images/handshake.png';
+import delivery from '../../images/delivery.png';
+import garbage from '../../images/garbage.png';
+import mask from '../../images/mask.png';
+import earth from '../../images/earth.png';
+import money from '../../images/money.png';
+import house from '../../images/warehouse.png';
+import camera from '../../images/camera.png';
+import cp from '../../images/cp.png';
 
 const Benefits = () => {
   return (
     <BenefitsMainContainer>
-      <BenefitsMainText>7 ОСНОВНЫХ ВЫГОД</BenefitsMainText>
+      <BenefitsMainText>9 ОСНОВНЫХ ВЫГОД</BenefitsMainText>
       <BenefitsSubText>
-        при работе с базой <PurpleSpan>ЭкстраСток</PurpleSpan>
+        під час роботи з базою{' '}
+        <PurpleSpan>
+          Екстра<YellowSpan>Сток</YellowSpan>
+        </PurpleSpan>
       </BenefitsSubText>
       <CardContainer>
         <BigCard>
           <BigCardIcon src={handshake} />
           <BigCardText>
-            Помощь в открытии успешных магазинов{' '}
-            <BigCardTextSpan>секонд-хенд</BigCardTextSpan>
+            Допомога <br /> При <br />
+            відкритті магазину
           </BigCardText>
           <BigCardSubText>
-            Полный цикл сопровождения желающих начать свой бизнес
+            Повний цикл супроводу для бажаючих почати свій бізнес{' '}
           </BigCardSubText>
         </BigCard>
         <SmallCardsContainer>
           <SmallCardDark>
-            <SmallIcon />
-            <SmallCardDarkText>Возможность просмотреть товар</SmallCardDarkText>
+            <SmallIcon src={delivery} alt="delivery" />
+            <SmallCardDarkText>Швидка доставка</SmallCardDarkText>
             <SmallCardDarkSubText>
-              Любой мешок можно посмотреть на складе
+              Отримуйте свої замовлення без зайвого очікування!
             </SmallCardDarkSubText>
           </SmallCardDark>
           <SmallCardLight>
-            <SmallIcon />
+            <SmallIcon src={garbage} alt="garbage" />
             <SmallCardLightText>
-              Бесплатная <br />
-              доставка
+              Зашиті мішки які не вскривались в Україні{' '}
             </SmallCardLightText>
-            <SmallCardLightSubText>
-              при заказе от 10000 грн, доставка бесплатная
-            </SmallCardLightSubText>
+            <SmallCardDarkSubText>
+              Товар, який був відкритим тільки для вас.
+            </SmallCardDarkSubText>
           </SmallCardLight>
         </SmallCardsContainer>
         <SmallCardsContainer>
           <SmallCardLight>
-            <SmallIcon />
-            <SmallCardLightText>
-              Бронирование <br />
-              товара
-            </SmallCardLightText>
-            <SmallCardLightSubText>
-              Товар можно забронировать на сайте{' '}
-            </SmallCardLightSubText>
+            <SmallIcon src={mask} alt="mask" />
+            <SmallCardLightText>Речі з біркою </SmallCardLightText>
+            <SmallCardDarkSubText>
+              Оригінальні речі з бірками – жодних компромісів!{' '}
+            </SmallCardDarkSubText>
           </SmallCardLight>
           <SmallCardDark>
-            <SmallIcon />
-            <SmallCardDarkText>Модных брендов на 20% больше</SmallCardDarkText>
+            <SmallIcon src={earth} alt="earth" />
+            <SmallCardDarkText>Прямі поставки</SmallCardDarkText>
             <SmallCardDarkSubText>
-              Вещи из самых последних коллекций{' '}
+              Товари надходять безпосередньо від постачальників.
             </SmallCardDarkSubText>
           </SmallCardDark>
         </SmallCardsContainer>
         <SmallCardsContainer>
           <SmallCardDark>
-            <SmallIcon />
-            <SmallCardDarkText>Более 50 наименований товара</SmallCardDarkText>
+            <SmallIcon src={money} alt="money" />
+            <SmallCardDarkText>Ходовий товар</SmallCardDarkText>
             <SmallCardDarkSubText>
-              Большой выбор, постоянно обновляемый ассортимент
+              Товари високої якості, які користуються найбільшим попитом!{' '}
             </SmallCardDarkSubText>
           </SmallCardDark>
           <SmallCardLight>
-            <SmallIcon />
-            <SmallCardLightText>
-              Возможность просмотреть товар
-            </SmallCardLightText>
-            <SmallCardLightSubText>
-              Любой мешок можно посмотреть на складе
-            </SmallCardLightSubText>
+            <SmallIcon src={house} alt="house" />
+            <SmallCardLightText>Можна приїхати на склад </SmallCardLightText>
+            <SmallCardDarkSubText>
+              Можливість особисто відвідати склад для огляду товару.{' '}
+            </SmallCardDarkSubText>
           </SmallCardLight>
+        </SmallCardsContainer>
+        <SmallCardsContainer>
+          <SmallCardLight>
+            <SmallIcon src={camera} alt="camera" />
+            <SmallCardLightText>Відеоогляд</SmallCardLightText>
+            <SmallCardDarkSubText>
+              Відеоогляди товарів для детального ознайомлення.{' '}
+            </SmallCardDarkSubText>
+          </SmallCardLight>
+          <SmallCardDark>
+            <SmallIcon src={cp} alt="cp" />
+            <SmallCardDarkText>
+              Більше брендів в кожному мішку
+            </SmallCardDarkText>
+            <SmallCardDarkSubText>
+              Кожен мішок містить продукцію від кількох брендів.{' '}
+            </SmallCardDarkSubText>
+          </SmallCardDark>
         </SmallCardsContainer>
       </CardContainer>
     </BenefitsMainContainer>

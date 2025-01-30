@@ -13,3 +13,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Alegre Sans';
+  src: url('/fonts/ALEGRESANS-REGULAR.TTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geologica';
+  src: url('/fonts/GEOLOGICA-VARIABLEFONT_CRSV\,SHRP\,SLNT\,WGHT.TTF')
+    format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
