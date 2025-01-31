@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/ExtraStock/static/css/main.2fc308a2.css",
-    "main.js": "/ExtraStock/static/js/main.0b7399f0.js",
+    "main.css": "/ExtraStock/static/css/main.eb503f6c.css",
+    "main.js": "/ExtraStock/static/js/main.4303651e.js",
     "static/media/cat.png": "/ExtraStock/static/media/cat.552d4cf5ed6666669c11.png",
     "static/media/header_bg.png": "/ExtraStock/static/media/header_bg.4720796946a34cc0d79b.png",
     "static/media/imagePlaceholder.png": "/ExtraStock/static/media/imagePlaceholder.918996425f52cb3922ca.png",
     "static/media/header_tshorts.png": "/ExtraStock/static/media/header_tshorts.2742e2733e302a8c0659.png",
     "static/media/GEOLOGICA-VARIABLEFONT_CRSV,SHRP,SLNT,WGHT.TTF": "/ExtraStock/static/media/GEOLOGICA-VARIABLEFONT_CRSV,SHRP,SLNT,WGHT.f3e3fbc9355fd9e0c193.TTF",
     "static/media/bus.png": "/ExtraStock/static/media/bus.a67236aedc647fd2a8d6.png",
+    "static/media/inst.png": "/ExtraStock/static/media/inst.c1d7b88ab81b6f389856.png",
+    "static/media/tg.png": "/ExtraStock/static/media/tg.2bc8a3726ab23c699384.png",
+    "static/media/tiktok.png": "/ExtraStock/static/media/tiktok.2e3aa34fd0252b300ecf.png",
     "static/media/ALEGRESANS-REGULAR.TTF": "/ExtraStock/static/media/ALEGRESANS-REGULAR.c1e01da92d3f0ffb7f66.TTF",
+    "static/media/youtube.png": "/ExtraStock/static/media/youtube.5b0db98d061b4204fd58.png",
     "index.html": "/ExtraStock/index.html",
-    "main.2fc308a2.css.map": "/ExtraStock/static/css/main.2fc308a2.css.map",
-    "main.0b7399f0.js.map": "/ExtraStock/static/js/main.0b7399f0.js.map"
+    "main.eb503f6c.css.map": "/ExtraStock/static/css/main.eb503f6c.css.map",
+    "main.4303651e.js.map": "/ExtraStock/static/js/main.4303651e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fc308a2.css",
-    "static/js/main.0b7399f0.js"
+    "static/css/main.eb503f6c.css",
+    "static/js/main.4303651e.js"
   ]
 }
