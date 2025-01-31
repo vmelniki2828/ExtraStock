@@ -4,6 +4,7 @@ import {
   BigConContactText,
   ItemContainer,
   ItemContainerBottom,
+  MapText,
   SocialBigContainers,
   SocialContainer,
   SocialMainSubText,
@@ -19,9 +20,23 @@ import tg from '../../images/tg.png';
 import viber from '../../images/viber.png';
 import tiktok from '../../images/tiktok.png';
 import phone from '../../images/phone.png';
-import { useEffect, useRef } from 'react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const Social = () => {
+  const containerStyle = {
+    width: "590px",
+    height: "279px",
+    background:" #9c28ff",
+    // mixBlendMode: "color",
+    border: "1px solid #000000",
+    borderRadius: "24px 24px 0 0"
+  };
+
+  const center = {
+    lat: 50.45825261911876,
+    lng: 30.41964242710779
+  };
+
   return (
     <SocialContainer id="social">
       <SocialMainText>Ми в соціальних мережах</SocialMainText>
@@ -65,7 +80,18 @@ const Social = () => {
             </TelItem>
           </TelContainer>
         </BigConContact>
-        <BigCon></BigCon>
+        <BigCon>
+          <LoadScript googleMapsApiKey="AIzaSyCIpjA5fg_xeksRJyRO25ZiDfCvV6feRz4">
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              zoom={10}
+            >
+              <Marker position={center} />
+            </GoogleMap>
+          </LoadScript>
+          <MapText>Знайдіть нас за адресою: м. Київ, вул. Миколи Василенко 2</MapText>
+        </BigCon>
       </SocialBigContainers>
     </SocialContainer>
   );

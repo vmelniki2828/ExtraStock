@@ -165,3 +165,15 @@ export const TelNum = styled.p`
 
   color: #000000;
 `;
+
+export const MapText = styled.p`
+  margin: 0;
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #767676;
+  margin-top: 8px;
+`;
