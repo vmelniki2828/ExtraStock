@@ -267,5 +267,6 @@ export const SmallCardLightSubText = styled(SmallCardDarkSubText)`
 
 export const SmallIcon = styled.img`
   height: 70px;
+  max-width: 100px;
   margin: 28.86px 0 19.65px 21.23px;
 `;

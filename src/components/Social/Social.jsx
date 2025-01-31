@@ -1,63 +1,72 @@
 import {
-  GrayTextInst,
-  GrayTextTg,
-  GrayTextViber,
-  GrayTextYouTube,
-  InstImg,
-  ItemContainerInst,
-  ItemContainerTg,
-  ItemContainerViber,
-  ItemContainerYouTube,
-  PurpleText,
+  BigCon,
+  BigConContact,
+  BigConContactText,
+  ItemContainer,
+  ItemContainerBottom,
+  SocialBigContainers,
   SocialContainer,
   SocialMainSubText,
   SocialMainText,
   SocialSmallContainers,
-  TgImg,
-  ViberImg,
-  YouTubeImg,
+  TelContainer,
+  TelItem,
+  TelNum,
 } from './Social.styled';
 import youtube from '../../images/youtube.png';
-import viber from '../../images/viber.png';
+import inst from '../../images/inst.png';
 import tg from '../../images/tg.png';
-import inst from '../../images/insta.png';
+import viber from '../../images/viber.png';
+import tiktok from '../../images/tiktok.png';
+import phone from '../../images/phone.png';
+import { useEffect, useRef } from 'react';
 
 const Social = () => {
   return (
-    <SocialContainer>
+    <SocialContainer id="social">
       <SocialMainText>Ми в соціальних мережах</SocialMainText>
       <SocialMainSubText>
         Приєднуйтесь до нашої спільноти в <br />
         Вайбері та Телеграм
       </SocialMainSubText>
       <SocialSmallContainers>
-        <ItemContainerYouTube>
-          <YouTubeImg src={youtube} alt="youtube" />
-          <PurpleText>YouTube</PurpleText>
-          <GrayTextYouTube>все видео обзоры наших товаров</GrayTextYouTube>
-        </ItemContainerYouTube>
-        <ItemContainerViber>
-          <ViberImg src={viber} alt="viber" />
-          <PurpleText>Viber</PurpleText>
-          <GrayTextViber>
-            - всегда свежий прайс <br />- горячие, акционные позиции <br /> -
-            актуальная информация о наличии товара
-          </GrayTextViber>
-        </ItemContainerViber>
-        <ItemContainerTg>
-          <TgImg src={tg} alt="tg" />
-          <PurpleText>Telegram</PurpleText>
-          <GrayTextTg>
-            - возможность увидеть отзывы о товаре и оперативно общаться с
-            поставщиком. <br />- информация о свежих видео обзорах на новинки
-          </GrayTextTg>
-        </ItemContainerTg>
-        <ItemContainerInst>
-          <InstImg src={inst} alt="inst" />
-          <PurpleText>Instagram</PurpleText>
-          <GrayTextInst>свежие фото горячих позиций</GrayTextInst>
-        </ItemContainerInst>
+        <ItemContainer>
+          <img src={youtube} alt="youtube" style={{ marginTop: '26.77px' }} />
+          <ItemContainerBottom>YouTube</ItemContainerBottom>
+        </ItemContainer>
+        <ItemContainer>
+          <img src={inst} alt="inst" style={{ marginTop: '7.31px' }} />
+          <ItemContainerBottom>Instagram</ItemContainerBottom>
+        </ItemContainer>
+        <ItemContainer>
+          <img src={tg} alt="tg" style={{ marginTop: '26.77px' }} />
+          <ItemContainerBottom>Telegram</ItemContainerBottom>
+        </ItemContainer>
+        <ItemContainer>
+          <img src={viber} alt="viber" style={{ marginTop: '24.91px' }} />
+          <ItemContainerBottom>Viber</ItemContainerBottom>
+        </ItemContainer>
+        <ItemContainer>
+          <img src={tiktok} alt="tiktok" style={{ marginTop: '29.21px' }} />
+          <ItemContainerBottom>Tik Tok</ItemContainerBottom>
+        </ItemContainer>
       </SocialSmallContainers>
+      <SocialBigContainers>
+        <BigConContact>
+          <BigConContactText>Контакти:</BigConContactText>
+          <TelContainer>
+            <TelItem>
+              <img src={phone} alt="phone" />
+              <TelNum>+380994088848</TelNum>
+            </TelItem>
+            <TelItem>
+              <img src={phone} alt="phone" />
+              <TelNum>+390971338350</TelNum>
+            </TelItem>
+          </TelContainer>
+        </BigConContact>
+        <BigCon></BigCon>
+      </SocialBigContainers>
     </SocialContainer>
   );
 };

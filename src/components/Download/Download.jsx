@@ -17,10 +17,9 @@ import {
 import vp from '../../images/imagePlaceholder.png';
 import headerArrow from '../../images/headerArrow.png';
 
-
 const Download = () => {
   return (
-    <DownloadContainer>
+    <DownloadContainer id="price">
       <DownloadMainTitle>Секонд-хенд і Сток оптом.</DownloadMainTitle>
       <DownloadMainSubTitle>
         Великий вибір товару.{' '}

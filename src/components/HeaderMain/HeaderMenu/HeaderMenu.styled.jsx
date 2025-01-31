@@ -46,6 +46,12 @@ export const HeaderSocialList = styled.div`
 export const HeaderImg = styled.img`
   width: 40px;
   height: 40px;
+  cursor: pointer;
+  transform: scale(1); /* Начальный размер */
+  transition: transform 0.3s ease-in-out; /* Плавность */
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const LogoContainer = styled.div`

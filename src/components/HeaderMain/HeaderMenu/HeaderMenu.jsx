@@ -36,16 +36,33 @@ const HeaderMenu = () => {
         </LogoContainer>
 
         <HeaderSocialList>
-          <HeaderImg src={tiktok} alt="tiktok" />
-          <HeaderImg src={youtube} alt="youtube" />
-          <HeaderImg src={viber} alt="viber" />
-          <HeaderImg src={tg} alt="tg" />
-          <HeaderImg src={inst} alt="inst" />
+          <a href="https://www.tiktok.com/@extrastock.com.ua?_t=ZM-8tWchnCRHXy&_r=1">
+            <HeaderImg src={tiktok} alt="tiktok" />
+          </a>
+          <a href="https://youtube.com/@extrastock_com_ua?si=AFcN_XUCreTIZsyI">
+            <HeaderImg src={youtube} alt="youtube" />
+          </a>
+          <a href="https://invite.viber.com/?g2=AQBLlxe5ksgOhkh9pYS%2FMIgVWUJGQcvTlsOlwp9Aj0iBb796MKW48I1LOPbxIWDp">
+            <HeaderImg src={viber} alt="viber" />
+          </a>
+          <a href="https://t.me/extrastock">
+            <HeaderImg src={tg} alt="tg" />
+          </a>
+          <a href="https://www.instagram.com/extrastock.com.ua?igsh=MTZvcDI2em94ampneg==">
+            <HeaderImg src={inst} alt="inst" />
+          </a>
         </HeaderSocialList>
 
         <HeaderList>
-          <li>КОНТАКТИ</li>
-          <li>ПРАЙС</li>
+          <a
+            href="#social"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
+            <li>КОНТАКТИ</li>
+          </a>
+          <a href="#price" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <li>ПРАЙС</li>
+          </a>
         </HeaderList>
 
         <BurgerMenu
