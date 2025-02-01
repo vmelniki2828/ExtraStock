@@ -24,17 +24,17 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const Social = () => {
   const containerStyle = {
-    width: "590px",
-    height: "279px",
-    background:" #9c28ff",
+    width: '590px',
+    height: '279px',
+    background: ' #9c28ff',
     // mixBlendMode: "color",
-    border: "1px solid #000000",
-    borderRadius: "24px 24px 0 0"
+    border: '1px solid #000000',
+    borderRadius: '24px 24px 0 0',
   };
 
   const center = {
     lat: 50.45825261911876,
-    lng: 30.41964242710779
+    lng: 30.41964242710779,
   };
 
   return (
@@ -45,39 +45,74 @@ const Social = () => {
         Вайбері та Телеграм
       </SocialMainSubText>
       <SocialSmallContainers>
-        <ItemContainer>
-          <img src={youtube} alt="youtube" style={{ marginTop: '26.77px' }} />
-          <ItemContainerBottom>YouTube</ItemContainerBottom>
-        </ItemContainer>
-        <ItemContainer>
-          <img src={inst} alt="inst" style={{ marginTop: '7.31px' }} />
-          <ItemContainerBottom>Instagram</ItemContainerBottom>
-        </ItemContainer>
-        <ItemContainer>
-          <img src={tg} alt="tg" style={{ marginTop: '26.77px' }} />
-          <ItemContainerBottom>Telegram</ItemContainerBottom>
-        </ItemContainer>
-        <ItemContainer>
-          <img src={viber} alt="viber" style={{ marginTop: '24.91px' }} />
-          <ItemContainerBottom>Viber</ItemContainerBottom>
-        </ItemContainer>
-        <ItemContainer>
-          <img src={tiktok} alt="tiktok" style={{ marginTop: '29.21px' }} />
-          <ItemContainerBottom>Tik Tok</ItemContainerBottom>
-        </ItemContainer>
+        <a
+          href="https://youtube.com/@extrastock_com_ua?si=AFcN_XUCreTIZsyI"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          <ItemContainer>
+            <img src={youtube} alt="youtube" style={{ marginTop: '26.77px' }} />
+            <ItemContainerBottom>YouTube</ItemContainerBottom>
+          </ItemContainer>
+        </a>
+        <a
+          href="https://www.instagram.com/extrastock.com.ua?igsh=MTZvcDI2em94ampneg=="
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          <ItemContainer>
+            <img src={inst} alt="inst" style={{ marginTop: '7.31px' }} />
+            <ItemContainerBottom>Instagram</ItemContainerBottom>
+          </ItemContainer>
+        </a>
+        <a
+          href="https://t.me/extrastock"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          <ItemContainer>
+            <img src={tg} alt="tg" style={{ marginTop: '26.77px' }} />
+            <ItemContainerBottom>Telegram</ItemContainerBottom>
+          </ItemContainer>
+        </a>
+        <a
+          href="https://invite.viber.com/?g2=AQBLlxe5ksgOhkh9pYS%2FMIgVWUJGQcvTlsOlwp9Aj0iBb796MKW48I1LOPbxIWDp"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          <ItemContainer>
+            <img src={viber} alt="viber" style={{ marginTop: '24.91px' }} />
+            <ItemContainerBottom>Viber</ItemContainerBottom>
+          </ItemContainer>
+        </a>
+        <a
+          href="https://www.tiktok.com/@extrastock.com.ua?_t=ZM-8tWchnCRHXy&_r=1"
+          style={{ textDecoration: 'none', color: 'inherit' }}
+        >
+          <ItemContainer>
+            <img src={tiktok} alt="tiktok" style={{ marginTop: '29.21px' }} />
+            <ItemContainerBottom>Tik Tok</ItemContainerBottom>
+          </ItemContainer>
+        </a>
       </SocialSmallContainers>
       <SocialBigContainers>
         <BigConContact>
           <BigConContactText>Контакти:</BigConContactText>
           <TelContainer>
-            <TelItem>
-              <img src={phone} alt="phone" />
-              <TelNum>+380994088848</TelNum>
-            </TelItem>
-            <TelItem>
-              <img src={phone} alt="phone" />
-              <TelNum>+390971338350</TelNum>
-            </TelItem>
+            <a
+              href="tel:+380994088848"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              <TelItem>
+                <img src={phone} alt="phone" />
+                <TelNum>+380994088848</TelNum>
+              </TelItem>
+            </a>
+            <a
+              href="tel:+390971338350"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              <TelItem>
+                <img src={phone} alt="phone" />
+                <TelNum>+390971338350</TelNum>
+              </TelItem>
+            </a>
           </TelContainer>
         </BigConContact>
         <BigCon>
@@ -90,7 +125,9 @@ const Social = () => {
               <Marker position={center} />
             </GoogleMap>
           </LoadScript>
-          <MapText>Знайдіть нас за адресою: м. Київ, вул. Миколи Василенко 2</MapText>
+          <MapText>
+            Знайдіть нас за адресою: м. Київ, вул. Миколи Василенко 2
+          </MapText>
         </BigCon>
       </SocialBigContainers>
     </SocialContainer>
