@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import { Toaster, toast } from 'sonner';
 import {
   BigContainer,
   ContainerImg,
@@ -13,11 +16,41 @@ import {
   SmallContainers,
   SmallTextBox,
   TextBox,
+  Form,
 } from './Download.styled';
 import vp from '../../images/imagePlaceholder.png';
 import headerArrow from '../../images/headerArrow.png';
 
 const Download = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    contact: '',
+  });
+
+  const handleChange = e => {
+    const { name, value } = e.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/send', formData);
+
+      toast.success('Дякуємо за заявку!');
+
+      setFormData({
+        name: '',
+        contact: '',
+      });
+    } catch (error) {
+      console.error(error);
+      toast.error('Упс! Щось пішло не так! 😢');
+    }
+  };
   return (
     <DownloadContainer id="price">
       <DownloadMainTitle>Секонд-хенд і Сток оптом.</DownloadMainTitle>
@@ -58,15 +91,28 @@ const Download = () => {
           </SmallCont>
         </SmallContainers>
       </MainBlockContainer>
-
+      <Form onSubmit={handleSubmit}>
       <DownloadInputContainer>
-        <DownloadInput placeholder="Ім’я:" />
-        <DownloadInput placeholder="Мобільний телефон:" />
+        <DownloadInput
+          placeholder="Ім’я:"
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+        <DownloadInput
+          placeholder="Мобільний телефон:"
+          type="text"
+          name="contact"
+          value={formData.contact}
+          onChange={handleChange}
+        />
       </DownloadInputContainer>
-
-      <DownloadButton>
+<Toaster position="top-center" richColors />
+      <DownloadButton type="submit">
         Скачать прайс <img src={headerArrow} alt="headerArrow" />
       </DownloadButton>
+      </Form>
     </DownloadContainer>
   );
 };

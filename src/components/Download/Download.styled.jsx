@@ -194,3 +194,10 @@ export const DownloadButton = styled.button`
 
   color: #000000;
 `;
+
+
+export const Form = styled.form`
+display: flex;
+flex-direction: column;
+align-items: center;
+`;

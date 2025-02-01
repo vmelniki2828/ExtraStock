@@ -160,8 +160,8 @@ export const SuccessInput = styled.input`
   }
 `;
 
-export const DownloadButton = styled.div`
-  padding: 0 7px 0 34px;
+export const DownloadButton = styled.button`
+  padding: 0 7px 0 18px;
   margin: 0 auto;
   color: #fff;
   width: 370px;
@@ -177,10 +177,9 @@ export const DownloadButton = styled.div`
   font-weight: 500;
   font-size: 33px;
   line-height: 18px;
-  color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
-
+  background-color: transparent;
   &:hover {
     background-color: #ffc400;
     border-color: #ffc400;

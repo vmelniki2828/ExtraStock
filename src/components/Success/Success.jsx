@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import { Toaster, toast } from 'sonner';
 import {
   CircleGradient,
   DarkContainer,
@@ -14,8 +17,38 @@ import {
 import whiteArrow from '../../images/whiteArrow.png';
 
 const Success = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    contact: '',
+  });
+
+  const handleChange = e => {
+    const { name, value } = e.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/send', formData);
+
+      toast.success('Дякуємо за заявку!');
+
+      setFormData({
+        name: '',
+        contact: '',
+      });
+    } catch (error) {
+      console.error(error);
+      toast.error('Упс! Щось пішло не так! 😢');
+    }
+  };
   return (
     <SuccessContainer>
+     
       <SuccessBlackText>Безкоштовна допомога</SuccessBlackText>
       <DarkContainer>
         <SuccessWhiteText>
@@ -28,16 +61,31 @@ const Success = () => {
           для успішного розвитку та росту саме вашого магазину.
         </SuccessWhiteSubText>
         <DownloadYellowText>Замовити консультацію</DownloadYellowText>
-        <InputContainer>
-          <SuccessInput placeholder="ім’я..." />
-          <SuccessInput placeholder="номер телефону..." />
-          <DownloadButton>
-            Надіслати запит
-            <DownloadButtonArrow>
-              <img src={whiteArrow} alt="dsad" />
-            </DownloadButtonArrow>
-          </DownloadButton>
-        </InputContainer>
+        <form onSubmit={handleSubmit}>
+          <InputContainer>
+            <SuccessInput
+              placeholder="ім’я..."
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <SuccessInput
+              placeholder="номер телефону..."
+              type="text"
+              name="contact"
+              value={formData.contact}
+              onChange={handleChange}
+            />
+             <Toaster position="top-center" richColors />
+            <DownloadButton type="submit">
+              Надіслати запит
+              <DownloadButtonArrow>
+                <img src={whiteArrow} alt="dsad" />
+              </DownloadButtonArrow>
+            </DownloadButton>
+          </InputContainer>
+        </form>
       </DarkContainer>
       <CircleGradient />
     </SuccessContainer>
