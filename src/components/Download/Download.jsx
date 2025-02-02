@@ -18,8 +18,10 @@ import {
   TextBox,
   Form,
 } from './Download.styled';
-import vp from '../../images/imagePlaceholder.png';
 import headerArrow from '../../images/headerArrow.png';
+import g_tshort from '../../images/grey_tshort.png';
+import g_trauthers from '../../images/trauthers.png';
+import g_shouse from '../../images/shouse.png';
 
 const Download = () => {
   const [formData, setFormData] = useState({
@@ -65,7 +67,7 @@ const Download = () => {
 
       <MainBlockContainer>
         <BigContainer>
-          <ContainerImg src={vp} alt="dsad" />
+          <ContainerImg src={g_tshort} alt="dsad" />
           <TextBox>
             <strong>СОРТОВКА ОПТОМ:</strong>
             <p>
@@ -76,14 +78,14 @@ const Download = () => {
         </BigContainer>
         <SmallContainers>
           <SmallCont>
-            <ContainerImg src={vp} alt="dsad" />
+            <ContainerImg src={g_trauthers} alt="dsad" />
             <SmallTextBox>
               <strong>Сток Оптом:</strong>
               <p>Дорослий. Дитячий. Взуття. Домашні вжиток</p>
             </SmallTextBox>
           </SmallCont>
           <SmallCont>
-            <ContainerImg src={vp} alt="dsad" />
+            <ContainerImg src={g_shouse} alt="dsad" />
             <SmallTextBox>
               <strong>Оригінал Оптом:</strong>
               <p>Актуальні бренди, останні колекції, висока якість</p>
@@ -92,26 +94,26 @@ const Download = () => {
         </SmallContainers>
       </MainBlockContainer>
       <Form onSubmit={handleSubmit}>
-      <DownloadInputContainer>
-        <DownloadInput
-          placeholder="Ім’я:"
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        <DownloadInput
-          placeholder="Мобільний телефон:"
-          type="text"
-          name="contact"
-          value={formData.contact}
-          onChange={handleChange}
-        />
-      </DownloadInputContainer>
-<Toaster position="top-center" richColors />
-      <DownloadButton type="submit">
-        Скачать прайс <img src={headerArrow} alt="headerArrow" />
-      </DownloadButton>
+        <DownloadInputContainer>
+          <DownloadInput
+            placeholder="Ім’я:"
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <DownloadInput
+            placeholder="Мобільний телефон:"
+            type="text"
+            name="contact"
+            value={formData.contact}
+            onChange={handleChange}
+          />
+        </DownloadInputContainer>
+        <Toaster position="top-center" richColors />
+        <DownloadButton type="submit">
+          Скачати прайс <img src={headerArrow} alt="headerArrow" />
+        </DownloadButton>
       </Form>
     </DownloadContainer>
   );

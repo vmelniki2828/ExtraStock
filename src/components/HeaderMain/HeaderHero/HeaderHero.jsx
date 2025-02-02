@@ -23,7 +23,6 @@ const HeaderHero = () => {
     contact: '',
   });
 
-
   const handleChange = e => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -36,7 +35,7 @@ const HeaderHero = () => {
     e.preventDefault();
     try {
       await axios.post('http://localhost:5000/send', formData);
-      
+
       toast.success('Дякуємо за заявку!');
 
       setFormData({
@@ -63,26 +62,26 @@ const HeaderHero = () => {
           Щотижневе оновлення!
         </HeaderHeroSubTitle>
         <form onSubmit={handleSubmit}>
-        <HeaderInputContainer>
-          <HeaderInput
-            placeholder="Ім’я:"
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          <HeaderInput
-            placeholder="Мобільний телефон:"
-            type="text"
-            name="contact"
-            value={formData.contact}
-            onChange={handleChange}
-          />
-        </HeaderInputContainer>
-        <Toaster position="top-center" richColors  />
-        <HeaderButton type="submit">
-          Скачать прайс <img src={headerArrow} alt="headerArrow" />
-        </HeaderButton>
+          <HeaderInputContainer>
+            <HeaderInput
+              placeholder="Ім’я:"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <HeaderInput
+              placeholder="Мобільний телефон:"
+              type="text"
+              name="contact"
+              value={formData.contact}
+              onChange={handleChange}
+            />
+          </HeaderInputContainer>
+          <Toaster position="top-center" richColors />
+          <HeaderButton type="submit">
+            Скачати прайс <img src={headerArrow} alt="headerArrow" />
+          </HeaderButton>
         </form>
       </HeaderHeroContainerLeft>
       <HeaderHeroContainerRight>

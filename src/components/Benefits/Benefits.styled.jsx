@@ -95,14 +95,12 @@ export const BigCard = styled.div`
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
-  @media (max-width: 768px) {
-    width: 240px;
-    padding: 60px 0 40px;
+  @media (max-width: 827px) {
+    width: 100%;
   }
 
   @media (max-width: 480px) {
-    width: 100%;
-    padding: 40px 0 30px;
+    height: 400px;
   }
 `;
 

@@ -6,12 +6,14 @@ export const HeaderHeroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0;
 
   @media (max-width: 1024px) {
     width: 100%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 40px;
   }
 
   @media (max-width: 768px) {
@@ -46,8 +48,19 @@ export const HeaderInput = styled.input`
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
 
   color: #c9c9c9;
+
+  @media (max-width: 1024px) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    width: 220px;
+    margin: 0 auto;
+  }
 `;
 
 export const HeaderHeroContainerLeft = styled.div`
@@ -191,6 +204,11 @@ export const HeaderButton = styled.button`
   line-height: 18px;
   text-align: center;
   cursor: pointer;
+  margin: 0;
 
   color: #000000;
+
+  @media (max-width: 1024px) {
+    margin: 0 auto;
+  }
 `;

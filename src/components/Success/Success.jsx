@@ -48,7 +48,6 @@ const Success = () => {
   };
   return (
     <SuccessContainer>
-     
       <SuccessBlackText>Безкоштовна допомога</SuccessBlackText>
       <DarkContainer>
         <SuccessWhiteText>
@@ -58,7 +57,8 @@ const Success = () => {
           Зрозуміти як правильно зробити, і На що дуже важливо звернути увагу
           при торгівлі секонд-хенд і Сток. Ми безкоштовно відповімо на всі Ваші
           питання і підскажемо в якому напрямку потрібно рухатись при продажі
-          для успішного розвитку та росту саме вашого магазину.
+          для успішного розвитку та росту вашого онлайн чи офлайн магазину та
+          продажі через соц мережі.
         </SuccessWhiteSubText>
         <DownloadYellowText>Замовити консультацію</DownloadYellowText>
         <form onSubmit={handleSubmit}>
@@ -77,7 +77,7 @@ const Success = () => {
               value={formData.contact}
               onChange={handleChange}
             />
-             <Toaster position="top-center" richColors />
+            <Toaster position="top-center" richColors />
             <DownloadButton type="submit">
               Надіслати запит
               <DownloadButtonArrow>
