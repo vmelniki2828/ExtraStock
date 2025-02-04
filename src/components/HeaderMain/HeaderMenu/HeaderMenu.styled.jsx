@@ -13,14 +13,15 @@ export const HeaderMainMenu = styled.header`
   margin: 0 auto;
   padding: 36px 30px 0;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     padding-top: 24px;
     max-width: 960px;
     margin: 0 auto;
     flex-direction: row;
+    flex-direction: column;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     flex-direction: row;
     align-items: space-between;
     padding-top: 16px;
@@ -30,17 +31,33 @@ export const HeaderMainMenu = styled.header`
   }
 
   @media (max-width: 480px) {
-    align-items: center;
     padding-top: 12px;
     padding-left: 8px;
     padding-right: 8px;
+    flex-direction: row;
   }
 `;
 
 export const HeaderSocialList = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 40px;
+  padding-top: 20px;
+
+  @media (min-width: 1200px) {
+    gap: 50px;
+    padding-top: 0;
+  }
+
+  @media (max-width: 770px) {
+    display: none;
+  }
+`;
+
+export const HeaderSocialListMob = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 `;
 
 export const HeaderImg = styled.img`
@@ -112,7 +129,7 @@ export const HeaderLogo = styled.img`
 export const HeaderLogoMenu = styled.img`
   position: absolute;
   top: 12px;
-  left: 8px;
+  left: 30px;
   width: 50px;
   height: 50px;
 `;
@@ -120,7 +137,7 @@ export const HeaderLogoMenu = styled.img`
 export const HeaderList = styled.ul`
   display: flex;
   gap: 145px;
-  padding: 0;
+  padding-right: 40px;
   list-style: none;
 
   font-family: 'Geologica', sans-serif;
@@ -138,8 +155,8 @@ export const HeaderList = styled.ul`
   }
 
   @media (max-width: 1024px) {
-    gap: 100px; /* Reduce gap for medium screens */
-    font-size: 20px; /* Slightly smaller font */
+    gap: 100px;
+    font-size: 20px;
     display: flex;
   }
 

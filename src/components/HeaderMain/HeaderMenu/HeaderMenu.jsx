@@ -8,6 +8,7 @@ import {
   HeaderLogoMenu,
   HeaderMainMenu,
   HeaderSocialList,
+  HeaderSocialListMob,
   LogoContainer,
   LogoText,
   Menu,
@@ -34,6 +35,12 @@ const HeaderMenu = () => {
             EXTRA<LogoSpan>STOCK</LogoSpan>
           </LogoText>
         </LogoContainer>
+        <BurgerMenu
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+            console.log(menuOpen);
+          }}
+        />
 
         <HeaderSocialList>
           <a href="https://www.tiktok.com/@extrastock.com.ua?_t=ZM-8tWchnCRHXy&_r=1">
@@ -65,12 +72,6 @@ const HeaderMenu = () => {
           </a>
         </HeaderList>
 
-        <BurgerMenu
-          onClick={() => {
-            setMenuOpen(!menuOpen);
-            console.log(menuOpen);
-          }}
-        />
         {menuOpen ? (
           <>
             <Menu>
@@ -79,6 +80,23 @@ const HeaderMenu = () => {
               <MenuItem>Услуги</MenuItem>
               <MenuItem>Контакты</MenuItem>
               <HeaderLogoMenu src={logo} alt="Logo" />
+              <HeaderSocialListMob>
+                <a href="https://www.tiktok.com/@extrastock.com.ua?_t=ZM-8tWchnCRHXy&_r=1">
+                  <HeaderImg src={tiktok} alt="tiktok" />
+                </a>
+                <a href="https://youtube.com/@extrastock_com_ua?si=AFcN_XUCreTIZsyI">
+                  <HeaderImg src={youtube} alt="youtube" />
+                </a>
+                <a href="https://invite.viber.com/?g2=AQBLlxe5ksgOhkh9pYS%2FMIgVWUJGQcvTlsOlwp9Aj0iBb796MKW48I1LOPbxIWDp">
+                  <HeaderImg src={viber} alt="viber" />
+                </a>
+                <a href="https://t.me/extrastock">
+                  <HeaderImg src={tg} alt="tg" />
+                </a>
+                <a href="https://www.instagram.com/extrastock.com.ua?igsh=MTZvcDI2em94ampneg==">
+                  <HeaderImg src={inst} alt="inst" />
+                </a>
+              </HeaderSocialListMob>
               <CloseBtn
                 onClick={() => {
                   setMenuOpen(!menuOpen);
