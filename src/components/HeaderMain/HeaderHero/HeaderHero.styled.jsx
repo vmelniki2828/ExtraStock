@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const HeaderHeroContainer = styled.div`
-  width: 1320px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0;
+  padding: 25px;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -64,6 +63,12 @@ export const HeaderInput = styled.input`
 `;
 
 export const HeaderHeroContainerLeft = styled.div`
+  @media (min-width: 1400px) {
+    width: 650px;
+  }
+  @media (min-width: 1024px) {
+    width: 550px;
+  }
   @media (max-width: 1024px) {
     margin-bottom: 20px;
   }
@@ -138,7 +143,7 @@ export const HeaderHeroContainerRight = styled.div`
 export const HeaderImgTshorts = styled.img`
   margin-right: -50px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1400px) {
     margin-right: 0;
     width: 400px;
   }
