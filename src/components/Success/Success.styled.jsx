@@ -256,8 +256,12 @@ export const DownloadButtonArrow = styled.div`
   border: 1px solid #ffc400;
   border-radius: 43.5px;
 
-  @media (max-width: 650px) {
+  @media (max-width: 1000px) {
     width: 60px;
     height: 60px;
+  }
+  @media (max-width: 650px) {
+    width: 50px;
+    height: 50px;
   }
 `;
