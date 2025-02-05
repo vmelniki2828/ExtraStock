@@ -75,10 +75,28 @@ const HeaderMenu = () => {
         {menuOpen ? (
           <>
             <Menu>
-              <MenuItem>Главная</MenuItem>
-              <MenuItem>О нас</MenuItem>
-              <MenuItem>Услуги</MenuItem>
-              <MenuItem>Контакты</MenuItem>
+              <a
+                href="#social"
+                style={{
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  width: '100%',
+                }}
+                onClick={() => setMenuOpen(false)}
+              >
+                <MenuItem>КОНТАКТИ</MenuItem>
+              </a>
+              <a
+                href="#price"
+                style={{
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  width: '100%',
+                }}
+                onClick={() => setMenuOpen(false)}
+              >
+                <MenuItem>ПРАЙС</MenuItem>
+              </a>
               <HeaderLogoMenu src={logo} alt="Logo" />
               <HeaderSocialListMob>
                 <a href="https://www.tiktok.com/@extrastock.com.ua?_t=ZM-8tWchnCRHXy&_r=1">

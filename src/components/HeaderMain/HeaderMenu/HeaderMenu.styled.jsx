@@ -58,6 +58,7 @@ export const HeaderSocialListMob = styled.div`
   display: flex;
   flex-direction: row;
   gap: 20px;
+  margin: 30px 0;
 `;
 
 export const HeaderImg = styled.img`
@@ -65,6 +66,7 @@ export const HeaderImg = styled.img`
   height: 40px;
   cursor: pointer;
   transform: scale(1); /* Начальный размер */
+  background-color: transparent;
   transition: transform 0.3s ease-in-out; /* Плавность */
   &:hover {
     transform: scale(1.2);
@@ -95,6 +97,7 @@ export const BurgerMenu = styled(GiHamburgerMenu)`
     display: block;
     width: 40px;
     height: 40px; /* Slightly smaller logo on medium screens */
+    cursor: pointer;
   }
 
   @media (max-width: 480px) {
@@ -102,6 +105,7 @@ export const BurgerMenu = styled(GiHamburgerMenu)`
     color: #fff;
     width: 50px;
     height: 50px;
+    cursor: pointer;
   }
 `;
 
@@ -178,17 +182,16 @@ export const Menu = styled.ul`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     margin: 0;
     width: 100%;
-    background: #fff;
     margin-left: -16px;
     list-style: none;
     padding: 70px 0 0 0;
     border-radius: 0 0 10px 10px;
-    background: rgb(155, 124, 2);
+    background: rgb(65, 56, 18);
   }
 `;
 
