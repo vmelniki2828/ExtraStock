@@ -4,6 +4,7 @@ import {
   BigConContactText,
   ItemContainer,
   ItemContainerBottom,
+  Map,
   MapText,
   SocialBigContainers,
   SocialContainer,
@@ -11,6 +12,7 @@ import {
   SocialMainText,
   SocialSmallContainers,
   TelContainer,
+  TelImg,
   TelItem,
   TelNum,
 } from './Social.styled';
@@ -22,20 +24,6 @@ import tiktok from '../../images/tiktok.png';
 import phone from '../../images/phone.png';
 
 const Social = () => {
-  const containerStyle = {
-    width: '590px',
-    height: '279px',
-    background: ' #9c28ff',
-    // mixBlendMode: "color",
-    border: '1px solid #000000',
-    borderRadius: '24px 24px 0 0',
-  };
-
-  const center = {
-    lat: 50.45825261911876,
-    lng: 30.41964242710779,
-  };
-
   return (
     <SocialContainer id="social">
       <SocialMainText>Ми в соціальних мережах</SocialMainText>
@@ -99,7 +87,7 @@ const Social = () => {
               style={{ textDecoration: 'none', color: 'inherit' }}
             >
               <TelItem>
-                <img src={phone} alt="phone" />
+                <TelImg src={phone} alt="phone" />
                 <TelNum>+380994088848</TelNum>
               </TelItem>
             </a>
@@ -108,22 +96,19 @@ const Social = () => {
               style={{ textDecoration: 'none', color: 'inherit' }}
             >
               <TelItem>
-                <img src={phone} alt="phone" />
+                <TelImg src={phone} alt="phone" />
                 <TelNum>+390971338350</TelNum>
               </TelItem>
             </a>
           </TelContainer>
         </BigConContact>
         <BigCon>
-          <iframe
+          <Map
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.085470004345!2d30.417056776060996!3d50.458133086811195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc45d5e6f69f%3A0x7621fe40f77c50b!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0JLQsNGB0LjQu9C10L3QutC-LCAyLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1738621056994!5m2!1sru!2sua"
-            width="591"
-            height="280"
-            style={{ border: 0, borderRadius: '24px 24px 0 0' }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          ></Map>
           <MapText>
             Знайдіть нас за адресою: м. Київ, вул. Миколи Василенко 2
           </MapText>

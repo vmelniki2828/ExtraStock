@@ -64,6 +64,7 @@ export const SocialSmallContainers = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30.02px;
   margin-bottom: 50.09px;
@@ -114,6 +115,8 @@ export const ItemContainerBottom = styled.div`
 export const SocialBigContainers = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 37px;
 `;
 
@@ -124,6 +127,11 @@ export const BigCon = styled.div`
   background: #ffffff;
   border: 1px solid #000000;
   border-radius: 24px;
+
+  @media (max-width: 640px) {
+    max-width: 270px;
+    height: 150px;
+  }
 `;
 
 export const BigConContact = styled(BigCon)`
@@ -139,6 +147,12 @@ export const BigConContactText = styled.p`
   line-height: 46px;
 
   color: #000000;
+
+  @media (max-width: 640px) {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+  }
 `;
 
 export const TelContainer = styled.div`
@@ -146,6 +160,14 @@ export const TelContainer = styled.div`
   flex-direction: column;
   gap: 50px;
   margin: 50px 0 0 52px;
+  justify-content: start;
+
+  @media (max-width: 640px) {
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    align-items: center;
+  }
 `;
 
 export const TelItem = styled.div`
@@ -164,6 +186,20 @@ export const TelNum = styled.p`
   line-height: 46px;
 
   color: #000000;
+
+  @media (max-width: 640px) {
+    font-size: 18px;
+  }
+`;
+
+export const TelImg = styled.img`
+  width: 39px;
+  height: 39px;
+
+  @media (max-width: 640px) {
+    width: 18px;
+    height: 18px;
+  }
 `;
 
 export const MapText = styled.p`
@@ -176,4 +212,21 @@ export const MapText = styled.p`
   text-align: center;
   color: #767676;
   margin-top: 8px;
+
+  @media (max-width: 640px) {
+    margin-top: 0;
+    font-size: 8px;
+  }
+`;
+
+export const Map = styled.iframe`
+  width: 591px;
+  height: 280px;
+  border: 0;
+  border-radius: 24px 24px 0 0;
+
+  @media (max-width: 640px) {
+    width: 270px;
+    height: 125px;
+  }
 `;
