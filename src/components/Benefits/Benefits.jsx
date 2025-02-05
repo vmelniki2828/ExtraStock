@@ -7,6 +7,7 @@ import {
   BigCardIcon,
   BigCardSubText,
   BigCardText,
+  CardBlock,
   CardContainer,
   SmallCardDark,
   SmallCardDarkSubText,
@@ -49,7 +50,7 @@ const Benefits = () => {
             Повний цикл супроводу для бажаючих почати свій бізнес{' '}
           </BigCardSubText>
         </BigCard>
-        <div style={{ display: 'flex', gap: '23.98px' }}>
+        <CardBlock>
           <SmallCardsContainer>
             <SmallCardDark>
               <SmallIcon src={delivery} alt="delivery" />
@@ -85,8 +86,8 @@ const Benefits = () => {
               </SmallCardDarkSubText>
             </SmallCardDark>
           </SmallCardsContainer>
-        </div>
-        <div style={{ display: 'flex', gap: '23.98px' }}>
+        </CardBlock>
+        <CardBlock>
           <SmallCardsContainer>
             <SmallCardDark>
               <SmallIcon src={money} alt="money" />
@@ -121,7 +122,7 @@ const Benefits = () => {
               </SmallCardDarkSubText>
             </SmallCardDark>
           </SmallCardsContainer>
-        </div>
+        </CardBlock>
       </CardContainer>
     </BenefitsMainContainer>
   );
