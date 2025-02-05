@@ -16,6 +16,17 @@ export const DeliveryContainer = styled.div`
   }
 `;
 
+export const DeliveryBlock = styled.div`
+  position: relative;
+  z-index: 2;
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
 export const DeliveryTopText = styled.p`
   font-family: 'Geologica', sans-serif;
   font-style: normal;

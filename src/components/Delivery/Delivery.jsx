@@ -1,16 +1,17 @@
 import {
   BusImg,
+  DeliveryBlock,
   DeliveryBottomText,
   DeliveryCenterText,
   DeliveryContainer,
   DeliveryTopText,
 } from './Delivery.styled';
-import bus from '../../images/bus.png'
+import bus from '../../images/bus.png';
 
 const Delivery = () => {
   return (
     <DeliveryContainer>
-      <div>
+      <DeliveryBlock>
         <DeliveryTopText>
           <span>Доставка і передоплата.</span>
           <br />
@@ -28,8 +29,8 @@ const Delivery = () => {
           при замовленні <br />
           від 10000грн і повній оплаті.
         </DeliveryBottomText>
-      </div>
-      <BusImg src={bus} alt='bus'/>
+      </DeliveryBlock>
+      <BusImg src={bus} alt="bus" />
     </DeliveryContainer>
   );
 };
