@@ -16,6 +16,13 @@ export const DownloadMainTitle = styled.h2`
   line-height: 40px;
   margin: 3px 0 8px 0;
   color: #000000;
+
+  @media (max-width: 1200px) {
+    font-size: 38px;
+  }
+  @media (max-width: 850px) {
+    font-size: 28px;
+  }
 `;
 
 export const DownloadMainSubTitle = styled.p`
@@ -28,6 +35,20 @@ export const DownloadMainSubTitle = styled.p`
   width: 1338px;
   color: #000000;
   margin-bottom: 50px;
+
+  @media (max-width: 1200px) {
+    width: 900px;
+    font-size: 25px;
+  }
+
+  @media (max-width: 850px) {
+    width: 500px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 `;
 
 export const DownloadPurpleSpan = styled.span`
@@ -51,6 +72,16 @@ export const BigContainer = styled.div`
   width: 844px;
   height: 233px;
   background-color: #ffffff;
+
+  @media (max-width: 1300px) {
+    width: 618px;
+  }
+  @media (max-width: 650px) {
+    width: 530px;
+  }
+  @media (max-width: 550px) {
+    width: 330px;
+  }
 `;
 
 export const ContainerImg = styled.img`
@@ -58,6 +89,16 @@ export const ContainerImg = styled.img`
   height: 233px;
   margin-right: 15px;
   flex-shrink: 0;
+
+  @media (max-width: 650px) {
+    width: 150px;
+    height: 150px;
+  }
+
+  @media (max-width: 550px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -73,6 +114,11 @@ export const TextBox = styled.div`
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
+
+    @media (max-width: 550px) {
+      font-size: 20.9893px;
+      line-height: 0px;
+    }
   }
 
   p {
@@ -85,6 +131,15 @@ export const TextBox = styled.div`
     color: #b58ada;
     width: 540px;
     margin: 0 auto;
+
+    @media (max-width: 1300px) {
+      width: 370px;
+    }
+    @media (max-width: 550px) {
+      font-size: 16px;
+      line-height: 19px;
+      width: 180px;
+    }
   }
 `;
 
@@ -92,6 +147,10 @@ export const SmallContainers = styled.div`
   display: flex;
   flex-direction: row;
   gap: 30px;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+  }
 `;
 
 export const SmallCont = styled.div`
@@ -103,6 +162,13 @@ export const SmallCont = styled.div`
   width: 618px;
   height: 233px;
   background-color: #ffffff;
+
+  @media (max-width: 650px) {
+    width: 530px;
+  }
+  @media (max-width: 550px) {
+    width: 330px;
+  }
 `;
 
 export const SmallTextBox = styled.div`
@@ -130,6 +196,12 @@ export const SmallTextBox = styled.div`
     color: #b58ada;
     width: 252px;
     margin: 0 auto;
+
+    @media (max-width: 550px) {
+      font-size: 16px;
+      line-height: 19px;
+      width: 180px;
+    }
   }
 `;
 
@@ -138,6 +210,11 @@ export const DownloadInputContainer = styled.div`
   flex-direction: row;
   gap: 50px;
   margin-bottom: 40px;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 export const DownloadInput = styled.input`
@@ -162,6 +239,10 @@ export const DownloadInput = styled.input`
   &:focus {
     border-color: #ffc300;
     outline: none; /* Убирает стандартное выделение */
+  }
+
+  @media (max-width: 440px) {
+    width: 300px;
   }
 `;
 
@@ -195,9 +276,8 @@ export const DownloadButton = styled.button`
   color: #000000;
 `;
 
-
 export const Form = styled.form`
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

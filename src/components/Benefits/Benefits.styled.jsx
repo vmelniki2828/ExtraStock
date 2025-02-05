@@ -182,6 +182,15 @@ export const SmallCardsContainer = styled.div`
   }
 `;
 
+export const CardBlock = styled.div`
+  display: flex;
+  gap: 23.98px;
+
+  @media (max-width: 610px) {
+    flex-direction: column;
+  }
+`;
+
 export const SmallCardDark = styled.div`
   width: 240.26px;
   height: 240.26px;

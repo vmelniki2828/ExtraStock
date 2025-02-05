@@ -62,7 +62,7 @@ const Download = () => {
           Найкращі ціни для торгівлі в онлайн та магазині.{' '}
         </DownloadPurpleSpan>
         Отримаєте саме той товар
-        <DownloadPurpleSpan>який Ви швидко продасте.</DownloadPurpleSpan>
+        <DownloadPurpleSpan> який Ви швидко продасте.</DownloadPurpleSpan>
       </DownloadMainSubTitle>
 
       <MainBlockContainer>

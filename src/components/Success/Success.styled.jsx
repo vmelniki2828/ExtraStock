@@ -116,6 +116,11 @@ export const DownloadYellowText = styled.h3`
   text-transform: uppercase;
 
   color: #ffc400;
+
+  @media (max-width: 750px) {
+    font-size: 30px;
+    line-height: 45px;
+  }
 `;
 
 export const SuccessWhiteSubTextStrong = styled.span`
@@ -128,6 +133,10 @@ export const InputContainer = styled.div`
   align-items: center;
   margin-top: 50px;
   gap: 30px;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+  }
 `;
 
 export const SuccessInput = styled.input`
@@ -196,7 +205,7 @@ export const DownloadButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    width: 50%;
+    width: 70%;
     height: 70px;
     font-size: 18px;
   }
@@ -246,4 +255,9 @@ export const DownloadButtonArrow = styled.div`
   );
   border: 1px solid #ffc400;
   border-radius: 43.5px;
+
+  @media (max-width: 650px) {
+    width: 60px;
+    height: 60px;
+  }
 `;
