@@ -184,7 +184,7 @@ export const DownloadButton = styled.button`
   font-family: 'Geologica', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 33px;
+  font-size: 32px;
   line-height: 18px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -207,7 +207,7 @@ export const DownloadButton = styled.button`
   @media (max-width: 768px) {
     width: 70%;
     height: 70px;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   @media (max-width: 480px) {
