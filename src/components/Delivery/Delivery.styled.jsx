@@ -123,8 +123,4 @@ export const BusImg = styled.img`
   @media (max-width: 768px) {
     width: 320px;
   }
-
-  @media (max-width: 480px) {
-    display: none;
-  }
 `;

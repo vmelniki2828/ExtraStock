@@ -44,6 +44,7 @@ export const DownloadMainSubTitle = styled.p`
   @media (max-width: 850px) {
     width: 500px;
     font-size: 18px;
+    line-height: 28px;
   }
 
   @media (max-width: 500px) {
