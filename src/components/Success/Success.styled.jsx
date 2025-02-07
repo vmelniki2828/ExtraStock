@@ -212,7 +212,7 @@ export const DownloadButton = styled.button`
 
   @media (max-width: 480px) {
     height: 60px;
-    font-size: 10px;
+    font-size: 13px;
   }
 `;
 
@@ -259,9 +259,11 @@ export const DownloadButtonArrow = styled.div`
   @media (max-width: 1000px) {
     width: 60px;
     height: 60px;
+    margin: -5px;
   }
   @media (max-width: 650px) {
     width: 50px;
     height: 50px;
+    margin: -5px;
   }
 `;

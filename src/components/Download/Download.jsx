@@ -23,7 +23,7 @@ import g_tshort from '../../images/grey_tshort.png';
 import g_trauthers from '../../images/trauthers.png';
 import g_shouse from '../../images/shouse.png';
 
-const Download = () => {
+const   Download = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
