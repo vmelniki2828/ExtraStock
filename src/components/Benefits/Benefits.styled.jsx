@@ -71,10 +71,9 @@ export const CardContainer = styled.div`
   gap: 23.98px;
   flex-wrap: wrap;
 
-  @media (max-width: 768px) {
-  }
-
-  @media (max-width: 480px) {
+  @media (max-width: 610px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -96,7 +95,11 @@ export const BigCard = styled.div`
   }
 
   @media (max-width: 827px) {
-    width: 100%;
+    width: 580px;
+  }
+
+  @media (max-width: 610px) {
+    width: 270px;
   }
 
   @media (max-width: 480px) {
@@ -204,6 +207,12 @@ export const SmallCardDark = styled.div`
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
+  @media (max-width: 827px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   @media (max-width: 768px) {
     padding: 40px 20px 30px;
   }
@@ -230,6 +239,13 @@ export const SmallCardDarkText = styled.h3`
   width: 193.58px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 827px) {
+    margin: 0;
+    text-align: center;
+    display: block;
+  }
+
   @media (max-width: 768px) {
     font-size: 15.5px;
     width: 180px;
@@ -253,6 +269,12 @@ export const SmallCardDarkSubText = styled.p`
   margin: 0 0 0 24.84px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 827px) {
+    margin: 0;
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     font-size: 12px;
     width: 180px;
@@ -276,4 +298,8 @@ export const SmallIcon = styled.img`
   height: 70px;
   max-width: 100px;
   margin: 28.86px 0 19.65px 21.23px;
+
+  @media (max-width: 827px) {
+    margin: 10px 0;
+  }
 `;
