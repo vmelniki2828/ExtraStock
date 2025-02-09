@@ -22,6 +22,7 @@ const HeaderHero = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
+    type: "price",
   });
 
   const handleChange = e => {
@@ -40,6 +41,7 @@ const HeaderHero = () => {
       toast.success('Дякуємо за заявку!');
 
       setFormData({
+        
         name: '',
         contact: '',
       });
@@ -77,7 +79,7 @@ const HeaderHero = () => {
               onChange={handleChange}
             />
             <HeaderInput
-              placeholder="Мобільний телефон:"
+              placeholder="Електронна пошта:"
               type="text"
               name="contact"
               value={formData.contact}

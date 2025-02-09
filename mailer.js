@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.post('/send', (req, res) => {
-  const { name, contact } = req.body;
+  const { name, contact , type} = req.body;
 
   const transporter = nodemailer.createTransport({
    service: 'gmail',
@@ -22,12 +22,25 @@ app.post('/send', (req, res) => {
    
   });
 
-  const mailOptions = {
-    from: process.env.EMAIL,
-    to: process.env.EMAIL,
-    subject: 'Отправка новой формы',
-    text: `Имя: ${name}\nМобильный телефон: ${contact}`
-  };
+  let mailOptions;
+  
+  if (type === 'price') {
+    mailOptions = {
+      from: process.env.EMAIL,
+      to: process.env.EMAIL,
+      subject: 'Отправка новой формы',
+      text: `Имя: ${name}\nПочта: ${contact}\nСкачали прайс`
+    };
+  } else if (type === 'consultation') {
+    mailOptions = {
+      from: process.env.EMAIL,
+      to: process.env.EMAIL,
+      subject: 'Отправка новой формы',
+      text: `Имя: ${name}\nМобильный телефон: ${contact}\nЗапросил консультацию`
+    };
+  } else {
+    return res.status(400).send('Некорректный тип формы');
+  }
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {

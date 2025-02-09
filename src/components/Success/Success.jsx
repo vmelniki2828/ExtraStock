@@ -20,6 +20,7 @@ const Success = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
+    type: "consultation",
   });
 
   const handleChange = e => {
@@ -38,6 +39,7 @@ const Success = () => {
       toast.success('Дякуємо за заявку!');
 
       setFormData({
+        
         name: '',
         contact: '',
       });

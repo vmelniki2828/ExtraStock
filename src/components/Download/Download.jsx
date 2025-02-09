@@ -28,6 +28,7 @@ const Download = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
+    type: "price",
   });
 
   const handleChange = e => {
@@ -46,6 +47,7 @@ const Download = () => {
       toast.success('Дякуємо за заявку!');
 
       setFormData({
+       
         name: '',
         contact: '',
       });
@@ -109,7 +111,7 @@ const Download = () => {
             onChange={handleChange}
           />
           <DownloadInput
-            placeholder="Мобільний телефон:"
+            placeholder="Електронна пошта:"
             type="text"
             name="contact"
             value={formData.contact}
