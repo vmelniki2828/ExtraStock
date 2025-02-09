@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { z } from "zod";
 import { Toaster, toast } from 'sonner';
 import {
   HeaderButton,
@@ -17,7 +18,13 @@ import {
 import header_tshorts from '../../../images/header_tshorts.png';
 import headerArrow from '../../../images/headerArrow.png';
 import price from '../../../images/Price.pdf'
-
+const formSchema = z.object({
+  name: z.string().optional(),
+  contact: z
+    .string()
+    .email("Введіть дійсний email-адрес"),
+  type: z.enum(["price"]).default("price"),
+});
 const HeaderHero = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -35,6 +42,13 @@ const HeaderHero = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
+    const parseResult = formSchema.safeParse(formData);
+    if (!parseResult.success) {
+      parseResult.error.errors.forEach((err) =>
+        toast.error(err.message)
+      );
+      return;
+    }
     try {
       await axios.post('http://localhost:5000/send', formData);
 

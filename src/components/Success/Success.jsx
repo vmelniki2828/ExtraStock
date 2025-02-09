@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { z } from "zod";
 import axios from 'axios';
 import { Toaster, toast } from 'sonner';
 import {
@@ -15,6 +16,18 @@ import {
   SuccessWhiteText,
 } from './Success.styled';
 import whiteArrow from '../../images/whiteArrow.png';
+
+const formSchema = z.object({
+  name: z.string().min(1, "Ім'я обов'язкове").max(50, "Максимум 50 символів"),
+  contact: z
+    .string()
+    .min(1, "Контакт обов'язковий")
+    .regex(
+      /^\+?[1-9]\d{1,14}$/,
+      "Введіть дійсний номер телефону у міжнародному форматі (наприклад, +380123456789)"
+    ),
+  type: z.enum(["consultation", "other"]).default("consultation"),
+});
 
 const Success = () => {
   const [formData, setFormData] = useState({
@@ -33,19 +46,25 @@ const Success = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
+    const parseResult = formSchema.safeParse(formData);
+    if (!parseResult.success) {
+      parseResult.error.errors.forEach((err) =>
+        toast.error(err.message)
+      );
+      return;
+    }
+
     try {
-      await axios.post('http://localhost:5000/send', formData);
-
-      toast.success('Дякуємо за заявку!');
-
+      await axios.post("http://localhost:5000/send", formData);
+      toast.success("Дякуємо за заявку!");
       setFormData({
-        
-        name: '',
-        contact: '',
+        name: "",
+        contact: "",
+        type: "consultation",
       });
     } catch (error) {
       console.error(error);
-      toast.error('Упс! Щось пішло не так! 😢');
+      toast.error("Упс! Щось пішло не так! 😢");
     }
   };
   return (
