@@ -16,6 +16,7 @@ import {
 } from './HeaderHero.styled';
 import header_tshorts from '../../../images/header_tshorts.png';
 import headerArrow from '../../../images/headerArrow.png';
+import price from '../../../images/Price.pdf'
 
 const HeaderHero = () => {
   const [formData, setFormData] = useState({
@@ -42,6 +43,11 @@ const HeaderHero = () => {
         name: '',
         contact: '',
       });
+
+      const downloadLink = document.createElement('a');
+      downloadLink.href = price; // Путь к вашему файлу
+      downloadLink.download = price; // Имя скачиваемого файла
+      downloadLink.click();
     } catch (error) {
       console.error(error);
       toast.error('Упс! Щось пішло не так! 😢');

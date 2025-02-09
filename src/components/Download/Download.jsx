@@ -22,8 +22,9 @@ import headerArrow from '../../images/headerArrow.png';
 import g_tshort from '../../images/grey_tshort.png';
 import g_trauthers from '../../images/trauthers.png';
 import g_shouse from '../../images/shouse.png';
+import price from '../../images/Price.pdf';
 
-const   Download = () => {
+const Download = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
@@ -48,6 +49,11 @@ const   Download = () => {
         name: '',
         contact: '',
       });
+
+      const downloadLink = document.createElement('a');
+      downloadLink.href = price; // Путь к вашему файлу
+      downloadLink.download = price; // Имя скачиваемого файла
+      downloadLink.click();
     } catch (error) {
       console.error(error);
       toast.error('Упс! Щось пішло не так! 😢');
