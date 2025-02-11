@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { z } from "zod";
+import { z } from 'zod';
 import { Toaster, toast } from 'sonner';
 import {
   HeaderButton,
@@ -15,21 +15,19 @@ import {
   PurpleSpan,
   StrongSpan,
 } from './HeaderHero.styled';
-import header_tshorts from '../../../images/header_tshorts.png';
+import header_tshorts from '../../../images/heroPicture.png';
 import headerArrow from '../../../images/headerArrow.png';
-import price from '../../../images/Price.pdf'
+import price from '../../../images/Price.pdf';
 const formSchema = z.object({
   name: z.string().optional(),
-  contact: z
-    .string()
-    .email("Введіть дійсний email-адрес"),
-  type: z.enum(["price"]).default("price"),
+  contact: z.string().email('Введіть дійсний email-адрес'),
+  type: z.enum(['price']).default('price'),
 });
 const HeaderHero = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
-    type: "price",
+    type: 'price',
   });
 
   const handleChange = e => {
@@ -44,9 +42,7 @@ const HeaderHero = () => {
     e.preventDefault();
     const parseResult = formSchema.safeParse(formData);
     if (!parseResult.success) {
-      parseResult.error.errors.forEach((err) =>
-        toast.error(err.message)
-      );
+      parseResult.error.errors.forEach(err => toast.error(err.message));
       return;
     }
     try {
@@ -55,7 +51,6 @@ const HeaderHero = () => {
       toast.success('Дякуємо за заявку!');
 
       setFormData({
-        
         name: '',
         contact: '',
       });

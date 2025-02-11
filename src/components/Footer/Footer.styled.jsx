@@ -6,6 +6,10 @@ export const FooterContainer = styled.footer`
   justify-content: space-around;
   align-items: center;
   height: 162px;
+
+  @media (max-width: 770px) {
+    height: 83px;
+  }
 `;
 
 export const LeftText = styled.p`
@@ -18,14 +22,29 @@ export const LeftText = styled.p`
   color: #b58ada;
   text-align: left;
 
-  @media (max-width: 768px) {
-    font-size: 16px;
-    text-align: center;
+  @media (max-width: 1200px) {
+    font-size: 9.3px;
+    line-height: 9px;
   }
 
-  @media (max-width: 480px) {
-    font-size: 10px;
-    text-align: center;
+  @media (max-width: 770px) {
+    font-size: 4px;
+    line-height: 4px;
+  }
+`;
+
+export const ImageLogo = styled.img`
+  width: 87px;
+  height: 87px;
+
+  @media (max-width: 1200px) {
+    width: 44.95px;
+    height: 44.95px;
+  }
+
+  @media (max-width: 770px) {
+    width: 19.33px;
+    height: 19.33px;
   }
 `;
 
@@ -41,15 +60,13 @@ export const RightText = styled.p`
 
   color: #b58ada;
 
-  @media (max-width: 768px) {
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
+  @media (max-width: 770px) {
+    font-size: 9.3px;
+    line-height: 16px;
   }
 
-  @media (max-width: 480px) {
-    font-size: 10px;
-    line-height: 18px;
-    text-align: center;
+  @media (max-width: 1200px) {
+    font-size: 4px;
+    line-height: 7px;
   }
 `;

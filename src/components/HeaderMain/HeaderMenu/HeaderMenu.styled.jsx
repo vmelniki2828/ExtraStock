@@ -18,39 +18,30 @@ export const HeaderMainMenu = styled.header`
     max-width: 960px;
     margin: 0 auto;
     flex-direction: row;
-    flex-direction: column;
   }
 
-  @media (max-width: 770px) {
+  @media (max-width: 700px) {
     flex-direction: row;
-    align-items: space-between;
+    justify-content: space-between;
     padding-top: 16px;
     max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
-  }
-
-  @media (max-width: 480px) {
-    padding-top: 12px;
-    padding-left: 8px;
-    padding-right: 8px;
-    flex-direction: row;
   }
 `;
 
 export const HeaderSocialList = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 40px;
-  padding-top: 20px;
+  gap: 25px;
 
   @media (min-width: 1200px) {
-    gap: 50px;
     padding-top: 0;
+    gap: 50px;
   }
-
-  @media (max-width: 770px) {
-    display: none;
+  @media (min-width: 700px) {
+    padding-top: 0;
+    gap: 20px;
   }
 `;
 
@@ -71,6 +62,16 @@ export const HeaderImg = styled.img`
   &:hover {
     transform: scale(1.2);
   }
+
+  @media (max-width: 1200px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 700px) {
+    width: 9px;
+    height: 9px;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -88,26 +89,38 @@ export const LogoText = styled.p`
   font-size: 53px;
   line-height: 61px;
   color: #ffffff;
-`;
 
-export const BurgerMenu = styled(GiHamburgerMenu)`
-  display: none;
-  @media (max-width: 768px) {
-    color: #fff;
-    display: block;
-    width: 40px;
-    height: 40px; /* Slightly smaller logo on medium screens */
-    cursor: pointer;
+  @media (max-width: 1200px) {
+    font-family: 'Alegre Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.3833px;
+    line-height: 32px;
   }
-
-  @media (max-width: 480px) {
-    display: block;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+  @media (max-width: 700px) {
+    font-size: 11.7778px;
+    line-height: 14px;
   }
 `;
+
+// export const BurgerMenu = styled(GiHamburgerMenu)`
+//   display: none;
+//   @media (max-width: 768px) {
+//     color: #fff;
+//     display: block;
+//     width: 40px;
+//     height: 40px; /* Slightly smaller logo on medium screens */
+//     cursor: pointer;
+//   }
+
+//   @media (max-width: 480px) {
+//     display: block;
+//     color: #fff;
+//     width: 50px;
+//     height: 50px;
+//     cursor: pointer;
+//   }
+// `;
 
 export const HeaderLogo = styled.img`
   width: 46.5px;
@@ -119,14 +132,13 @@ export const HeaderLogo = styled.img`
     transform: scale(1.1); /* Increase the size by 10% on hover */
   }
 
-  @media (max-width: 768px) {
-    width: 40px;
-    height: 40px; /* Slightly smaller logo on medium screens */
+  @media (max-width: 1200px) {
+    width: 24px;
+    height: 24px;
   }
-
-  @media (max-width: 480px) {
-    width: 50px;
-    height: 50px;
+  @media (max-width: 700px) {
+    width: 10px;
+    height: 10px;
   }
 `;
 
@@ -158,21 +170,19 @@ export const HeaderList = styled.ul`
     cursor: pointer;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     gap: 100px;
-    font-size: 20px;
     display: flex;
+
+    font-size: 11.3667px;
+    line-height: 14px;
   }
 
-  @media (max-width: 768px) {
-    display: none;
+  @media (max-width: 700px) {
+    font-size: 4.88889px;
+    line-height: 6px;
+    gap: 30px;
   }
-
-  // @media (max-width: 480px) {
-  //   gap: 12px; /* Further reduce gap for smaller screens */
-  //   font-size: 16px; /* Smallest font size */
-  //   align-items: center; /* Center align for small screens */
-  // }
 `;
 
 export const Menu = styled.ul`

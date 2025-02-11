@@ -35,12 +35,11 @@ const HeaderMenu = () => {
             EXTRA<LogoSpan>STOCK</LogoSpan>
           </LogoText>
         </LogoContainer>
-        <BurgerMenu
+        {/* <BurgerMenu
           onClick={() => {
             setMenuOpen(!menuOpen);
-            console.log(menuOpen);
           }}
-        />
+        /> */}
 
         <HeaderSocialList>
           <a href="https://www.tiktok.com/@extrastock.com.ua?_t=ZM-8tWchnCRHXy&_r=1">
@@ -72,7 +71,7 @@ const HeaderMenu = () => {
           </a>
         </HeaderList>
 
-        {menuOpen ? (
+        {/* {menuOpen ? (
           <>
             <Menu>
               <a
@@ -126,7 +125,7 @@ const HeaderMenu = () => {
           </>
         ) : (
           <></>
-        )}
+        )} */}
       </HeaderMainMenu>
     </>
   );

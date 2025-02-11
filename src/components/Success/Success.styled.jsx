@@ -14,13 +14,13 @@ export const SuccessContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding-top: 80px;
+    padding-top: 54px;
     margin-bottom: 80px;
   }
 
-  @media (max-width: 480px) {
-    padding-top: 60px;
-    margin-bottom: 60px;
+  @media (max-width: 770px) {
+    padding-top: 27px;
+    margin-bottom: 34px;
   }
 `;
 
@@ -37,19 +37,15 @@ export const SuccessBlackText = styled.p`
   color: #000000;
 
   @media (max-width: 1200px) {
-    width: 85%;
-    font-size: 70px;
+    font-size: 43.4px;
+    line-height: 39px;
+    width: 691px;
   }
 
-  @media (max-width: 768px) {
-    width: 90%;
-    font-size: 50px;
-    line-height: 60px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 36px;
-    line-height: 45px;
+  @media (max-width: 770px) {
+    font-size: 18.6667px;
+    line-height: 17px;
+    width: 297px;
   }
 `;
 
@@ -65,12 +61,12 @@ export const DarkContainer = styled.div`
   background: black;
   padding: 0 0 100px 0;
 
-  @media (max-width: 768px) {
-    padding: 30px 0;
+  @media (max-width: 1200px) {
+    padding: 0 0 54px 0;
   }
 
-  @media (max-width: 480px) {
-    padding: 20px 0;
+  @media (max-width: 770px) {
+    padding: 0 0 22px 0;
   }
 `;
 
@@ -89,19 +85,21 @@ export const SuccessWhiteSubText = styled.p`
   color: #ffffff;
 
   @media (max-width: 1200px) {
-    width: 90%;
-    font-size: 36px;
-    line-height: 50px;
+    width: 646.87px;
+
+    margin: 55px 0 55px 0;
+
+    font-size: 18.0833px;
+    line-height: 34px;
   }
 
-  @media (max-width: 768px) {
-    font-size: 28px;
-    line-height: 40px;
-  }
+  @media (max-width: 770px) {
+    width: 278.22px;
 
-  @media (max-width: 480px) {
-    font-size: 22px;
-    line-height: 35px;
+    margin: 24px 0 24px 0;
+
+    font-size: 7.77778px;
+    line-height: 14px;
   }
 `;
 
@@ -117,9 +115,17 @@ export const DownloadYellowText = styled.h3`
 
   color: #ffc400;
 
-  @media (max-width: 750px) {
-    font-size: 30px;
-    line-height: 45px;
+  @media (max-width: 1200px) {
+    font-size: 43.4px;
+    line-height: 39px;
+
+    margin-bottom: 31px;
+  }
+  @media (max-width: 770px) {
+    font-size: 18.6667px;
+    line-height: 17px;
+
+    margin-bottom: 13px;
   }
 `;
 
@@ -134,8 +140,8 @@ export const InputContainer = styled.div`
   margin-top: 50px;
   gap: 30px;
 
-  @media (max-width: 1300px) {
-    flex-direction: column;
+  @media (max-width: 1200px) {
+    gap: 6px;
   }
 `;
 
@@ -156,16 +162,21 @@ export const SuccessInput = styled.input`
 
   color: #9c9c9c;
 
-  @media (max-width: 768px) {
-    width: 80%;
-    height: 70px;
-    font-size: 22px;
+  @media (max-width: 1200px) {
+    width: 206px;
+    height: 46px;
+    font-size: 13.95px;
+    line-height: 14px;
   }
 
-  @media (max-width: 480px) {
-    width: 50%;
-    font-size: 18px;
-    height: 60px;
+  @media (max-width: 770px) {
+    font-size: 6px;
+    line-height: 6px;
+
+    padding: 0;
+
+    width: 88px;
+    height: 20px;
   }
 `;
 
@@ -196,23 +207,24 @@ export const DownloadButton = styled.button`
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
-  @media (max-width: 1024px) {
-    width: 350px;
-    height: 80px;
-    font-size: 28px;
+  @media (max-width: 1200px) {
+    width: 213px;
+    height: 44px;
+
+    font-size: 17.05px;
+    line-height: 9px;
+
     justify-content: space-between;
     padding-right: 10px;
   }
 
-  @media (max-width: 768px) {
-    width: 70%;
-    height: 70px;
-    font-size: 17px;
-  }
+  @media (max-width: 770px) {
+    width: 91px;
+    height: 19px;
 
-  @media (max-width: 480px) {
-    height: 60px;
-    font-size: 13px;
+    font-size: 7.33333px;
+    line-height: 4px;
+    padding: 0 7px 0 6px;
   }
 `;
 
@@ -256,14 +268,24 @@ export const DownloadButtonArrow = styled.div`
   border: 1px solid #ffc400;
   border-radius: 43.5px;
 
-  @media (max-width: 1000px) {
-    width: 60px;
-    height: 60px;
+  @media (max-width: 1200px) {
+    width: 38px;
+    height: 38px;
     margin: -5px;
   }
-  @media (max-width: 650px) {
-    width: 50px;
-    height: 50px;
+  @media (max-width: 770px) {
+    width: 16px;
+    height: 16px;
     margin: -5px;
+  }
+`;
+
+export const ImgArrow = styled.img`
+  width: 26px;
+  @media (max-width: 1200px) {
+    width: 13px;
+  }
+  @media (max-width: 770px) {
+    width: 5px;
   }
 `;

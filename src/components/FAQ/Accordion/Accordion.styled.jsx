@@ -58,10 +58,8 @@ export const Question = styled.div`
   justify-content: space-between;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     align-items: center;
-    text-align: center;
-    flex-direction: column;
 
     gap: 10px;
   }
@@ -76,14 +74,14 @@ export const Number = styled.span`
 
   color: #9c28ff;
 
-  @media (max-width: 768px) {
-    font-size: 36px;
-    line-height: 40px;
+  @media (max-width: 1200px) {
+    font-size: 22.7333px;
+    line-height: 26px;
   }
 
-  @media (max-width: 480px) {
-    font-size: 28px;
-    line-height: 32px;
+  @media (max-width: 770px) {
+    font-size: 9.77778px;
+    line-height: 11px;
   }
 `;
 
@@ -99,18 +97,13 @@ export const Text = styled.p`
   color: #131313;
 
   @media (max-width: 1200px) {
-    width: 700px;
+    font-size: 14.4667px;
+    line-height: 20px;
   }
 
-  @media (max-width: 768px) {
-    width: 100%;
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 20px;
-    line-height: 28px;
+  @media (max-width: 770px) {
+    font-size: 6.22222px;
+    line-height: 8px;
   }
 `;
 
@@ -147,21 +140,16 @@ export const Answer = styled.div`
   @media (max-width: 1200px) {
     padding-left: 0px;
     text-align: center;
-    font-size: 20px;
-    line-height: 26px;
+
+    font-size: 11.8833px;
+    line-height: 16px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     padding-left: 0px;
-    font-size: 20px;
-    line-height: 26px;
-    text-align: center;
-  }
+    font-size: 5.11111px;
+    line-height: 7px;
 
-  @media (max-width: 480px) {
-    padding-left: 0;
-    font-size: 18px;
-    line-height: 24px;
     text-align: center;
   }
 `;

@@ -9,11 +9,11 @@ export const SocialContainer = styled.div`
   padding-bottom: 200px;
 
   @media (max-width: 768px) {
-    padding-bottom: 100px;
+    padding-bottom: 59px;
   }
 
   @media (max-width: 480px) {
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 `;
 
@@ -26,14 +26,14 @@ export const SocialMainText = styled.h3`
   margin: 0 0 16px;
   color: #000000;
 
-  @media (max-width: 768px) {
-    font-size: 30px;
-    line-height: 40px;
+  @media (max-width: 1200px) {
+    font-size: 18.6px;
+    line-height: 24px;
   }
 
-  @media (max-width: 480px) {
-    font-size: 24px;
-    line-height: 32px;
+  @media (max-width: 770px) {
+    font-size: 8px;
+    line-height: 10px;
   }
 `;
 
@@ -47,16 +47,16 @@ export const SocialMainSubText = styled.p`
   color: #8c8c8c;
   margin-bottom: 54px;
 
-  @media (max-width: 768px) {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 40px;
+  @media (max-width: 1200px) {
+    font-size: 9.3px;
+    line-height: 16px;
+    margin-bottom: 31px;
   }
 
-  @media (max-width: 480px) {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 30px;
+  @media (max-width: 770px) {
+    font-size: 4px;
+    line-height: 7px;
+    margin-bottom: 12px;
   }
 `;
 
@@ -64,10 +64,13 @@ export const SocialSmallContainers = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 30.02px;
   margin-bottom: 50.09px;
+
+  @media (max-width: 770px) {
+    gap: 6px;
+  }
 `;
 
 export const ItemContainer = styled.div`
@@ -81,6 +84,16 @@ export const ItemContainer = styled.div`
   cursor: pointer;
   width: 224.74px;
   height: 258.81px;
+
+  @media (max-width: 1200px) {
+    width: 116px;
+    height: 133px;
+  }
+
+  @media (max-width: 770px) {
+    width: 49px;
+    height: 57px;
+  }
 
   &:hover {
     transform: scale(1.05);
@@ -110,6 +123,22 @@ export const ItemContainerBottom = styled.div`
   text-align: center;
 
   color: #9c28ff;
+
+  @media (max-width: 1200px) {
+    width: 116.11px;
+    height: 32.7px;
+
+    font-size: 11.7371px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 770px) {
+    width: 49.94px;
+    height: 14.06px;
+
+    font-size: 5.04822px;
+    line-height: 7px;
+  }
 `;
 
 export const SocialBigContainers = styled.div`
@@ -118,6 +147,10 @@ export const SocialBigContainers = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 37px;
+
+  @media (max-width: 770px) {
+    gap: 8px;
+  }
 `;
 
 export const BigCon = styled.div`
@@ -128,9 +161,14 @@ export const BigCon = styled.div`
   border: 1px solid #000000;
   border-radius: 24px;
 
-  @media (max-width: 640px) {
-    max-width: 270px;
-    height: 150px;
+  @media (max-width: 1200px) {
+    width: 305.35px;
+    height: 164.82px;
+  }
+
+  @media (max-width: 770px) {
+    width: 131.33px;
+    height: 70.89px;
   }
 `;
 
@@ -148,10 +186,16 @@ export const BigConContactText = styled.p`
 
   color: #000000;
 
-  @media (max-width: 640px) {
-    text-align: center;
-    margin: 0;
-    font-size: 14px;
+  @media (max-width: 1200px) {
+    margin: 26px 0 0 26px;
+    font-size: 20.6667px;
+    line-height: 24px;
+  }
+  @media (max-width: 770px) {
+    margin: 11px 0 0 11px;
+
+    font-size: 8.88889px;
+    line-height: 10px;
   }
 `;
 
@@ -162,11 +206,26 @@ export const TelContainer = styled.div`
   margin: 50px 0 0 52px;
   justify-content: start;
 
-  @media (max-width: 640px) {
-    justify-content: center;
-    gap: 0;
-    margin: 0;
-    align-items: center;
+  @media (max-width: 1200px) {
+    width: 116.11px;
+    height: 32.7px;
+
+    gap: 23px;
+    margin: 25px 0 0 25px;
+
+    font-size: 11.7371px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 770px) {
+    width: 49.94px;
+    height: 14.06px;
+
+    gap: 10px;
+    margin: 11px 0 0 11px;
+
+    font-size: 5.04822px;
+    line-height: 7px;
   }
 `;
 
@@ -175,6 +234,24 @@ export const TelItem = styled.div`
   flex-direction: row;
   gap: 20px;
   align-items: center;
+`;
+
+export const ImageItem = styled.img`
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+
+  @media (max-width: 1200px) {
+    width: 77.5px;
+    height: 77.5px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 770px) {
+    width: 33.33px;
+    height: 33.33px;
+    margin-top: 5px;
+  }
 `;
 
 export const TelNum = styled.p`
@@ -187,8 +264,14 @@ export const TelNum = styled.p`
 
   color: #000000;
 
-  @media (max-width: 640px) {
-    font-size: 18px;
+  @media (max-width: 1200px) {
+    font-size: 20.6667px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 770px) {
+    font-size: 8.88889px;
+    line-height: 10px;
   }
 `;
 
@@ -196,9 +279,14 @@ export const TelImg = styled.img`
   width: 39px;
   height: 39px;
 
-  @media (max-width: 640px) {
-    width: 18px;
-    height: 18px;
+  @media (max-width: 1200px) {
+    width: 19px;
+    height: 19px;
+  }
+
+  @media (max-width: 770px) {
+    width: 8px;
+    height: 8px;
   }
 `;
 
@@ -213,9 +301,14 @@ export const MapText = styled.p`
   color: #767676;
   margin-top: 8px;
 
-  @media (max-width: 640px) {
-    margin-top: 0;
-    font-size: 8px;
+  @media (max-width: 1200px) {
+    font-size: 9.3px;
+    line-height: 12px;
+  }
+
+  @media (max-width: 770px) {
+    font-size: 4px;
+    line-height: 5px;
   }
 `;
 
@@ -225,8 +318,12 @@ export const Map = styled.iframe`
   border: 0;
   border-radius: 24px 24px 0 0;
 
-  @media (max-width: 640px) {
-    width: 270px;
-    height: 125px;
+  @media (max-width: 1200px) {
+    width: 305.87px;
+    height: 130.82px;
+  }
+  @media (max-width: 770px) {
+    width: 131.56px;
+    height: 44.89px;
   }
 `;

@@ -7,23 +7,11 @@ export const HeaderHeroContainer = styled.div`
   margin-top: 0;
   padding: 25px;
 
-  @media (max-width: 1024px) {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
+  @media (max-width: 1200px) {
+    padding: 80px;
   }
-
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 0 16px;
-    flex-direction: column;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    padding: 0 8px;
+  @media (max-width: 770px) {
+    padding: 55px;
   }
 `;
 
@@ -51,14 +39,16 @@ export const HeaderInput = styled.input`
 
   color: #c9c9c9;
 
-  @media (max-width: 1024px) {
-    width: 320px;
-    margin: 0 auto;
+  @media (max-width: 1200px) {
+    font-size: 9.3px;
+    line-height: 16px;
+
+    width: 220px;
   }
 
-  @media (max-width: 768px) {
-    width: 220px;
-    margin: 0 auto;
+  @media (max-width: 770px) {
+    width: 95px;
+    height: 23px;
   }
 `;
 
@@ -83,19 +73,14 @@ export const HeaderHeroMainTitle = styled.h1`
   line-height: 50px;
   color: #ffffff;
 
-  @media (max-width: 1024px) {
-    font-size: 38px;
-    line-height: 45px;
+  @media (max-width: 1200px) {
+    font-size: 24.0013px;
+    line-height: 26px;
   }
 
-  @media (max-width: 768px) {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 28px;
-    line-height: 36px;
+  @media (max-width: 700px) {
+    font-size: 10.3231px;
+    line-height: 11px;
   }
 `;
 
@@ -110,22 +95,18 @@ export const HeaderHeroSubTitle = styled.p`
   color: #ffffff;
   margin-bottom: 30px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     width: 100%;
-    font-size: 36px;
-    line-height: 32px;
+
+    font-size: 18.0833px;
+    line-height: 26px;
   }
 
-  @media (max-width: 768px) {
-    font-size: 28px;
-    line-height: 28px;
+  @media (max-width: 770px) {
+    font-size: 7.77778px;
+    line-height: 11px;
+
     margin-bottom: 30px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 20px;
   }
 `;
 
@@ -148,12 +129,8 @@ export const HeaderImgTshorts = styled.img`
     width: 400px;
   }
 
-  @media (max-width: 768px) {
-    width: 300px;
-  }
-
-  @media (max-width: 480px) {
-    width: 200px;
+  @media (max-width: 770px) {
+    width: 180px;
   }
 `;
 
@@ -162,25 +139,19 @@ export const StrongSpan = styled.span`
   font-size: 46px;
   line-height: 50px;
 
-  @media (max-width: 1024px) {
-    font-size: 38px;
+  @media (max-width: 1200px) {
+    font-size: 24.0013px;
+    line-height: 26px;
   }
 
-  @media (max-width: 768px) {
-    font-size: 32px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 24px;
+  @media (max-width: 770px) {
+    font-size: 10.3231px;
+    line-height: 11px;
   }
 `;
 
 export const PurpleSpan = styled.span`
   color: #9c28ff;
-
-  @media (max-width: 480px) {
-    font-size: 24px;
-  }
 `;
 
 export const HeaderButton = styled.button`
@@ -213,7 +184,19 @@ export const HeaderButton = styled.button`
 
   color: #000000;
 
-  @media (max-width: 1024px) {
-    margin: 0 auto;
+  @media (max-width: 1200px) {
+    padding: 24px 36px;
+    gap: 8px;
+    width: 170px;
+    height: 34px;
+    font-size: 9px;
+    line-height: 14px;
+  }
+  @media (max-width: 770px) {
+    padding: 20px 28px;
+    width: 100px;
+    height: 7px;
+    font-size: 10px;
+    line-height: 11px;
   }
 `;
