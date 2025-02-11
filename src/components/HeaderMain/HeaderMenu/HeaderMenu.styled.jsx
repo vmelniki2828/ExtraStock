@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { GiHamburgerMenu } from 'react-icons/gi';
+//import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
 
 export const CloseImg = styled(IoClose)``;

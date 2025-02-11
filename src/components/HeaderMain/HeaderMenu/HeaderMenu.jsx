@@ -1,21 +1,21 @@
 import {
-  BurgerMenu,
-  CloseBtn,
-  CloseImg,
+  // BurgerMenu,
+  // CloseBtn,
+  // CloseImg,
   HeaderImg,
   HeaderList,
   HeaderLogo,
-  HeaderLogoMenu,
+  // HeaderLogoMenu,
   HeaderMainMenu,
   HeaderSocialList,
-  HeaderSocialListMob,
+  // HeaderSocialListMob,
   LogoContainer,
   LogoText,
-  Menu,
-  MenuItem,
+  // Menu,
+  // MenuItem,
 } from './HeaderMenu.styled';
 import logo from '../../../images/logo.png';
-import { useState } from 'react';
+//import { useState } from 'react';
 import tiktok from '../../../images/headerTikTok.png';
 import youtube from '../../../images/headerYouTube.png';
 import viber from '../../../images/headerViber.png';
@@ -24,7 +24,7 @@ import inst from '../../../images/headerInst.png';
 import { LogoSpan } from '../HeaderHero/HeaderHero.styled';
 
 const HeaderMenu = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  //const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
