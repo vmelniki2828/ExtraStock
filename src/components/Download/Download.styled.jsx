@@ -18,10 +18,12 @@ export const DownloadMainTitle = styled.h2`
   color: #000000;
 
   @media (max-width: 1200px) {
-    font-size: 38px;
+    font-size: 27.9px;
+    line-height: 21px;
   }
-  @media (max-width: 850px) {
-    font-size: 28px;
+  @media (max-width: 770px) {
+    font-size: 12px;
+    line-height: 9px;
   }
 `;
 
@@ -37,14 +39,21 @@ export const DownloadMainSubTitle = styled.p`
   margin-bottom: 50px;
 
   @media (max-width: 1200px) {
-    width: 900px;
-    font-size: 25px;
+    width: 691.3px;
+
+    margin-bottom: 25px;
+
+    font-size: 17.05px;
+    line-height: 21px;
   }
 
-  @media (max-width: 850px) {
-    width: 500px;
-    font-size: 18px;
-    line-height: 28px;
+  @media (max-width: 770px) {
+    width: 297.33px;
+
+    margin-bottom: 11px;
+
+    font-size: 7.33333px;
+    line-height: 9px;
   }
 
   @media (max-width: 500px) {
@@ -62,6 +71,13 @@ export const MainBlockContainer = styled.div`
   align-items: center;
   gap: 30px;
   margin-bottom: 50px;
+
+  @media (max-width: 1200px) {
+    gap: 15px;
+  }
+  @media (max-width: 770px) {
+    gap: 6px;
+  }
 `;
 
 export const BigContainer = styled.div`
@@ -71,17 +87,13 @@ export const BigContainer = styled.div`
   border-radius: 22px;
   padding: 10px;
   width: 844px;
-  height: 233px;
   background-color: #ffffff;
 
-  @media (max-width: 1300px) {
-    width: 618px;
+  @media (max-width: 1200px) {
+    width: 447px;
   }
-  @media (max-width: 650px) {
-    width: 530px;
-  }
-  @media (max-width: 550px) {
-    width: 330px;
+  @media (max-width: 770px) {
+    width: 192px;
   }
 `;
 
@@ -91,14 +103,14 @@ export const ContainerImg = styled.img`
   margin-right: 15px;
   flex-shrink: 0;
 
-  @media (max-width: 650px) {
-    width: 150px;
-    height: 150px;
+  @media (max-width: 1200px) {
+    width: 124px;
+    height: 124px;
   }
 
-  @media (max-width: 550px) {
-    width: 100px;
-    height: 100px;
+  @media (max-width: 770px) {
+    width: 54px;
+    height: 54px;
   }
 `;
 
@@ -116,9 +128,18 @@ export const TextBox = styled.div`
     text-transform: uppercase;
     color: #000000;
 
-    @media (max-width: 550px) {
-      font-size: 20.9893px;
-      line-height: 0px;
+    @media (max-width: 1200px) {
+      margin-bottom: 10.45px;
+
+      font-size: 14.4611px;
+      line-height: 18px;
+    }
+
+    @media (max-width: 770px) {
+      margin-bottom: 4.67px;
+
+      font-size: 6.21984px;
+      line-height: 8px;
     }
   }
 
@@ -133,13 +154,17 @@ export const TextBox = styled.div`
     width: 540px;
     margin: 0 auto;
 
-    @media (max-width: 1300px) {
-      width: 370px;
+    @media (max-width: 1200px) {
+      width: 279px;
+
+      font-size: 13.95px;
+      line-height: 14px;
     }
-    @media (max-width: 550px) {
-      font-size: 16px;
-      line-height: 19px;
-      width: 180px;
+    @media (max-width: 770px) {
+      width: 120px;
+
+      font-size: 6px;
+      line-height: 6px;
     }
   }
 `;
@@ -149,8 +174,11 @@ export const SmallContainers = styled.div`
   flex-direction: row;
   gap: 30px;
 
-  @media (max-width: 1300px) {
-    flex-direction: column;
+  @media (max-width: 1200px) {
+    gap: 15px;
+  }
+  @media (max-width: 770px) {
+    gap: 4px;
   }
 `;
 
@@ -161,14 +189,13 @@ export const SmallCont = styled.div`
   border-radius: 22px;
   padding: 10px;
   width: 618px;
-  height: 233px;
   background-color: #ffffff;
 
-  @media (max-width: 650px) {
-    width: 530px;
+  @media (max-width: 1200px) {
+    width: 447px;
   }
-  @media (max-width: 550px) {
-    width: 330px;
+  @media (max-width: 770px) {
+    width: 192px;
   }
 `;
 
@@ -185,6 +212,20 @@ export const SmallTextBox = styled.div`
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 10.45px;
+
+      font-size: 14.4611px;
+      line-height: 18px;
+    }
+
+    @media (max-width: 770px) {
+      margin-bottom: 4.67px;
+
+      font-size: 6.21984px;
+      line-height: 8px;
+    }
   }
 
   p {
@@ -198,10 +239,17 @@ export const SmallTextBox = styled.div`
     width: 252px;
     margin: 0 auto;
 
-    @media (max-width: 550px) {
-      font-size: 16px;
-      line-height: 19px;
-      width: 180px;
+    @media (max-width: 1200px) {
+      width: 279px;
+
+      font-size: 13.95px;
+      line-height: 14px;
+    }
+    @media (max-width: 770px) {
+      width: 120px;
+
+      font-size: 6px;
+      line-height: 6px;
     }
   }
 `;
@@ -212,9 +260,13 @@ export const DownloadInputContainer = styled.div`
   gap: 50px;
   margin-bottom: 40px;
 
-  @media (max-width: 950px) {
-    flex-direction: column;
-    gap: 20px;
+  @media (max-width: 1200px) {
+    gap: 27px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 770px) {
+    gap: 11px;
+    margin-bottom: 9px;
   }
 `;
 
@@ -242,8 +294,17 @@ export const DownloadInput = styled.input`
     outline: none; /* Убирает стандартное выделение */
   }
 
-  @media (max-width: 440px) {
-    width: 300px;
+  @media (max-width: 1200px) {
+    width: 221px;
+
+    font-size: 9.3px;
+    line-height: 16px;
+  }
+  @media (max-width: 770px) {
+    width: 95px;
+    height: 20px;
+    font-size: 4px;
+    line-height: 7px;
   }
 `;
 
@@ -251,7 +312,6 @@ export const DownloadButton = styled.button`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 24px 36px;
   gap: 8px;
 
   width: 231px;
@@ -271,10 +331,27 @@ export const DownloadButton = styled.button`
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
-  text-align: center;
+
   cursor: pointer;
 
   color: #000000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1200px) {
+    width: 155px;
+    height: 39px;
+
+    font-size: 11px;
+    line-height: 18px;
+  }
+  @media (max-width: 770px) {
+    width: 120px;
+    height: 25px;
+    font-size: 8px;
+    line-height: 18px;
+  }
 `;
 
 export const Form = styled.form`

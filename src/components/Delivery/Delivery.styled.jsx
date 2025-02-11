@@ -5,26 +5,22 @@ export const DeliveryContainer = styled.div`
   max-width: 1330px;
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   gap: 30px;
 
   @media (max-width: 1200px) {
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 20px;
+  }
+  @media (max-width: 770px) {
+    gap: 10px;
   }
 `;
 
 export const DeliveryBlock = styled.div`
   position: relative;
   z-index: 2;
-  @media (max-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 `;
 
 export const DeliveryTopText = styled.p`
@@ -37,6 +33,8 @@ export const DeliveryTopText = styled.p`
   color: #000000;
   margin: 0 0 60px 0;
 
+  text-align: left;
+
   span {
     font-weight: 700;
     font-size: 71px;
@@ -44,20 +42,25 @@ export const DeliveryTopText = styled.p`
   }
 
   @media (max-width: 1200px) {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 27.3833px;
+    line-height: 34px;
+
+    margin: 0 0 40px 0;
 
     span {
-      font-size: 55px;
+      font-size: 36.6833px;
+      line-height: 34px;
     }
   }
 
-  @media (max-width: 768px) {
-    font-size: 34px;
-    line-height: 44px;
+  @media (max-width: 770px) {
+    font-size: 11.7778px;
+    line-height: 14px;
+    margin: 0 0 20px 0;
 
     span {
-      font-size: 45px;
+      font-size: 15.7778px;
+      line-height: 14px;
     }
   }
 `;
@@ -72,14 +75,18 @@ export const DeliveryCenterText = styled.p`
   color: #000000;
   margin: 0 0 60px 0;
 
+  text-align: left;
+
   @media (max-width: 1200px) {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 27.3833px;
+    line-height: 34px;
+    margin: 0 0 40px 0;
   }
 
   @media (max-width: 768px) {
-    font-size: 34px;
-    line-height: 44px;
+    font-size: 11.7778px;
+    line-height: 14px;
+    margin: 0 0 20px 0;
   }
 `;
 
@@ -93,18 +100,20 @@ export const DeliveryBottomText = styled.p`
   text-transform: uppercase;
   color: #000000;
 
+  text-align: left;
+
   span {
     color: #9c28ff;
   }
 
   @media (max-width: 1200px) {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 27.3833px;
+    line-height: 34px;
   }
 
-  @media (max-width: 768px) {
-    font-size: 34px;
-    line-height: 44px;
+  @media (max-width: 770px) {
+    font-size: 11.7778px;
+    line-height: 14px;
   }
 `;
 
@@ -120,7 +129,7 @@ export const BusImg = styled.img`
     width: 450px;
   }
 
-  @media (max-width: 768px) {
-    width: 320px;
+  @media (max-width: 770px) {
+    width: 208px;
   }
 `;

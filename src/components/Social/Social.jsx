@@ -2,6 +2,7 @@ import {
   BigCon,
   BigConContact,
   BigConContactText,
+  ImageItem,
   ItemContainer,
   ItemContainerBottom,
   Map,
@@ -37,7 +38,7 @@ const Social = () => {
           style={{ textDecoration: 'none', color: 'inherit' }}
         >
           <ItemContainer>
-            <img src={youtube} alt="youtube" style={{ marginTop: '26.77px' }} />
+            <ImageItem src={youtube} alt="youtube" />
             <ItemContainerBottom>YouTube</ItemContainerBottom>
           </ItemContainer>
         </a>
@@ -46,7 +47,7 @@ const Social = () => {
           style={{ textDecoration: 'none', color: 'inherit' }}
         >
           <ItemContainer>
-            <img src={inst} alt="inst" style={{ marginTop: '7.31px' }} />
+            <ImageItem src={inst} alt="inst" />
             <ItemContainerBottom>Instagram</ItemContainerBottom>
           </ItemContainer>
         </a>
@@ -55,7 +56,7 @@ const Social = () => {
           style={{ textDecoration: 'none', color: 'inherit' }}
         >
           <ItemContainer>
-            <img src={tg} alt="tg" style={{ marginTop: '26.77px' }} />
+            <ImageItem src={tg} alt="tg" />
             <ItemContainerBottom>Telegram</ItemContainerBottom>
           </ItemContainer>
         </a>
@@ -64,7 +65,7 @@ const Social = () => {
           style={{ textDecoration: 'none', color: 'inherit' }}
         >
           <ItemContainer>
-            <img src={viber} alt="viber" style={{ marginTop: '24.91px' }} />
+            <ImageItem src={viber} alt="viber" />
             <ItemContainerBottom>Viber</ItemContainerBottom>
           </ItemContainer>
         </a>
@@ -73,7 +74,7 @@ const Social = () => {
           style={{ textDecoration: 'none', color: 'inherit' }}
         >
           <ItemContainer>
-            <img src={tiktok} alt="tiktok" style={{ marginTop: '29.21px' }} />
+            <ImageItem src={tiktok} alt="tiktok" />
             <ItemContainerBottom>Tik Tok</ItemContainerBottom>
           </ItemContainer>
         </a>
