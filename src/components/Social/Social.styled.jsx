@@ -349,7 +349,6 @@ export const Map = styled.iframe`
   height: 280px;
   border: 0;
   border-radius: 24px 24px 0 0;
-
   
 
   @media (max-width: 1200px) {
