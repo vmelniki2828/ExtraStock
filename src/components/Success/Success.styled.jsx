@@ -287,9 +287,13 @@ export const DownloadButtonArrow = styled.div`
     margin: -6px;
   }
   @media (max-width: 770px) {
-    width: 16px;
-    height: 16px;
     margin: -5px;
+
+    width: 16.22px;
+    height: 16.22px;
+
+    border: 0.222222px solid #ffc400;
+    border-radius: 9.66667px;
   }
 `;
 
