@@ -172,6 +172,8 @@ export const SuccessInput = styled.input`
     height: 46px;
     font-size: 13.95px;
     line-height: 14px;
+
+    padding: 0;
     padding-left: 10px;
 
     border: 0.776807px solid #ffffff;
@@ -183,10 +185,10 @@ export const SuccessInput = styled.input`
     line-height: 6px;
 
     padding: 0;
+    padding-left: 5px;
 
     width: 88px;
     height: 20px;
-    padding-left: 5px;
 
     border: 0.33411px solid #ffffff;
     border-radius: 16.7055px;

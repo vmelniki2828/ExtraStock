@@ -56,8 +56,8 @@ const HeaderHero = () => {
       });
 
       const downloadLink = document.createElement('a');
-      downloadLink.href = price; // Путь к вашему файлу
-      downloadLink.download = price; // Имя скачиваемого файла
+      downloadLink.href = price;
+      downloadLink.download = price; 
       downloadLink.click();
     } catch (error) {
       console.error(error);
