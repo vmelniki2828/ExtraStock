@@ -58,7 +58,7 @@ export const HeaderInput = styled.input`
 
   @media (max-width: 440px) {
     width: 5.72rem; /* 91.5px / 16 = 5.72rem */
-    height: 0.56rem; /* 8.89px / 16 = 0.56rem */
+    height: 0.57rem; /* 8.89px / 16 = 0.56rem */
     font-size: 0.25rem; /* 4px / 16 = 0.25rem */
     line-height: 0.42rem; /* 6.7px / 16 = 0.42rem */
     padding-right: 0.22rem; /* 3.56px / 16 = 0.22rem */
