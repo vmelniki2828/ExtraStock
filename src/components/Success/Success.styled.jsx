@@ -141,7 +141,12 @@ export const InputContainer = styled.div`
   gap: 30px;
 
   @media (max-width: 1200px) {
-    gap: 6px;
+    gap: 15.5px;
+    margin-top: 31px;
+  }
+  @media (max-width: 770px) {
+    gap: 6.67px;
+    margin-top: 13.33px;
   }
 `;
 

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-//import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
 
 export const CloseImg = styled(IoClose)``;
@@ -9,39 +8,42 @@ export const HeaderMainMenu = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1320px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 36px 30px 0;
 
-  @media (max-width: 1200px) {
-    padding-top: 24px;
-    max-width: 960px;
-    margin: 0 auto;
-    flex-direction: row;
+  @media (max-width: 1440px) {
+    max-width: 1200px;
+    padding: 36px 24px 0;
   }
 
-  @media (max-width: 700px) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 16px;
+  @media (max-width: 744px) {
+    max-width: 744px;
+    padding: 24px 16px 0;
+  }
+
+  @media (max-width: 440px) {
     max-width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 16px;
   }
 `;
 
 export const HeaderSocialList = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  justify-content: space-around;
+  width: 404px;
 
-  @media (min-width: 1200px) {
-    padding-top: 0;
-    gap: 50px;
+  @media (max-width: 1440px) {
+    width: 304px;
   }
-  @media (min-width: 700px) {
-    padding-top: 0;
-    gap: 20px;
+
+  @media (max-width: 744px) {
+    width: 208px;
+  }
+
+  @media (max-width: 440px) {
+    width: 100px;
   }
 `;
 
@@ -56,21 +58,27 @@ export const HeaderImg = styled.img`
   width: 40px;
   height: 40px;
   cursor: pointer;
-  transform: scale(1); /* Начальный размер */
+  transform: scale(1);
   background-color: transparent;
-  transition: transform 0.3s ease-in-out; /* Плавность */
+  transition: transform 0.3s ease-in-out;
+
   &:hover {
     transform: scale(1.2);
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1440px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (max-width: 744px) {
     width: 20px;
     height: 20px;
   }
 
-  @media (max-width: 700px) {
-    width: 9px;
-    height: 9px;
+  @media (max-width: 440px) {
+    width: 10px;
+    height: 10px;
   }
 `;
 
@@ -78,7 +86,19 @@ export const LogoContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15.4px;
+  gap: 15px;
+
+  @media (max-width: 1440px) {
+    gap: 12px;
+  }
+
+  @media (max-width: 744px) {
+    gap: 8px;
+  }
+
+  @media (max-width: 440px) {
+    gap: 5px;
+  }
 `;
 
 export const LogoText = styled.p`
@@ -90,55 +110,45 @@ export const LogoText = styled.p`
   line-height: 61px;
   color: #ffffff;
 
-  @media (max-width: 1200px) {
-    font-family: 'Alegre Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27.3833px;
+  @media (max-width: 1440px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (max-width: 744px) {
+    font-size: 27px;
     line-height: 32px;
   }
-  @media (max-width: 700px) {
-    font-size: 11.7778px;
+
+  @media (max-width: 440px) {
+    font-size: 12px;
     line-height: 14px;
   }
 `;
 
-// export const BurgerMenu = styled(GiHamburgerMenu)`
-//   display: none;
-//   @media (max-width: 768px) {
-//     color: #fff;
-//     display: block;
-//     width: 40px;
-//     height: 40px; /* Slightly smaller logo on medium screens */
-//     cursor: pointer;
-//   }
-
-//   @media (max-width: 480px) {
-//     display: block;
-//     color: #fff;
-//     width: 50px;
-//     height: 50px;
-//     cursor: pointer;
-//   }
-// `;
-
 export const HeaderLogo = styled.img`
-  width: 46.5px;
-  height: 46.5px;
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  width: 46px;
+  height: 46px;
+  transition: transform 0.3s ease;
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.1); /* Increase the size by 10% on hover */
+    transform: scale(1.1);
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1440px) {
+    width: 36px;
+    height: 36px;
+  }
+
+  @media (max-width: 744px) {
     width: 24px;
     height: 24px;
   }
-  @media (max-width: 700px) {
-    width: 10px;
-    height: 10px;
+
+  @media (max-width: 440px) {
+    width: 12px;
+    height: 12px;
   }
 `;
 
@@ -152,8 +162,9 @@ export const HeaderLogoMenu = styled.img`
 
 export const HeaderList = styled.ul`
   display: flex;
-  gap: 145px;
-  padding-right: 40px;
+  justify-content: space-around;
+  width: 447px;
+  padding: 0 40px 0 0;
   list-style: none;
 
   font-family: 'Geologica', sans-serif;
@@ -170,24 +181,32 @@ export const HeaderList = styled.ul`
     cursor: pointer;
   }
 
-  @media (max-width: 1200px) {
-    gap: 100px;
-    display: flex;
-
-    font-size: 11.3667px;
-    line-height: 14px;
+  @media (max-width: 1440px) {
+    font-size: 18px;
+    line-height: 22px;
+    width: 350px;
+    padding: 0;
   }
 
-  @media (max-width: 700px) {
-    font-size: 4.88889px;
-    line-height: 6px;
-    gap: 30px;
+  @media (max-width: 744px) {
+    font-size: 12px;
+    line-height: 16px;
+    width: 230px;
+    padding: 0;
+  }
+
+  @media (max-width: 440px) {
+    font-size: 6px;
+    line-height: 8px;
+    width: 100px;
+    padding: 0;
   }
 `;
 
 export const Menu = styled.ul`
   display: none;
-  @media (max-width: 768px) {
+
+  @media (max-width: 744px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,6 +234,7 @@ export const MenuItem = styled.li`
   border-top: 1px solid black;
   background: #fff;
   cursor: pointer;
+
   &:hover {
     background-color: #ffcc00;
   }
@@ -226,18 +246,18 @@ export const CloseBtn = styled.button`
   right: 15px;
   width: 40px;
   height: 40px;
-  background-color: #ffcc00; /* Желтый цвет */
+  background-color: #ffcc00;
   border: none;
-  border-radius: 50%; /* Круглая форма */
+  border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Тень для визуального объема */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: scale(1.1); /* Легкое увеличение при наведении */
+    transform: scale(1.1);
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
   }
 
@@ -246,7 +266,7 @@ export const CloseBtn = styled.button`
   }
 
   svg {
-    color: #fff; /* Цвет иконки внутри кнопки */
+    color: #fff;
     font-size: 1.5rem;
   }
 `;

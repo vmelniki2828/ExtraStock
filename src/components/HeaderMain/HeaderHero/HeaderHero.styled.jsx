@@ -3,16 +3,10 @@ import styled from 'styled-components';
 export const HeaderHeroContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 0;
-  padding: 25px;
-
-  @media (max-width: 1200px) {
-    padding: 80px;
-  }
-  @media (max-width: 770px) {
-    padding: 55px;
-  }
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 25px 0;
+  width: 100%;
 `;
 
 export const HeaderInputContainer = styled.div`
@@ -20,6 +14,16 @@ export const HeaderInputContainer = styled.div`
   flex-direction: column;
   gap: 10px;
   margin-bottom: 30px;
+
+  @media (max-width: 744px) {
+    gap: 5.17px;
+    margin-bottom: 15.5px;
+  }
+
+  @media (max-width: 440px) {
+    gap: 2.2px;
+    margin-bottom: 6.67px;
+  }
 `;
 
 export const HeaderInput = styled.input`
@@ -39,28 +43,31 @@ export const HeaderInput = styled.input`
 
   color: #c9c9c9;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 744px) {
+    width: 201.49px;
+    height: 20.67px;
+    padding: 0 11.37px 0 8.27px;
     font-size: 9.3px;
-    line-height: 16px;
-
-    width: 220px;
+    line-height: 15.5px;
   }
 
-  @media (max-width: 770px) {
-    width: 95px;
-    height: 23px;
+  @media (max-width: 440px) {
+    width: 86.66px;
+    height: 8.89px;
+    padding: 0 4.89px 0 3.56px;
+    font-size: 4px;
+    line-height: 6.7px;
   }
 `;
 
 export const HeaderHeroContainerLeft = styled.div`
-  @media (min-width: 1400px) {
-    width: 650px;
+  max-width: 500px;
+  @media (max-width: 744px) {
+    width: 343.07px;
   }
-  @media (min-width: 1024px) {
-    width: 550px;
-  }
-  @media (max-width: 1024px) {
-    margin-bottom: 20px;
+
+  @media (max-width: 440px) {
+    width: 147.56px;
   }
 `;
 
@@ -73,12 +80,12 @@ export const HeaderHeroMainTitle = styled.h1`
   line-height: 50px;
   color: #ffffff;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 744px) {
     font-size: 24.0013px;
     line-height: 26px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 440px) {
     font-size: 10.3231px;
     line-height: 11px;
   }
@@ -95,18 +102,16 @@ export const HeaderHeroSubTitle = styled.p`
   color: #ffffff;
   margin-bottom: 30px;
 
-  @media (max-width: 1200px) {
-    width: 100%;
-
+  @media (max-width: 744px) {
     font-size: 18.0833px;
     line-height: 26px;
+    margin-bottom: 14.9px;
   }
 
-  @media (max-width: 770px) {
+  @media (max-width: 440px) {
     font-size: 7.77778px;
     line-height: 11px;
-
-    margin-bottom: 30px;
+    margin-bottom: 6px;
   }
 `;
 
@@ -114,23 +119,17 @@ export const LogoSpan = styled.span`
   color: #ae4fff;
 `;
 
-export const HeaderHeroContainerRight = styled.div`
-  @media (max-width: 1024px) {
-    display: flex;
-    justify-content: center;
-  }
-`;
-
 export const HeaderImgTshorts = styled.img`
   margin-right: -50px;
+  width: 702px;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 744px) {
     margin-right: 0;
-    width: 400px;
+    width: 362.7px;
   }
 
-  @media (max-width: 770px) {
-    width: 180px;
+  @media (max-width: 440px) {
+    width: 156px;
   }
 `;
 
@@ -139,12 +138,12 @@ export const StrongSpan = styled.span`
   font-size: 46px;
   line-height: 50px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 744px) {
     font-size: 24.0013px;
     line-height: 26px;
   }
 
-  @media (max-width: 770px) {
+  @media (max-width: 440px) {
     font-size: 10.3231px;
     line-height: 11px;
   }
@@ -184,19 +183,37 @@ export const HeaderButton = styled.button`
 
   color: #000000;
 
-  @media (max-width: 1200px) {
-    padding: 24px 36px;
-    gap: 8px;
-    width: 170px;
-    height: 34px;
-    font-size: 9px;
-    line-height: 14px;
+  @media (max-width: 744px) {
+    padding: 12.4px 18.6px;
+    gap: 4.13px;
+    width: 119.63px;
+    height: 34.8px;
+    border-radius: 20.67px;
+    font-size: 9.3px;
+    line-height: 9px;
   }
-  @media (max-width: 770px) {
-    padding: 20px 28px;
-    width: 100px;
-    height: 7px;
-    font-size: 10px;
-    line-height: 11px;
+
+  @media (max-width: 440px) {
+    padding: 5.33px 8px;
+    gap: 1.78px;
+    width: 51.78px;
+    height: 14.67px;
+    border-radius: 8.89px;
+    font-size: 4px;
+    line-height: 4px;
+  }
+`;
+
+export const HeaderButtonArrow = styled.img`
+  width: 15px;
+  height: 15px;
+  @media (max-width: 744px) {
+    width: 9.3px;
+    height: 9.3px;
+  }
+
+  @media (max-width: 440px) {
+    width: 4px;
+    height: 4px;
   }
 `;

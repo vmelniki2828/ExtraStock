@@ -17,7 +17,7 @@ export const DownloadMainTitle = styled.h2`
   margin: 3px 0 8px 0;
   color: #000000;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     font-size: 27.9px;
     line-height: 21px;
   }
@@ -38,7 +38,7 @@ export const DownloadMainSubTitle = styled.p`
   color: #000000;
   margin-bottom: 50px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     width: 691.3px;
 
     margin-bottom: 25px;
@@ -72,11 +72,13 @@ export const MainBlockContainer = styled.div`
   gap: 30px;
   margin-bottom: 50px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     gap: 15px;
+    margin-bottom: 25px;
   }
   @media (max-width: 770px) {
     gap: 6px;
+    margin-bottom: 11px;
   }
 `;
 
@@ -89,11 +91,15 @@ export const BigContainer = styled.div`
   width: 844px;
   background-color: #ffffff;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     width: 447px;
+    border: 0.442549px solid #000000;
+    border-radius: 11.3667px;
   }
   @media (max-width: 770px) {
     width: 192px;
+    border: 0.190343px solid #000000;
+    border-radius: 4.88889px;
   }
 `;
 
@@ -103,7 +109,7 @@ export const ContainerImg = styled.img`
   margin-right: 15px;
   flex-shrink: 0;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     width: 124px;
     height: 124px;
   }
@@ -128,7 +134,7 @@ export const TextBox = styled.div`
     text-transform: uppercase;
     color: #000000;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1280px) {
       margin-bottom: 10.45px;
 
       font-size: 14.4611px;
@@ -154,7 +160,7 @@ export const TextBox = styled.div`
     width: 540px;
     margin: 0 auto;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1280px) {
       width: 279px;
 
       font-size: 13.95px;
@@ -174,7 +180,7 @@ export const SmallContainers = styled.div`
   flex-direction: row;
   gap: 30px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     gap: 15px;
   }
   @media (max-width: 770px) {
@@ -191,11 +197,15 @@ export const SmallCont = styled.div`
   width: 618px;
   background-color: #ffffff;
 
-  @media (max-width: 1200px) {
-    width: 447px;
+  @media (max-width: 1280px) {
+    width: 330.67px;
+    border: 0.442549px solid #000000;
+    border-radius: 11.3667px;
   }
   @media (max-width: 770px) {
-    width: 192px;
+    width: 142.22px;
+    border: 0.190343px solid #000000;
+    border-radius: 4.88889px;
   }
 `;
 
@@ -213,7 +223,7 @@ export const SmallTextBox = styled.div`
     text-transform: uppercase;
     color: #000000;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1280px) {
       margin-bottom: 10.45px;
 
       font-size: 14.4611px;
@@ -239,14 +249,14 @@ export const SmallTextBox = styled.div`
     width: 252px;
     margin: 0 auto;
 
-    @media (max-width: 1200px) {
-      width: 279px;
+    @media (max-width: 1280px) {
+      width: 130px;
 
       font-size: 13.95px;
       line-height: 14px;
     }
     @media (max-width: 770px) {
-      width: 120px;
+      width: 56px;
 
       font-size: 6px;
       line-height: 6px;
@@ -260,7 +270,7 @@ export const DownloadInputContainer = styled.div`
   gap: 50px;
   margin-bottom: 40px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     gap: 27px;
     margin-bottom: 20px;
   }
@@ -294,7 +304,7 @@ export const DownloadInput = styled.input`
     outline: none; /* Убирает стандартное выделение */
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     width: 221px;
 
     font-size: 9.3px;
@@ -339,7 +349,7 @@ export const DownloadButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     width: 155px;
     height: 39px;
 
@@ -358,4 +368,17 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const DownloadButtonArrow = styled.img`
+  width: 18px;
+  height: 18px;
+  @media (max-width: 1280px) {
+    width: 9.3px;
+    height: 9.3px;
+  }
+  @media (max-width: 770px) {
+    width: 4px;
+    height: 4px;
+  }
 `;

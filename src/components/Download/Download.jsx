@@ -18,6 +18,7 @@ import {
   SmallTextBox,
   TextBox,
   Form,
+  DownloadButtonArrow,
 } from './Download.styled';
 import headerArrow from '../../images/headerArrow.png';
 import g_tshort from '../../images/grey_tshort.png';
@@ -134,7 +135,7 @@ const Download = () => {
         </DownloadInputContainer>
         <Toaster position="top-center" richColors />
         <DownloadButton type="submit">
-          Скачати прайс <img src={headerArrow} alt="headerArrow" />
+          Скачати прайс <DownloadButtonArrow src={headerArrow} alt="headerArrow" />
         </DownloadButton>
       </Form>
     </DownloadContainer>

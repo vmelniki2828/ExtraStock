@@ -4,9 +4,9 @@ import { z } from 'zod';
 import { Toaster, toast } from 'sonner';
 import {
   HeaderButton,
+  HeaderButtonArrow,
   HeaderHeroContainer,
   HeaderHeroContainerLeft,
-  HeaderHeroContainerRight,
   HeaderHeroMainTitle,
   HeaderHeroSubTitle,
   HeaderImgTshorts,
@@ -97,13 +97,11 @@ const HeaderHero = () => {
           </HeaderInputContainer>
           <Toaster position="top-center" richColors />
           <HeaderButton type="submit">
-            Скачати прайс <img src={headerArrow} alt="headerArrow" />
+            Скачати прайс <HeaderButtonArrow src={headerArrow} alt="headerArrow" />
           </HeaderButton>
         </form>
       </HeaderHeroContainerLeft>
-      <HeaderHeroContainerRight>
-        <HeaderImgTshorts src={header_tshorts} alt={header_tshorts} />
-      </HeaderHeroContainerRight>
+      <HeaderImgTshorts src={header_tshorts} alt={header_tshorts} />
     </HeaderHeroContainer>
   );
 };
