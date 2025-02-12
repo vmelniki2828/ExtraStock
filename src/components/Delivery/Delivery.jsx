@@ -29,8 +29,8 @@ const Delivery = () => {
           при замовленні <br />
           від 10000грн і повній оплаті.
         </DeliveryBottomText>
+        <BusImg src={bus} alt="bus" />
       </DeliveryBlock>
-      <BusImg src={bus} alt="bus" />
     </DeliveryContainer>
   );
 };

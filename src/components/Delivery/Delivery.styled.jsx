@@ -1,31 +1,24 @@
 import styled from 'styled-components';
 
 export const DeliveryContainer = styled.div`
-  margin: 156px 100px 120px 100px;
-  max-width: 1440px;
+  margin: 156px 0 120px 0;
+
   width: 90%;
   display: flex;
-  justify-content: left;
-  position: relative;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 1200px) {
-    max-width: 582px;
-    margin: 80.6px 50px 62px 50px;
-    gap: 20px;
-    justify-content: left;
+    margin: 80px 0 62px 0;
   }
   @media (max-width: 770px) {
-    gap: 10px;
-    margin: 34.67px auto 26.6px;
-    max-width: 290px;
+    margin: 34px 0 26px 0;
   }
 `;
 
 export const DeliveryBlock = styled.div`
   position: relative;
   z-index: 2;
-  margin-left: 40px;
 `;
 
 export const DeliveryTopText = styled.p`
@@ -124,21 +117,20 @@ export const DeliveryBottomText = styled.p`
 
 export const BusImg = styled.img`
   position: absolute;
-  right: -450px;
+  right: -575px;
   top: -50px;
   width: 900px;
   max-width: 100%;
 
   @media (max-width: 1200px) {
-    //   position: static;
     width: 450px;
-    right: -400px;
+    right: -275px;
     top: 0px;
   }
 
   @media (max-width: 770px) {
     width: 208px;
-    right: -130px;
+    right: -135px;
     top: 0px;
   }
 `;

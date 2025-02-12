@@ -49,6 +49,9 @@ export const HeaderInput = styled.input`
     padding: 0 0 0 8.27px;
     font-size: 9.3px;
     line-height: 15.5px;
+
+    border: 0.516667px solid #ffc300;
+    border-radius: 21.1833px;
   }
 
   @media (max-width: 440px) {
@@ -57,6 +60,9 @@ export const HeaderInput = styled.input`
     padding: 0 0 0 3.56px;
     font-size: 4px;
     line-height: 6.7px;
+
+    border: 0.222222px solid #ffc300;
+    border-radius: 9.11111px;
   }
 `;
 
