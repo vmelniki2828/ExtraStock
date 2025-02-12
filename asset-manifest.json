@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ExtraStock/static/css/main.eb503f6c.css",
-    "main.js": "/ExtraStock/static/js/main.6564b558.js",
+    "main.css": "/ExtraStock/static/css/main.1d5e8f37.css",
+    "main.js": "/ExtraStock/static/js/main.4e392c2b.js",
     "static/media/cat.png": "/ExtraStock/static/media/cat.552d4cf5ed6666669c11.png",
     "static/media/Price.pdf": "/ExtraStock/static/media/Price.85f900c0cffde34b4ec7.pdf",
     "static/media/header_bg.png": "/ExtraStock/static/media/header_bg.4720796946a34cc0d79b.png",
@@ -17,11 +17,11 @@
     "static/media/grey_tshort.png": "/ExtraStock/static/media/grey_tshort.8a13d1e5f311876c834f.png",
     "static/media/trauthers.png": "/ExtraStock/static/media/trauthers.6190b3dc6e6825594ba9.png",
     "index.html": "/ExtraStock/index.html",
-    "main.eb503f6c.css.map": "/ExtraStock/static/css/main.eb503f6c.css.map",
-    "main.6564b558.js.map": "/ExtraStock/static/js/main.6564b558.js.map"
+    "main.1d5e8f37.css.map": "/ExtraStock/static/css/main.1d5e8f37.css.map",
+    "main.4e392c2b.js.map": "/ExtraStock/static/js/main.4e392c2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb503f6c.css",
-    "static/js/main.6564b558.js"
+    "static/css/main.1d5e8f37.css",
+    "static/js/main.4e392c2b.js"
   ]
 }
