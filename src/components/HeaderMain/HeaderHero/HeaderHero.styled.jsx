@@ -49,7 +49,7 @@ export const HeaderInput = styled.input`
     font-size: 9.3px;
     line-height: 15.5px;
 
-    padding: 0;
+    padding-right: 8.27px;
     padding-left: 8.27px;
 
     border: 0.516667px solid #ffc300;
@@ -61,7 +61,7 @@ export const HeaderInput = styled.input`
     height: 8.89px;
     font-size: 4px;
     line-height: 6.7px;
-    padding: 0;
+    padding-right: 3.56px;
     padding-left: 3.56px;
 
     border: 0.222222px solid #ffc300;
