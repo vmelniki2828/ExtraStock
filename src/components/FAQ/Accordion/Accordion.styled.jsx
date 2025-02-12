@@ -7,6 +7,16 @@ export const Plus = styled(FiPlus)`
   width: 30px;
   color: #9c28ff;
   transition: transform 0.3s ease;
+
+  @media (max-width: 768px) {
+    height: 14.72px;
+    width: 14.72px;
+  }
+
+  @media (max-width: 480px) {
+    height: 6.33px;
+    width: 6.33px;
+  }
 `;
 
 export const Cross = styled(RxCross2)`
@@ -14,6 +24,16 @@ export const Cross = styled(RxCross2)`
   width: 30px;
   color: #9f9f9f;
   transition: transform 0.3s ease;
+
+  @media (max-width: 768px) {
+    height: 14.72px;
+    width: 14.72px;
+  }
+
+  @media (max-width: 480px) {
+    height: 6.33px;
+    width: 6.33px;
+  }
 `;
 
 export const AccordionContainer = styled.div`
@@ -27,10 +47,12 @@ export const AccordionContainer = styled.div`
   }
 
   @media (max-width: 768px) {
+    max-width: 630.34px;
     padding: 15px;
   }
 
   @media (max-width: 480px) {
+    max-width: 271.11px;
     padding: 10px;
   }
 `;

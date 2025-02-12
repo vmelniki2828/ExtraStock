@@ -5,26 +5,27 @@ export const DeliveryContainer = styled.div`
   max-width: 1440px;
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   position: relative;
   gap: 30px;
 
   @media (max-width: 1200px) {
-    align-items: center;
     max-width: 582px;
     margin: 80.6px 50px 62px 50px;
     gap: 20px;
+    justify-content: left;
   }
   @media (max-width: 770px) {
     gap: 10px;
-    margin: 34.67px 10px 26.6px 10px;
-    max-width: 250px;
+    margin: 34.67px auto 26.6px;
+    max-width: 290px;
   }
 `;
 
 export const DeliveryBlock = styled.div`
   position: relative;
   z-index: 2;
+  margin-left: 40px;
 `;
 
 export const DeliveryTopText = styled.p`
@@ -137,7 +138,7 @@ export const BusImg = styled.img`
 
   @media (max-width: 770px) {
     width: 208px;
-    right: -200px;
+    right: -130px;
     top: 0px;
   }
 `;

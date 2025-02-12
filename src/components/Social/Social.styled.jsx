@@ -68,6 +68,10 @@ export const SocialSmallContainers = styled.div`
   gap: 30.02px;
   margin-bottom: 50.09px;
 
+  @media (max-width: 1200px) {
+    gap: 15.51px;
+  }
+
   @media (max-width: 770px) {
     gap: 6px;
   }
@@ -88,11 +92,13 @@ export const ItemContainer = styled.div`
   @media (max-width: 1200px) {
     width: 116px;
     height: 133px;
+    border-radius: 10.06px;
   }
 
   @media (max-width: 770px) {
     width: 49px;
     height: 57px;
+    border-radius: 4.33px;
   }
 
   &:hover {
@@ -127,6 +133,7 @@ export const ItemContainerBottom = styled.div`
   @media (max-width: 1200px) {
     width: 116.11px;
     height: 32.7px;
+    border-radius: 10.06px;
 
     font-size: 11.7371px;
     line-height: 16px;
@@ -135,6 +142,7 @@ export const ItemContainerBottom = styled.div`
   @media (max-width: 770px) {
     width: 49.94px;
     height: 14.06px;
+    border-radius: 4.33px;
 
     font-size: 5.04822px;
     line-height: 7px;
