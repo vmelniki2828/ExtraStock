@@ -334,11 +334,13 @@ export const MapText = styled.p`
   @media (max-width: 1200px) {
     font-size: 9.3px;
     line-height: 12px;
+    margin-top: 4.13px;
   }
 
   @media (max-width: 770px) {
     font-size: 4px;
     line-height: 5px;
+    margin-top: 1.78px;
   }
 `;
 
@@ -356,7 +358,7 @@ export const Map = styled.iframe`
   }
   @media (max-width: 770px) {
     width: 131.56px;
-    height: 44.89px;
+    height: 56.89px;
 
     border-radius: 5.33333px 5.33333px 0 0;
   }
