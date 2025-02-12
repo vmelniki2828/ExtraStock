@@ -172,6 +172,7 @@ export const SuccessInput = styled.input`
     height: 46px;
     font-size: 13.95px;
     line-height: 14px;
+    padding-left: 10px;
   }
 
   @media (max-width: 770px) {
@@ -182,6 +183,7 @@ export const SuccessInput = styled.input`
 
     width: 88px;
     height: 20px;
+    padding-left: 5px;
   }
 `;
 
@@ -193,7 +195,6 @@ export const DownloadButton = styled.button`
   height: 85px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   border: 1px solid #ffc400;
   border-radius: 43.5px;
@@ -272,11 +273,12 @@ export const DownloadButtonArrow = styled.div`
   );
   border: 1px solid #ffc400;
   border-radius: 43.5px;
+  margin-left: 8px;
 
   @media (max-width: 1200px) {
     width: 38px;
     height: 38px;
-    margin: -5px;
+    margin: -6px;
   }
   @media (max-width: 770px) {
     width: 16px;

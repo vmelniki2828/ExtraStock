@@ -44,17 +44,17 @@ export const HeaderInput = styled.input`
   color: #c9c9c9;
 
   @media (max-width: 744px) {
-    width: 201.49px;
+    width: 212.86px;
     height: 20.67px;
-    padding: 0 11.37px 0 8.27px;
+    padding: 0 0 0 8.27px;
     font-size: 9.3px;
     line-height: 15.5px;
   }
 
   @media (max-width: 440px) {
-    width: 86.66px;
+    width: 91.5px;
     height: 8.89px;
-    padding: 0 4.89px 0 3.56px;
+    padding: 0 0 0 3.56px;
     font-size: 4px;
     line-height: 6.7px;
   }

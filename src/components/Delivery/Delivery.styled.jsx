@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const DeliveryContainer = styled.div`
-  margin: 100px auto;
-  max-width: 1330px;
+  margin: 156px 100px 120px 100px;
+  max-width: 1440px;
   width: 90%;
   display: flex;
   justify-content: center;
@@ -11,10 +11,14 @@ export const DeliveryContainer = styled.div`
 
   @media (max-width: 1200px) {
     align-items: center;
+    max-width: 582px;
+    margin: 80.6px 50px 62px 50px;
     gap: 20px;
   }
   @media (max-width: 770px) {
     gap: 10px;
+    margin: 34.67px 10px 26.6px 10px;
+    max-width: 250px;
   }
 `;
 
@@ -119,17 +123,21 @@ export const DeliveryBottomText = styled.p`
 
 export const BusImg = styled.img`
   position: absolute;
-  right: -360px;
+  right: -450px;
   top: -50px;
   width: 900px;
   max-width: 100%;
 
   @media (max-width: 1200px) {
-    position: static;
+    //   position: static;
     width: 450px;
+    right: -400px;
+    top: 0px;
   }
 
   @media (max-width: 770px) {
     width: 208px;
+    right: -200px;
+    top: 0px;
   }
 `;
