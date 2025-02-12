@@ -90,12 +90,16 @@ export const ItemContainer = styled.div`
   height: 258.81px;
 
   @media (max-width: 1200px) {
+    border: 0.419182px solid #000000;
+
     width: 116px;
     height: 133px;
     border-radius: 10.06px;
   }
 
   @media (max-width: 770px) {
+    border: 0.180294px solid #000000;
+
     width: 49px;
     height: 57px;
     border-radius: 4.33px;
@@ -134,7 +138,7 @@ export const ItemContainerBottom = styled.div`
     width: 116.11px;
     height: 32.7px;
     border-radius: 10.06px;
-
+    border: 0.419182px solid #000000;
     font-size: 11.7371px;
     line-height: 16px;
   }
@@ -143,6 +147,7 @@ export const ItemContainerBottom = styled.div`
     width: 49.94px;
     height: 14.06px;
     border-radius: 4.33px;
+    border: 0.180294px solid #000000;
 
     font-size: 5.04822px;
     line-height: 7px;
