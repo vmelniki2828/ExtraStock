@@ -228,6 +228,9 @@ export const DownloadButton = styled.button`
 
     justify-content: space-between;
     padding-right: 10px;
+
+    border: 0.516667px solid #ffc400;
+    border-radius: 22.475px;
   }
 
   @media (max-width: 770px) {
@@ -237,6 +240,9 @@ export const DownloadButton = styled.button`
     font-size: 7.33333px;
     line-height: 4px;
     padding: 0 7px 0 6px;
+
+    border: 0.222222px solid #ffc400;
+    border-radius: 9.66667px;
   }
 `;
 

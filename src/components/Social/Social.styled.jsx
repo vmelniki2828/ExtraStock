@@ -352,14 +352,12 @@ export const Map = styled.iframe`
     width: 305.87px;
     height: 130.82px;
 
-    border: 0.516667px solid #000000;
-    border-radius: 12.4px;
+    border-radius: 12.4px 12.4px 0 0;
   }
   @media (max-width: 770px) {
     width: 131.56px;
     height: 44.89px;
 
-    border: 0.222222px solid #000000;
-    border-radius: 5.33333px;
+    border-radius: 5.33333px 5.33333px 0 0;
   }
 `;
