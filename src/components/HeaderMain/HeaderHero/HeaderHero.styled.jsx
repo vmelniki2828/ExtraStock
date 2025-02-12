@@ -68,6 +68,49 @@ export const HeaderInput = styled.input`
   }
 `;
 
+// export const HeaderInput = styled.input`
+//   width: 390px;
+//   height: 40px;
+//   padding: 0 22px 0 16px;
+//   background: rgba(0, 0, 0, 0.36);
+//   border: 1px solid #ffc300;
+//   border-radius: 41px;
+
+//   font-family: 'Geologica', sans-serif;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 30px;
+//   margin: 0;
+
+//   color: #c9c9c9;
+
+//   @media (max-width: 744px) {
+//     width: 212.86px;
+//     height: 20.67px;
+//     font-size: 9.3px;
+//     line-height: 15.5px;
+
+//     padding-right: 8.27px;
+//     padding-left: 8.27px;
+
+//     border: 0.516667px solid #ffc300;
+//     border-radius: 21.1833px;
+//   }
+
+//   @media (max-width: 440px) {
+//     width: 91.5px;
+//     height: 8.89px;
+//     font-size: 4px;
+//     line-height: 6.7px;
+//     padding-right: 3.56px;
+//     padding-left: 3.56px;
+
+//     border: 0.222222px solid #ffc300;
+//     border-radius: 9.11111px;
+//   }
+// `;
+
 export const HeaderHeroContainerLeft = styled.div`
   max-width: 500px;
   @media (max-width: 744px) {
