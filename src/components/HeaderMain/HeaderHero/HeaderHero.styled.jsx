@@ -63,6 +63,9 @@ export const HeaderInput = styled.input`
 
     border: 0.222222px solid #ffc300;
     border-radius: 9.11111px;
+
+    box-sizing: border-box;
+    text-align: left;
   }
 `;
 
