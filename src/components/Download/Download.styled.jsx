@@ -325,6 +325,50 @@ export const DownloadInput = styled.input`
   }
 `;
 
+// export const DownloadInput = styled.input`
+//   width: 390px;
+//   height: 40px;
+
+//   background: rgba(255, 255, 255, 0.36);
+//   border: 1px solid #000000;
+//   border-radius: 41px;
+//   padding: 0 22px 0 16px;
+
+//   font-family: 'Geologica', sans-serif;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 30px;
+
+//   color: #b58ada;
+
+//   transition: border 0.3s ease-in-out; /* Плавный переход для бордера */
+
+//   &:focus {
+//     border-color: #ffc300;
+//     outline: none; /* Убирает стандартное выделение */
+//   }
+
+//   @media (max-width: 1280px) {
+//     width: 221px;
+
+//     font-size: 9.3px;
+//     line-height: 16px;
+
+//     border: 1px solid #000000;
+//     border-radius: 21.1833px;
+//   }
+//   @media (max-width: 770px) {
+//     width: 95px;
+//     height: 20px;
+//     font-size: 4px;
+//     line-height: 7px;
+
+//     border: 1px solid #000000;
+//     border-radius: 9.11111px;
+//   }
+// `;
+
 export const DownloadButton = styled.button`
   display: flex;
   flex-direction: row;
