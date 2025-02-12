@@ -46,9 +46,11 @@ export const HeaderInput = styled.input`
   @media (max-width: 744px) {
     width: 212.86px;
     height: 20.67px;
-    padding: 0 0 0 8.27px;
     font-size: 9.3px;
     line-height: 15.5px;
+
+    padding: 0;
+    padding-left: 8.27px;
 
     border: 0.516667px solid #ffc300;
     border-radius: 21.1833px;
@@ -57,15 +59,13 @@ export const HeaderInput = styled.input`
   @media (max-width: 440px) {
     width: 91.5px;
     height: 8.89px;
-    padding: 0 0 0 3.56px;
     font-size: 4px;
     line-height: 6.7px;
+    padding: 0;
+    padding-left: 3.56px;
 
     border: 0.222222px solid #ffc300;
     border-radius: 9.11111px;
-
-    box-sizing: border-box;
-    text-align: left;
   }
 `;
 
