@@ -310,7 +310,7 @@ export const DownloadInput = styled.input`
     font-size: 9.3px;
     line-height: 16px;
 
-    border: 1.516667px solid #000000;
+    border: 1px solid #000000;
     border-radius: 21.1833px;
   }
   @media (max-width: 770px) {
@@ -319,7 +319,7 @@ export const DownloadInput = styled.input`
     font-size: 4px;
     line-height: 7px;
 
-    border: 1.222222px solid #000000;
+    border: 1px solid #000000;
     border-radius: 9.11111px;
   }
 `;
