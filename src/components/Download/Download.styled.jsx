@@ -320,7 +320,7 @@ export const DownloadInput = styled.input`
     font-size: 0.25rem;
     line-height: 0.4375rem;
 
-    border: 0.0425rem solid #000000;
+    border: 0.0325rem solid #000000;
     border-radius: 0.569rem;
   }
 `;
