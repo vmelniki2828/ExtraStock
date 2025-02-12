@@ -37,35 +37,35 @@ export const HeaderInput = styled.input`
   font-family: 'Geologica', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem; /* 18px / 16 = 1.125rem */
+  line-height: 1.875rem; /* 30px / 16 = 1.875rem */
   margin: 0;
 
   color: #c9c9c9;
 
   @media (max-width: 744px) {
-    width: 212.86px;
-    height: 20.67px;
-    font-size: 9.3px;
-    line-height: 15.5px;
+    width: 13.3rem; /* 212.86px / 16 = 13.3rem */
+    height: 1.29rem; /* 20.67px / 16 = 1.29rem */
+    font-size: 0.581rem; /* 9.3px / 16 = 0.581rem */
+    line-height: 0.968rem; /* 15.5px / 16 = 0.968rem */
 
-    padding-right: 8.27px;
-    padding-left: 8.27px;
+    padding-right: 0.52rem; /* 8.27px / 16 = 0.52rem */
+    padding-left: 0.52rem; /* 8.27px / 16 = 0.52rem */
 
-    border: 0.516667px solid #ffc300;
-    border-radius: 21.1833px;
+    border: 0.032rem solid #ffc300; /* 0.516667px / 16 = 0.032rem */
+    border-radius: 1.324rem; /* 21.1833px / 16 = 1.324rem */
   }
 
   @media (max-width: 440px) {
-    width: 91.5px;
-    height: 8.89px;
-    font-size: 4px;
-    line-height: 6.7px;
-    padding-right: 3.56px;
-    padding-left: 3.56px;
+    width: 5.72rem; /* 91.5px / 16 = 5.72rem */
+    height: 0.56rem; /* 8.89px / 16 = 0.56rem */
+    font-size: 0.25rem; /* 4px / 16 = 0.25rem */
+    line-height: 0.42rem; /* 6.7px / 16 = 0.42rem */
+    padding-right: 0.22rem; /* 3.56px / 16 = 0.22rem */
+    padding-left: 0.22rem; /* 3.56px / 16 = 0.22rem */
 
-    border: 0.222222px solid #ffc300;
-    border-radius: 9.11111px;
+    border: 0.014rem solid #ffc300; /* 0.222222px / 16 = 0.014rem */
+    border-radius: 0.57rem; /* 9.11111px / 16 = 0.57rem */
   }
 `;
 
