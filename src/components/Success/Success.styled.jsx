@@ -173,6 +173,9 @@ export const SuccessInput = styled.input`
     font-size: 13.95px;
     line-height: 14px;
     padding-left: 10px;
+
+    border: 0.776807px solid #ffffff;
+    border-radius: 38.8403px;
   }
 
   @media (max-width: 770px) {
@@ -184,6 +187,9 @@ export const SuccessInput = styled.input`
     width: 88px;
     height: 20px;
     padding-left: 5px;
+
+    border: 0.33411px solid #ffffff;
+    border-radius: 16.7055px;
   }
 `;
 

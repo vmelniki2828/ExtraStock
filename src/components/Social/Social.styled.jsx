@@ -29,11 +29,15 @@ export const SocialMainText = styled.h3`
   @media (max-width: 1200px) {
     font-size: 18.6px;
     line-height: 24px;
+
+    margin: 0 0 8px;
   }
 
   @media (max-width: 770px) {
     font-size: 8px;
     line-height: 10px;
+
+    margin: 0 0 3px;
   }
 `;
 
@@ -70,10 +74,14 @@ export const SocialSmallContainers = styled.div`
 
   @media (max-width: 1200px) {
     gap: 15.51px;
+
+    margin-bottom: 25px;
   }
 
   @media (max-width: 770px) {
     gap: 6px;
+
+    margin-bottom: 11px;
   }
 `;
 
@@ -161,6 +169,9 @@ export const SocialBigContainers = styled.div`
   flex-wrap: wrap;
   gap: 37px;
 
+  @media (max-width: 1200px) {
+    gap: 19px;
+  }
   @media (max-width: 770px) {
     gap: 8px;
   }
@@ -177,11 +188,17 @@ export const BigCon = styled.div`
   @media (max-width: 1200px) {
     width: 305.35px;
     height: 164.82px;
+
+    border: 0.516667px solid #000000;
+    border-radius: 12.4px;
   }
 
   @media (max-width: 770px) {
     width: 131.33px;
     height: 70.89px;
+
+    border: 0.222222px solid #000000;
+    border-radius: 5.33333px;
   }
 `;
 
