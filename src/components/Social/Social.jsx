@@ -32,17 +32,19 @@ const Social = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const zoomLevel = window.innerWidth < 770 ? 11 : 14; 
+      const isMobile = window.innerWidth < 770;
       setMapSrc(
-        `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.085470004345!2d30.417056776060996!3d50.458133086811195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc45d5e6f69f%3A0x7621fe40f77c50b!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0JLQsNGB0LjQu9C10L3QutC-LCAyLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua&zoom=${zoomLevel}`
+        isMobile
+          ? 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.17094000869!2d30.417056776060996!3d50.458133086811195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc45d5e6f69f%3A0x7621fe40f77c50b!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0JLQsNGB0LjQu9C10L3QutC-LCAyLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua'
+          : 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.085470004345!2d30.417056776060996!3d50.458133086811195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc45d5e6f69f%3A0x7621fe40f77c50b!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0JLQsNGB0LjQu9C10L3QutC-LCAyLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua'
       );
     };
 
-    handleResize(); 
+    handleResize();
     window.addEventListener('resize', handleResize);
-
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
   return (
     <SocialContainer id="social">
       <SocialMainText>Ми в соціальних мережах</SocialMainText>
