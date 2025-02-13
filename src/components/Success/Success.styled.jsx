@@ -231,7 +231,7 @@ export const DownloadButton = styled.button`
     justify-content: space-between;
     padding-right: 10px;
 
-    border: 0.516667px solid #ffc400;
+    border: 0.616667px solid #ffc400;
     border-radius: 22.475px;
   }
 
@@ -243,7 +243,7 @@ export const DownloadButton = styled.button`
     line-height: 4px;
     padding: 0 7px 0 6px;
 
-    border: 0.222222px solid #ffc400;
+    border: 0.5px solid #ffc400;
     border-radius: 9.66667px;
   }
 `;
