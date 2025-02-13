@@ -15,12 +15,12 @@ export const HeaderInputContainer = styled.div`
   gap: 10px;
   margin-bottom: 30px;
 
-  @media (max-width: 744px) {
+  @media (max-width: 1100px) {
     gap: 5.17px;
     margin-bottom: 15.5px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 650px) {
     gap: 2.2px;
     margin-bottom: 6.67px;
   }
@@ -43,7 +43,7 @@ export const HeaderInput = styled.input`
 
   color: #c9c9c9;
 
-  @media (max-width: 744px) {
+  @media (max-width: 1100px) {
     width: 13.3rem; 
     height: 1.29rem; 
     font-size: 0.581rem; 
@@ -55,7 +55,7 @@ export const HeaderInput = styled.input`
     border: 0.032rem solid #ffc300; 
     border-radius: 1.324rem; 
 
-  @media (max-width: 440px) {
+  @media (max-width: 650px) {
     width: 5.90rem; 
     height: 0.69rem; 
     font-size: 0.25rem; 
@@ -113,11 +113,11 @@ export const HeaderInput = styled.input`
 
 export const HeaderHeroContainerLeft = styled.div`
   max-width: 500px;
-  @media (max-width: 744px) {
+  @media (max-width: 1100px) {
     width: 343.07px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 650px) {
     width: 147.56px;
   }
 `;
@@ -131,12 +131,12 @@ export const HeaderHeroMainTitle = styled.h1`
   line-height: 50px;
   color: #ffffff;
 
-  @media (max-width: 744px) {
+  @media (max-width: 1100px) {
     font-size: 24.0013px;
     line-height: 26px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 650px) {
     font-size: 10.3231px;
     line-height: 11px;
   }
@@ -153,13 +153,13 @@ export const HeaderHeroSubTitle = styled.p`
   color: #ffffff;
   margin-bottom: 30px;
 
-  @media (max-width: 744px) {
+  @media (max-width: 1100px) {
     font-size: 18.0833px;
     line-height: 26px;
     margin-bottom: 14.9px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 650px) {
     font-size: 7.77778px;
     line-height: 11px;
     margin-bottom: 6px;
@@ -174,12 +174,12 @@ export const HeaderImgTshorts = styled.img`
   margin-right: -50px;
   width: 702px;
 
-  @media (max-width: 744px) {
+  @media (max-width: 1100px) {
     margin-right: 0;
     width: 362.7px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 650px) {
     width: 156px;
   }
 `;
@@ -189,12 +189,12 @@ export const StrongSpan = styled.span`
   font-size: 46px;
   line-height: 50px;
 
-  @media (max-width: 744px) {
+  @media (max-width: 1100px) {
     font-size: 24.0013px;
     line-height: 26px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 650px) {
     font-size: 10.3231px;
     line-height: 11px;
   }
@@ -234,7 +234,7 @@ export const HeaderButton = styled.button`
 
   color: #000000;
 
-  @media (max-width: 744px) {
+  @media (max-width: 1100px) {
     padding: 12.4px 18.6px;
     gap: 4.13px;
     width: 119.63px;
@@ -244,7 +244,7 @@ export const HeaderButton = styled.button`
     line-height: 9px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 650px) {
     padding: 5.33px 8px;
     gap: 1.78px;
     width: 51.78px;
@@ -258,12 +258,12 @@ export const HeaderButton = styled.button`
 export const HeaderButtonArrow = styled.img`
   width: 15px;
   height: 15px;
-  @media (max-width: 744px) {
+  @media (max-width: 1100px) {
     width: 9.3px;
     height: 9.3px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 650px) {
     width: 4px;
     height: 4px;
   }
