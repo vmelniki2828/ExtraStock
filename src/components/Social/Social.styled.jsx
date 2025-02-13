@@ -8,11 +8,11 @@ export const SocialContainer = styled.div`
   text-align: center;
   padding-bottom: 200px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     padding-bottom: 59px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 770px) {
     padding-bottom: 25px;
   }
 `;
@@ -174,6 +174,7 @@ export const SocialBigContainers = styled.div`
   }
   @media (max-width: 770px) {
     gap: 8px;
+    flex-direction: column;
   }
 `;
 
@@ -187,23 +188,58 @@ export const BigCon = styled.div`
 
   @media (max-width: 1200px) {
     width: 305.35px;
-    height: 164.82px;
+    height: 225.82px;
 
     border: 0.516667px solid #000000;
     border-radius: 12.4px;
   }
 
   @media (max-width: 770px) {
-    width: 131.33px;
-    height: 70.89px;
+    width: 200px;
+    height: 212px;
 
     border: 0.222222px solid #000000;
     border-radius: 5.33333px;
   }
 `;
 
-export const BigConContact = styled(BigCon)`
+export const BigConMob = styled.div`
+  display: none;
+
+  @media (max-width: 770px) {
+    width: 200px;
+    height: 200px;
+
+    border: 0.222222px solid #000000;
+    border-radius: 5.33333px;
+  }
+`;
+
+export const BigConContact = styled.div`
   text-align: left;
+
+  width: 591px;
+  height: 319px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 24px;
+
+  @media (max-width: 1200px) {
+    width: 305.35px;
+    height: 225.82px;
+
+    border: 0.516667px solid #000000;
+    border-radius: 12.4px;
+  }
+
+  @media (max-width: 770px) {
+    width: 200px;
+    height: 60px;
+
+    border: 0.222222px solid #000000;
+    border-radius: 5.33333px;
+  }
 `;
 
 export const BigConContactText = styled.p`
@@ -218,7 +254,7 @@ export const BigConContactText = styled.p`
 
   @media (max-width: 1200px) {
     margin: 26px 0 0 26px;
-    font-size: 20.6667px;
+    font-size: 26px;
     line-height: 24px;
   }
   @media (max-width: 770px) {
@@ -240,8 +276,8 @@ export const TelContainer = styled.div`
     width: 116.11px;
     height: 32.7px;
 
-    gap: 23px;
-    margin: 25px 0 0 25px;
+    gap: 40px;
+    margin: 35px 0 0 20px;
 
     font-size: 11.7371px;
     line-height: 16px;
@@ -252,10 +288,12 @@ export const TelContainer = styled.div`
     height: 14.06px;
 
     gap: 10px;
-    margin: 11px 0 0 11px;
+    margin: 14px 0 0 11px;
 
     font-size: 5.04822px;
     line-height: 7px;
+
+    flex-direction: unset;
   }
 `;
 
@@ -264,6 +302,10 @@ export const TelItem = styled.div`
   flex-direction: row;
   gap: 20px;
   align-items: center;
+
+  @media (max-width: 770px) {
+    gap: 6px;
+  }
 `;
 
 export const ImageItem = styled.img`
@@ -295,7 +337,7 @@ export const TelNum = styled.p`
   color: #000000;
 
   @media (max-width: 1200px) {
-    font-size: 20.6667px;
+    font-size: 26px;
     line-height: 24px;
   }
 
@@ -310,8 +352,8 @@ export const TelImg = styled.img`
   height: 39px;
 
   @media (max-width: 1200px) {
-    width: 19px;
-    height: 19px;
+    width: 23px;
+    height: 23px;
   }
 
   @media (max-width: 770px) {
@@ -349,17 +391,16 @@ export const Map = styled.iframe`
   height: 280px;
   border: 0;
   border-radius: 24px 24px 0 0;
-  
 
   @media (max-width: 1200px) {
-    width: 305.87px;
-    height: 130.82px;
+    width: 305px;
+    height: 200px;
 
     border-radius: 12.4px 12.4px 0 0;
   }
   @media (max-width: 770px) {
-    width: 131.56px;
-    height: 56.89px;
+    width: 200px;
+    height: 200px;
 
     border-radius: 5.33333px 5.33333px 0 0;
   }
