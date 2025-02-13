@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { z } from "zod";
+import { z } from 'zod';
 import { Toaster, toast } from 'sonner';
 import {
   BigContainer,
@@ -27,16 +27,14 @@ import g_shouse from '../../images/shouse.png';
 import price from '../../images/Price.pdf';
 const formSchema = z.object({
   name: z.string().optional(),
-  contact: z
-    .string()
-    .email("Введіть дійсний email-адрес"),
-  type: z.enum(["price"]).default("price"),
+  contact: z.string().email('Введіть дійсний email-адрес'),
+  type: z.enum(['price']).default('price'),
 });
 const Download = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
-    type: "price",
+    type: 'price',
   });
 
   const handleChange = e => {
@@ -51,9 +49,7 @@ const Download = () => {
     e.preventDefault();
     const parseResult = formSchema.safeParse(formData);
     if (!parseResult.success) {
-      parseResult.error.errors.forEach((err) =>
-        toast.error(err.message)
-      );
+      parseResult.error.errors.forEach(err => toast.error(err.message));
       return;
     }
     try {
@@ -62,7 +58,7 @@ const Download = () => {
       toast.success('Дякуємо за заявку!');
 
       setFormData({
-       
+        type: 'price',
         name: '',
         contact: '',
       });
@@ -135,7 +131,8 @@ const Download = () => {
         </DownloadInputContainer>
         <Toaster position="top-center" richColors />
         <DownloadButton type="submit">
-          Скачати прайс <DownloadButtonArrow src={headerArrow} alt="headerArrow" />
+          Скачати прайс{' '}
+          <DownloadButtonArrow src={headerArrow} alt="headerArrow" />
         </DownloadButton>
       </Form>
     </DownloadContainer>

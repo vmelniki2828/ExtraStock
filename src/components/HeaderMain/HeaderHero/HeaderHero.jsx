@@ -51,13 +51,15 @@ const HeaderHero = () => {
       toast.success('Дякуємо за заявку!');
 
       setFormData({
+        type: 'price',
+
         name: '',
         contact: '',
       });
 
       const downloadLink = document.createElement('a');
       downloadLink.href = price;
-      downloadLink.download = price; 
+      downloadLink.download = price;
       downloadLink.click();
     } catch (error) {
       console.error(error);
@@ -97,7 +99,8 @@ const HeaderHero = () => {
           </HeaderInputContainer>
           <Toaster position="top-center" richColors />
           <HeaderButton type="submit">
-            Скачати прайс <HeaderButtonArrow src={headerArrow} alt="headerArrow" />
+            Скачати прайс{' '}
+            <HeaderButtonArrow src={headerArrow} alt="headerArrow" />
           </HeaderButton>
         </form>
       </HeaderHeroContainerLeft>
