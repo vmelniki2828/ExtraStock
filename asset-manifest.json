@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ExtraStock/static/css/main.eb503f6c.css",
-    "main.js": "/ExtraStock/static/js/main.3fd19909.js",
+    "main.js": "/ExtraStock/static/js/main.829b33ec.js",
     "static/media/cat.png": "/ExtraStock/static/media/cat.552d4cf5ed6666669c11.png",
     "static/media/Price.pdf": "/ExtraStock/static/media/Price.85f900c0cffde34b4ec7.pdf",
     "static/media/header_bg.png": "/ExtraStock/static/media/header_bg.4720796946a34cc0d79b.png",
@@ -18,10 +18,10 @@
     "static/media/trauthers.png": "/ExtraStock/static/media/trauthers.6190b3dc6e6825594ba9.png",
     "index.html": "/ExtraStock/index.html",
     "main.eb503f6c.css.map": "/ExtraStock/static/css/main.eb503f6c.css.map",
-    "main.3fd19909.js.map": "/ExtraStock/static/js/main.3fd19909.js.map"
+    "main.829b33ec.js.map": "/ExtraStock/static/js/main.829b33ec.js.map"
   },
   "entrypoints": [
     "static/css/main.eb503f6c.css",
-    "static/js/main.3fd19909.js"
+    "static/js/main.829b33ec.js"
   ]
 }
