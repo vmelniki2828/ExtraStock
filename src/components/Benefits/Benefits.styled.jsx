@@ -263,7 +263,7 @@ export const SmallCardDarkText = styled.h3`
   }
 
   @media (max-width: 766px) {
-    width: 50px;
+    width: 55px;
     margin: 0 0 3px 5.84px;
     font-size: 6px;
     line-height: 6px;
