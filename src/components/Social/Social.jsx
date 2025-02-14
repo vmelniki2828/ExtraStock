@@ -116,10 +116,15 @@ const Social = () => {
           <MapText>
             Знайдіть нас за адресою: м. Київ, вул. Миколи Василенко 2
           </MapText>
-          <LocationIcon/>
+          <LocationIcon />
           <MapTextMob>
-            Знайдіть нас за адресою: м. Київ, вул. Миколи Василенка, 2, станція
-            метро «Берестейська».
+            <a
+              href="https://maps.app.goo.gl/5XQ1qFkqrUjU13bq8"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              Знайдіть нас за адресою: м. Київ, вул. Миколи Василенка, 2,
+              станція метро «Берестейська».
+            </a>
           </MapTextMob>
         </BigCon>
       </SocialBigContainers>

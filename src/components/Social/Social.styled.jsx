@@ -326,9 +326,9 @@ export const ImageItem = styled.img`
   }
 
   @media (max-width: 770px) {
-    width: 40px;
-    height: 40px;
-    margin-top: 5px;
+    width: 45px;
+    height: 44px;
+    margin-top: 2px;
   }
 `;
 
@@ -407,6 +407,11 @@ export const MapTextMob = styled.p`
     font-size: 4px;
     line-height: 5px;
     margin-top: 6px;
+  }
+
+  &:hover {
+    color: #007bff;
+    text-decoration: underline; 
   }
 `;
 
