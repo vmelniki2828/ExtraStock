@@ -74,7 +74,7 @@ const Download = () => {
   };
   return (
     <DownloadContainer id="price">
-      <DownloadMainTitle>Секонд-хенд і Сток оптом.</DownloadMainTitle>
+      <DownloadMainTitle>Секонд-хенд і Сток оптом</DownloadMainTitle>
       <DownloadMainSubTitle>
         Великий вибір товару.{' '}
         <DownloadPurpleSpan>
@@ -115,14 +115,14 @@ const Download = () => {
       <Form onSubmit={handleSubmit}>
         <DownloadInputContainer>
           <DownloadInput
-            placeholder="Ім’я:"
+            placeholder="Введіть ім'я :"
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
           />
           <DownloadInput
-            placeholder="Електронна пошта:"
+            placeholder="Введіть електронну пошту:"
             type="text"
             name="contact"
             value={formData.contact}

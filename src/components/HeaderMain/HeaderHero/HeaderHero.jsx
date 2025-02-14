@@ -83,14 +83,14 @@ const HeaderHero = () => {
         <form onSubmit={handleSubmit}>
           <HeaderInputContainer>
             <HeaderInput
-              placeholder="Ім’я:"
+              placeholder="Введіть ім'я:"
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
             />
             <HeaderInput
-              placeholder="Електронна пошта:"
+              placeholder="Введіть номер телефону:"
               type="text"
               name="contact"
               value={formData.contact}

@@ -315,11 +315,11 @@ export const DownloadInput = styled.input`
   }
 
   @media (max-width: 770px) {
-    width: 5.9375rem;
-    height: 1.25rem;
-    font-size: 0.25rem;
+    width: 96px;
+    height: 14px;
+    font-size: 6px;
     line-height: 0.4375rem;
-
+    padding: 0 4.89px 0 3.56px;
     border: 0.0425rem solid #000000;
     border-radius: 0.569rem;
   }

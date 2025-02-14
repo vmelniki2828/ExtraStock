@@ -3,10 +3,18 @@ import styled from 'styled-components';
 export const HeaderHeroContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0 auto;
   padding: 25px 0;
   width: 100%;
+
+  @media (max-width: 1100px) {
+    padding: 10px 0;
+  }
+
+  @media (max-width: 650px) {
+    padding: 4.4px 0;
+  }
 `;
 
 export const HeaderInputContainer = styled.div`
@@ -56,12 +64,12 @@ export const HeaderInput = styled.input`
     border-radius: 1.324rem; 
 
   @media (max-width: 650px) {
-    width: 5.90rem; 
-    height: 0.69rem; 
-    font-size: 0.25rem; 
+    width: 110px; 
+    height: 12px; 
+    font-size: 7px; 
     line-height: 0.42rem; 
-    padding-right: 0.22rem; 
-    padding-left: 0.22rem;
+    padding-right: 4.89px; 
+    padding-left: 3.56px;
 
     border: 0.014rem solid #ffc300; 
     border-radius: 0.57rem;
@@ -118,7 +126,7 @@ export const HeaderHeroContainerLeft = styled.div`
   }
 
   @media (max-width: 650px) {
-    width: 147.56px;
+    width: 152px;
   }
 `;
 
@@ -137,7 +145,7 @@ export const HeaderHeroMainTitle = styled.h1`
   }
 
   @media (max-width: 650px) {
-    font-size: 10.3231px;
+    font-size: 15px;
     line-height: 11px;
   }
 `;
@@ -160,7 +168,7 @@ export const HeaderHeroSubTitle = styled.p`
   }
 
   @media (max-width: 650px) {
-    font-size: 7.77778px;
+    font-size: 10px;
     line-height: 11px;
     margin-bottom: 6px;
   }
@@ -180,7 +188,8 @@ export const HeaderImgTshorts = styled.img`
   }
 
   @media (max-width: 650px) {
-    width: 156px;
+    width: 210px;
+    margin-right: -20px;
   }
 `;
 

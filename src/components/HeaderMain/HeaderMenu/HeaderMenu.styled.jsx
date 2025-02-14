@@ -24,7 +24,7 @@ export const HeaderMainMenu = styled.header`
 
   @media (max-width: 440px) {
     max-width: 100%;
-    padding: 16px;
+    padding: 16px 16px 0 16px;
   }
 `;
 
@@ -43,7 +43,7 @@ export const HeaderSocialList = styled.div`
   }
 
   @media (max-width: 440px) {
-    width: 100px;
+    width: 140px;
   }
 `;
 
@@ -77,8 +77,8 @@ export const HeaderImg = styled.img`
   }
 
   @media (max-width: 440px) {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
   }
 `;
 
