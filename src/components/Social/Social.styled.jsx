@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FaLocationDot } from 'react-icons/fa6';
 
 export const SocialContainer = styled.div`
   display: flex;
@@ -108,8 +109,8 @@ export const ItemContainer = styled.div`
   @media (max-width: 770px) {
     border: 0.180294px solid #000000;
 
-    width: 49px;
-    height: 57px;
+    width: 60px;
+    height: 60px;
     border-radius: 4.33px;
   }
 
@@ -152,8 +153,8 @@ export const ItemContainerBottom = styled.div`
   }
 
   @media (max-width: 770px) {
-    width: 49.94px;
-    height: 14.06px;
+    width: 59.94px;
+    height: 12px;
     border-radius: 4.33px;
     border: 0.180294px solid #000000;
 
@@ -174,7 +175,6 @@ export const SocialBigContainers = styled.div`
   }
   @media (max-width: 770px) {
     gap: 8px;
-    flex-direction: column;
   }
 `;
 
@@ -192,14 +192,22 @@ export const BigCon = styled.div`
 
     border: 0.516667px solid #000000;
     border-radius: 12.4px;
+
+    flex-direction: unset;
   }
 
   @media (max-width: 770px) {
-    width: 200px;
-    height: 212px;
+    width: 131px;
+    height: 70px;
 
     border: 0.222222px solid #000000;
     border-radius: 5.33333px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
   }
 `;
 
@@ -234,8 +242,8 @@ export const BigConContact = styled.div`
   }
 
   @media (max-width: 770px) {
-    width: 200px;
-    height: 60px;
+    width: 131px;
+    height: 70px;
 
     border: 0.222222px solid #000000;
     border-radius: 5.33333px;
@@ -258,7 +266,7 @@ export const BigConContactText = styled.p`
     line-height: 24px;
   }
   @media (max-width: 770px) {
-    margin: 11px 0 0 11px;
+    margin: 8px 0 0 11px;
 
     font-size: 8.88889px;
     line-height: 10px;
@@ -288,12 +296,10 @@ export const TelContainer = styled.div`
     height: 14.06px;
 
     gap: 10px;
-    margin: 14px 0 0 11px;
+    margin: 8px 0 0 11px;
 
     font-size: 5.04822px;
     line-height: 7px;
-
-    flex-direction: unset;
   }
 `;
 
@@ -320,8 +326,8 @@ export const ImageItem = styled.img`
   }
 
   @media (max-width: 770px) {
-    width: 33.33px;
-    height: 33.33px;
+    width: 40px;
+    height: 40px;
     margin-top: 5px;
   }
 `;
@@ -380,9 +386,27 @@ export const MapText = styled.p`
   }
 
   @media (max-width: 770px) {
+    display: none;
+  }
+`;
+
+export const MapTextMob = styled.p`
+  display: none;
+  margin: 0;
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #767676;
+  margin-top: 8px;
+
+  @media (max-width: 770px) {
+    display: block;
     font-size: 4px;
     line-height: 5px;
-    margin-top: 1.78px;
+    margin-top: 6px;
   }
 `;
 
@@ -399,9 +423,14 @@ export const Map = styled.iframe`
     border-radius: 12.4px 12.4px 0 0;
   }
   @media (max-width: 770px) {
-    width: 200px;
-    height: 200px;
+    display: none;
+  }
+`;
 
-    border-radius: 5.33333px 5.33333px 0 0;
+export const LocationIcon = styled(FaLocationDot)`
+  display: none;
+  @media (max-width: 770px) {
+    display: block;
+    width: 15px;
   }
 `;
