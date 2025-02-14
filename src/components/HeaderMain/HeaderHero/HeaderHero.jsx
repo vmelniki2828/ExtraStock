@@ -27,7 +27,7 @@ const HeaderHero = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
-    type: 'price',
+    type: 'consultation',
   });
 
   const handleChange = e => {
@@ -45,18 +45,15 @@ const HeaderHero = () => {
       parseResult.error.errors.forEach(err => toast.error(err.message));
       return;
     }
+
     try {
       await axios.post('http://localhost:5000/send', formData);
-
       toast.success('Дякуємо за заявку!');
-
       setFormData({
-        type: 'price',
-
         name: '',
         contact: '',
+        type: 'consultation',
       });
-
       const downloadLink = document.createElement('a');
       downloadLink.href = price;
       downloadLink.download = price;
