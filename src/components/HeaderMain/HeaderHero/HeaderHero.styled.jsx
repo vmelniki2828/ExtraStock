@@ -16,7 +16,7 @@ export const HeaderHeroContainer = styled.div`
 
   @media (max-width: 650px) {
     padding: 4.4px 0;
-    gap: 30px;
+    gap: 20px;
   }
 `;
 
