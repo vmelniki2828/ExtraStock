@@ -386,7 +386,12 @@ export const MapText = styled.p`
   }
 
   @media (max-width: 770px) {
-    display: none;
+    font-size: 4px;
+    line-height: 5px;
+
+    text-align: center;
+
+    margin-top: 2px;
   }
 `;
 
@@ -411,7 +416,7 @@ export const MapTextMob = styled.p`
 
   &:hover {
     color: #007bff;
-    text-decoration: underline; 
+    text-decoration: underline;
   }
 `;
 
@@ -429,6 +434,19 @@ export const Map = styled.iframe`
   }
   @media (max-width: 770px) {
     display: none;
+  }
+`;
+
+export const ImageMap = styled.img`
+  display: none;
+
+  @media (max-width: 770px) {
+    width: 131px;
+    height: 63px;
+
+    display: block;
+    border-radius: 5px 5px 0 0;
+    border: 0;
   }
 `;
 

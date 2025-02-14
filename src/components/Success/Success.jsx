@@ -71,7 +71,7 @@ const Success = () => {
       <SuccessBlackText>Безкоштовна допомога</SuccessBlackText>
       <DarkContainer>
         <SuccessWhiteText>
-          по торгівлі онлайн та магазину секонд-хенд.
+          по торгівлі онлайн та магазину секонд-хенд
         </SuccessWhiteText>
         <SuccessWhiteSubText>
           Зрозуміти як правильно зробити, і На що дуже важливо звернути увагу

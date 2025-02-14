@@ -76,7 +76,7 @@ export const AccordionItem = styled.div`
 
   @media (max-width: 770px) {
     padding: 15px 0;
-    width: 200px;
+    width: 310px;
   }
 `;
 
