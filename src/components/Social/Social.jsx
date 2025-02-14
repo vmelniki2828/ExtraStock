@@ -3,12 +3,13 @@ import {
   BigConContact,
   BigConContactText,
   ImageItem,
+  ImageMap,
   ItemContainer,
   ItemContainerBottom,
-  LocationIcon,
+  // LocationIcon,
   Map,
   MapText,
-  MapTextMob,
+  // MapTextMob,
   SocialBigContainers,
   SocialContainer,
   SocialMainSubText,
@@ -25,6 +26,7 @@ import tg from '../../images/tg.png';
 import viber from '../../images/viber.png';
 import tiktok from '../../images/tiktok.png';
 import phone from '../../images/phone.png';
+import mapIcon from '../../images/map_photo.jpg';
 // import { useEffect, useState } from 'react';
 
 const Social = () => {
@@ -113,19 +115,16 @@ const Social = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></Map>
+
+          <a
+            href="https://maps.app.goo.gl/5XQ1qFkqrUjU13bq8"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
+            <ImageMap src={mapIcon} alt="map photo" />
+          </a>
           <MapText>
             Знайдіть нас за адресою: м. Київ, вул. Миколи Василенко 2
           </MapText>
-          <LocationIcon />
-          <MapTextMob>
-            <a
-              href="https://maps.app.goo.gl/5XQ1qFkqrUjU13bq8"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
-              Знайдіть нас за адресою: м. Київ, вул. Миколи Василенка, 2,
-              станція метро «Берестейська».
-            </a>
-          </MapTextMob>
         </BigCon>
       </SocialBigContainers>
     </SocialContainer>
