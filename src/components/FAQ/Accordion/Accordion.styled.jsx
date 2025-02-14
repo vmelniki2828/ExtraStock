@@ -44,9 +44,13 @@ export const AccordionContainer = styled.div`
   @media (max-width: 1200px) {
     max-width: 100%;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     max-width: 630.34px;
     padding: 15px;
   }
@@ -65,12 +69,14 @@ export const AccordionItem = styled.div`
     border-top: 1px solid #e0e0e0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     padding: 40px 0;
+    width: 600px;
   }
 
-  @media (max-width: 480px) {
-    padding: 30px 0;
+  @media (max-width: 770px) {
+    padding: 15px 0;
+    width: 200px;
   }
 `;
 
@@ -147,8 +153,7 @@ export const Answer = styled.div`
   font-weight: 500;
   font-size: 23px;
   line-height: 30px;
-  color: #929292;
-
+  color: #4c4c4c;
   animation: fadeIn 0.3s ease;
 
   @keyframes fadeIn {
@@ -171,6 +176,8 @@ export const Answer = styled.div`
     padding-left: 0px;
     font-size: 5.11111px;
     line-height: 7px;
+
+    margin-top: 12px;
 
     text-align: center;
   }

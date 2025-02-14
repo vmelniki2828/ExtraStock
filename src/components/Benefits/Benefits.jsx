@@ -32,7 +32,7 @@ import cp from '../../images/cp.png';
 const Benefits = () => {
   return (
     <BenefitsMainContainer>
-      <BenefitsMainText>9 ОСНОВНЫХ ПЕРЕВАГ</BenefitsMainText>
+      <BenefitsMainText>9 ОСНОВНИХ ПЕРЕВАГ</BenefitsMainText>
       <BenefitsSubText>
         під час роботи з базою{' '}
         <PurpleSpan>
