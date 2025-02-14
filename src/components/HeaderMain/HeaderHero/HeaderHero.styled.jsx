@@ -7,9 +7,9 @@ export const HeaderHeroContainer = styled.div`
   margin: 0 auto;
   padding: 25px 0;
   width: 100%;
-  gap: 0;
+  gap: 260px;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1440px) {
     padding: 10px 0;
     gap: 0;
   }
@@ -26,7 +26,7 @@ export const HeaderInputContainer = styled.div`
   gap: 10px;
   margin-bottom: 30px;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     gap: 5.17px;
     margin-bottom: 15.5px;
   }
@@ -54,7 +54,7 @@ export const HeaderInput = styled.input`
 
   color: #c9c9c9;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     width: 13.3rem; 
     height: 1.29rem; 
     font-size: 0.581rem; 
@@ -124,7 +124,7 @@ export const HeaderInput = styled.input`
 
 export const HeaderHeroContainerLeft = styled.div`
   max-width: 500px;
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     width: 343.07px;
   }
 
@@ -142,7 +142,7 @@ export const HeaderHeroMainTitle = styled.h1`
   line-height: 50px;
   color: #ffffff;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     font-size: 24.0013px;
     line-height: 26px;
   }
@@ -164,7 +164,7 @@ export const HeaderHeroSubTitle = styled.p`
   color: #ffffff;
   margin-bottom: 30px;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     font-size: 18.0833px;
     line-height: 26px;
     margin-bottom: 14.9px;
@@ -185,7 +185,7 @@ export const HeaderImgTshorts = styled.img`
   margin-right: -50px;
   width: 702px;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     margin-right: 0;
     width: 362.7px;
   }
@@ -201,7 +201,7 @@ export const StrongSpan = styled.span`
   font-size: 46px;
   line-height: 50px;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     font-size: 24.0013px;
     line-height: 26px;
   }
@@ -246,7 +246,7 @@ export const HeaderButton = styled.button`
 
   color: #000000;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     padding: 12.4px 18.6px;
     gap: 4.13px;
     width: 119.63px;
@@ -270,7 +270,7 @@ export const HeaderButton = styled.button`
 export const HeaderButtonArrow = styled.img`
   width: 15px;
   height: 15px;
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     width: 9.3px;
     height: 9.3px;
   }

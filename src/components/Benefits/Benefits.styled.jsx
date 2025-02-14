@@ -105,8 +105,8 @@ export const BigCard = styled.div`
   }
 
   @media (max-width: 766px) {
-    width: 93.68px;
-    height: 153.06px;
+    width: 70.68px;
+    height: 130.06px;
     border-radius: 2.86px;
     justify-content: center;
   }
@@ -155,7 +155,6 @@ export const BigCardText = styled.p`
     font-size: 8px;
     line-height: 9px;
     margin: 0 0 6.74px 0;
-    width: 41.47px;
     width: 80px;
   }
 `;
@@ -232,8 +231,8 @@ export const SmallCardDark = styled.div`
     height: 122.68px;
     border-radius: 6.64px;
   @media (max-width: 766px) {
-    width: 71.56px;
-    height: 71.56px;
+    width: 60px;
+    height: 60px;
     border-radius: 2.86px;
   }
 `;
@@ -263,9 +262,9 @@ export const SmallCardDarkText = styled.h3`
   }
 
   @media (max-width: 766px) {
-    width: 55px;
-    margin: 0 0 3px 5.84px;
-    font-size: 6px;
+    width: 50px;
+    margin: 0 0 1.5px 4px;
+    font-size: 5px;
     line-height: 6px;
   }
 `;
@@ -290,10 +289,10 @@ export const SmallCardDarkSubText = styled.p`
   }
 
   @media (max-width: 766px) {
-    font-size: 5px;
+    font-size: 4px;
     line-height: 5px;
-    width: 60px;
-    margin: 0 0 0 5.84px;
+    width: 55px;
+    margin: 0 0 0 4px;
   }
 `;
 
@@ -316,8 +315,8 @@ export const SmallIcon = styled.img`
     height: 36.17px;
   }
   @media (max-width: 766px) {
-    margin: 9px 0 3px 7px;
+    margin: 9px 0 1.5px 7px;
     max-width: 30px;
-    height: 18px;
+    height: 13px;
   }
 `;
