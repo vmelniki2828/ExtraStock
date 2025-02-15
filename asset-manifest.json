@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/ExtraStock/static/css/main.eb503f6c.css",
-    "main.js": "/ExtraStock/static/js/main.0842fb58.js",
+    "main.js": "/ExtraStock/static/js/main.f3d42257.js",
     "static/media/cat.png": "/ExtraStock/static/media/cat.552d4cf5ed6666669c11.png",
     "static/media/Price.pdf": "/ExtraStock/static/media/Price.85f900c0cffde34b4ec7.pdf",
     "static/media/header_bg.png": "/ExtraStock/static/media/header_bg.4720796946a34cc0d79b.png",
     "static/media/heroPicture.png": "/ExtraStock/static/media/heroPicture.013e6bee85caccfbff6b.png",
     "static/media/GEOLOGICA-VARIABLEFONT_CRSV,SHRP,SLNT,WGHT.TTF": "/ExtraStock/static/media/GEOLOGICA-VARIABLEFONT_CRSV,SHRP,SLNT,WGHT.f3e3fbc9355fd9e0c193.TTF",
     "static/media/bus.png": "/ExtraStock/static/media/bus.a67236aedc647fd2a8d6.png",
-    "static/media/map_photo.jpg": "/ExtraStock/static/media/map_photo.24bd18efcfc209a3b67a.jpg",
     "static/media/inst.png": "/ExtraStock/static/media/inst.c1d7b88ab81b6f389856.png",
     "static/media/tg.png": "/ExtraStock/static/media/tg.2bc8a3726ab23c699384.png",
     "static/media/shouse.png": "/ExtraStock/static/media/shouse.9aa8ee447a613fed42f8.png",
@@ -19,10 +18,10 @@
     "static/media/trauthers.png": "/ExtraStock/static/media/trauthers.6190b3dc6e6825594ba9.png",
     "index.html": "/ExtraStock/index.html",
     "main.eb503f6c.css.map": "/ExtraStock/static/css/main.eb503f6c.css.map",
-    "main.0842fb58.js.map": "/ExtraStock/static/js/main.0842fb58.js.map"
+    "main.f3d42257.js.map": "/ExtraStock/static/js/main.f3d42257.js.map"
   },
   "entrypoints": [
     "static/css/main.eb503f6c.css",
-    "static/js/main.0842fb58.js"
+    "static/js/main.f3d42257.js"
   ]
 }
