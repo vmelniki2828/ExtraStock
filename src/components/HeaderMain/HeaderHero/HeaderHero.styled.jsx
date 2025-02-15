@@ -14,7 +14,7 @@ export const HeaderHeroContainer = styled.div`
     gap: 0;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     padding: 4.4px 0;
     gap: 20px;
   }
@@ -31,7 +31,7 @@ export const HeaderInputContainer = styled.div`
     margin-bottom: 15.5px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     gap: 2.2px;
     margin-bottom: 6.67px;
   }
@@ -66,7 +66,7 @@ export const HeaderInput = styled.input`
     border: 0.032rem solid #ffc300; 
     border-radius: 1.324rem; 
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     width: 110px; 
     height: 12px; 
     font-size: 7px; 
@@ -128,7 +128,7 @@ export const HeaderHeroContainerLeft = styled.div`
     width: 343.07px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     width: 152px;
   }
 `;
@@ -147,7 +147,7 @@ export const HeaderHeroMainTitle = styled.h1`
     line-height: 26px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     font-size: 15px;
     line-height: 11px;
   }
@@ -170,7 +170,7 @@ export const HeaderHeroSubTitle = styled.p`
     margin-bottom: 14.9px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     font-size: 10px;
     line-height: 11px;
     margin-bottom: 6px;
@@ -190,7 +190,7 @@ export const HeaderImgTshorts = styled.img`
     width: 362.7px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     width: 210px;
     margin-right: -20px;
   }
@@ -206,7 +206,7 @@ export const StrongSpan = styled.span`
     line-height: 26px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     font-size: 10.3231px;
     line-height: 11px;
   }
@@ -256,7 +256,7 @@ export const HeaderButton = styled.button`
     line-height: 9px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     padding: 5.33px 8px;
     gap: 1.78px;
     width: 51.78px;
@@ -275,7 +275,7 @@ export const HeaderButtonArrow = styled.img`
     height: 9.3px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 730px) {
     width: 4px;
     height: 4px;
   }

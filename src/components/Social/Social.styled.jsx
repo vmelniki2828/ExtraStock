@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 import { FaLocationDot } from 'react-icons/fa6';
+import { LuMapPin } from 'react-icons/lu';
+
+export const MapIcon = styled(LuMapPin)`
+  width: 12px;
+  height: 12px;
+  color: #9c28ff;
+`;
 
 export const SocialContainer = styled.div`
   display: flex;
@@ -174,6 +181,7 @@ export const SocialBigContainers = styled.div`
     gap: 19px;
   }
   @media (max-width: 770px) {
+    flex-direction: column;
     gap: 8px;
   }
 `;
@@ -197,8 +205,8 @@ export const BigCon = styled.div`
   }
 
   @media (max-width: 770px) {
-    width: 131px;
-    height: 70px;
+    width: 338px;
+    height: 300px;
 
     border: 0.222222px solid #000000;
     border-radius: 5.33333px;
@@ -242,11 +250,15 @@ export const BigConContact = styled.div`
   }
 
   @media (max-width: 770px) {
-    width: 131px;
-    height: 70px;
-
+    width: 336px;
+    height: 100%;
     border: 0.222222px solid #000000;
     border-radius: 5.33333px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto 0;
+    padding: 15px 0;
   }
 `;
 
@@ -266,7 +278,7 @@ export const BigConContactText = styled.p`
     line-height: 24px;
   }
   @media (max-width: 770px) {
-    margin: 8px 0 0 11px;
+    margin: 0 0 0 11px;
 
     font-size: 8.88889px;
     line-height: 10px;
@@ -292,14 +304,20 @@ export const TelContainer = styled.div`
   }
 
   @media (max-width: 770px) {
-    width: 49.94px;
-    height: 14.06px;
+    height: 100%;
 
     gap: 10px;
     margin: 8px 0 0 11px;
 
     font-size: 5.04822px;
     line-height: 7px;
+  }
+`;
+
+export const MapContainer = styled.div`
+  display: none;
+  @media (max-width: 770px) {
+    display: block;
   }
 `;
 
@@ -386,12 +404,7 @@ export const MapText = styled.p`
   }
 
   @media (max-width: 770px) {
-    font-size: 4px;
-    line-height: 5px;
-
-    text-align: center;
-
-    margin-top: 2px;
+    display: none;
   }
 `;
 
@@ -432,8 +445,14 @@ export const Map = styled.iframe`
 
     border-radius: 12.4px 12.4px 0 0;
   }
+
   @media (max-width: 770px) {
-    display: none;
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    border-radius: 5px;
+    border: 0;
   }
 `;
 

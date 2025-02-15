@@ -3,11 +3,13 @@ import {
   BigConContact,
   BigConContactText,
   ImageItem,
-  ImageMap,
+  // ImageMap,
   ItemContainer,
   ItemContainerBottom,
   // LocationIcon,
   Map,
+  MapContainer,
+  MapIcon,
   MapText,
   // MapTextMob,
   SocialBigContainers,
@@ -26,7 +28,7 @@ import tg from '../../images/tg.png';
 import viber from '../../images/viber.png';
 import tiktok from '../../images/tiktok.png';
 import phone from '../../images/phone.png';
-import mapIcon from '../../images/map_photo.jpg';
+// import mapIcon from '../../images/map_photo.jpg';
 // import { useEffect, useState } from 'react';
 
 const Social = () => {
@@ -86,27 +88,45 @@ const Social = () => {
       </SocialSmallContainers>
       <SocialBigContainers>
         <BigConContact>
-          <BigConContactText>Контакти:</BigConContactText>
-          <TelContainer>
-            <a
-              href="tel:+380994088848"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
-              <TelItem>
-                <TelImg src={phone} alt="phone" />
-                <TelNum>+380994088848</TelNum>
-              </TelItem>
-            </a>
-            <a
-              href="tel:+390971338350"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
-              <TelItem>
-                <TelImg src={phone} alt="phone" />
-                <TelNum>+390971338350</TelNum>
-              </TelItem>
-            </a>
-          </TelContainer>
+          <div>
+            <BigConContactText>Контакти:</BigConContactText>
+            <TelContainer>
+              <a
+                href="tel:+380994088848"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <TelItem>
+                  <TelImg src={phone} alt="phone" />
+                  <TelNum>+380994088848</TelNum>
+                </TelItem>
+              </a>
+              <a
+                href="tel:+390971338350"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <TelItem>
+                  <TelImg src={phone} alt="phone" />
+                  <TelNum>+390971338350</TelNum>
+                </TelItem>
+              </a>
+            </TelContainer>
+          </div>
+          <div>
+            <MapContainer>
+              <BigConContactText>Адреса:</BigConContactText>
+              <TelContainer>
+                <a
+                  href="https://maps.app.goo.gl/5XQ1qFkqrUjU13bq8"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <TelItem>
+                    <MapIcon />
+                    <TelNum> м. Київ, вул. Миколи Василенко 2</TelNum>
+                  </TelItem>
+                </a>
+              </TelContainer>
+            </MapContainer>
+          </div>
         </BigConContact>
         <BigCon>
           <Map
@@ -116,12 +136,12 @@ const Social = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></Map>
 
-          <a
+          {/* <a
             href="https://maps.app.goo.gl/5XQ1qFkqrUjU13bq8"
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
             <ImageMap src={mapIcon} alt="map photo" />
-          </a>
+          </a> */}
           <MapText>
             Знайдіть нас за адресою: м. Київ, вул. Миколи Василенко 2
           </MapText>
