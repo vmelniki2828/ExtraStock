@@ -205,7 +205,7 @@ export const BigCon = styled.div`
   }
 
   @media (max-width: 770px) {
-    width: 338px;
+    width: 336px;
     height: 300px;
 
     border: 0.222222px solid #000000;
