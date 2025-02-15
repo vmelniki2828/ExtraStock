@@ -122,7 +122,7 @@ const Download = () => {
             onChange={handleChange}
           />
           <DownloadInput
-            placeholder="Введіть електронну пошту:"
+            placeholder="Введіть номер телефону:"
             type="text"
             name="contact"
             value={formData.contact}
