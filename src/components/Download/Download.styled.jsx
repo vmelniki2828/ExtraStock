@@ -315,12 +315,12 @@ export const DownloadInput = styled.input`
   }
 
   @media (max-width: 770px) {
-    width: 165px;
+    width: 148px;
     height: 30px;
     font-size: 10px;
     line-height: 0.4375rem;
     padding: 0 4.89px 0 3.56px;
-    border: 0.0425rem solid #000000;
+    border: 0.0625rem solid #000000;
     border-radius: 0.569rem;
   }
 `;
@@ -429,7 +429,7 @@ export const DownloadButtonArrow = styled.img`
     height: 9.3px;
   }
   @media (max-width: 770px) {
-    width: 4px;
-    height: 4px;
+    width: 12px;
+    height: 12px;
   }
 `;
