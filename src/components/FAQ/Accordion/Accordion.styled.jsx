@@ -130,7 +130,7 @@ export const Text = styled.p`
   }
 
   @media (max-width: 770px) {
-    font-size: 6.22222px;
+    font-size: 9.22222px;
     line-height: 8px;
   }
 `;
@@ -174,8 +174,8 @@ export const Answer = styled.div`
 
   @media (max-width: 770px) {
     padding-left: 0px;
-    font-size: 5.11111px;
-    line-height: 7px;
+    font-size: 8.11111px;
+    line-height: 10px;
 
     margin-top: 12px;
 
