@@ -315,9 +315,9 @@ export const DownloadInput = styled.input`
   }
 
   @media (max-width: 770px) {
-    width: 96px;
-    height: 14px;
-    font-size: 6px;
+    width: 165px;
+    height: 30px;
+    font-size: 10px;
     line-height: 0.4375rem;
     padding: 0 4.89px 0 3.56px;
     border: 0.0425rem solid #000000;
@@ -408,9 +408,9 @@ export const DownloadButton = styled.button`
     line-height: 18px;
   }
   @media (max-width: 770px) {
-    width: 120px;
-    height: 25px;
-    font-size: 8px;
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
     line-height: 18px;
   }
 `;
