@@ -18,16 +18,24 @@ import {
 import header_tshorts from '../../../images/heroPicture.png';
 import headerArrow from '../../../images/headerArrow.png';
 import price from '../../../images/Price.pdf';
+
 const formSchema = z.object({
-  name: z.string().optional(),
-  contact: z.string().email('Введіть дійсний email-адрес'),
-  type: z.enum(['price']).default('price'),
+  name: z.string().min(1, "Ім'я обов'язкове").max(50, 'Максимум 50 символів'),
+  contact: z
+    .string()
+    .min(1, "Контакт обов'язковий")
+    .regex(
+      /^\+?[1-9]\d{1,14}$/,
+      'Введіть дійсний номер телефону у міжнародному форматі (наприклад, +380123456789)'
+    ),
+  type: z.enum(['price', 'other']).default('price'),
 });
+
 const HeaderHero = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
-    type: 'consultation',
+    type: 'price',
   });
 
   const handleChange = e => {
@@ -40,6 +48,7 @@ const HeaderHero = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
+
     const parseResult = formSchema.safeParse(formData);
     if (!parseResult.success) {
       parseResult.error.errors.forEach(err => toast.error(err.message));
@@ -47,22 +56,40 @@ const HeaderHero = () => {
     }
 
     try {
-      await axios.post('http://localhost:5000/send', formData);
-      toast.success('Дякуємо за заявку!');
-      setFormData({
-        name: '',
-        contact: '',
-        type: 'consultation',
+      const response = await fetch('/mailer.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
-      const downloadLink = document.createElement('a');
-      downloadLink.href = price;
-      downloadLink.download = price;
-      downloadLink.click();
+
+      // Проверка содержимого ответа сервера
+      const textResponse = await response.text(); // Получаем ответ как текст
+      console.log('Response text:', textResponse); // Логируем его
+
+      // Преобразуем в JSON, если это возможно
+      const data = JSON.parse(textResponse);
+
+      if (response.ok) {
+        toast.success('Дякуємо за заявку!');
+        setFormData({
+          type: 'price',
+          name: '',
+          contact: '',
+        });
+
+        const downloadLink = document.createElement('a');
+        downloadLink.href = price;
+        downloadLink.download = price;
+        downloadLink.click();
+      } else {
+        throw new Error(data.error || 'Упс! Щось пішло не так!');
+      }
     } catch (error) {
       console.error(error);
-      toast.error('Упс! Щось пішло не так! 😢');
+      toast.error(error.message);
     }
   };
+
   return (
     <HeaderHeroContainer>
       <HeaderHeroContainerLeft>

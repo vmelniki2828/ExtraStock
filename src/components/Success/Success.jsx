@@ -45,8 +45,9 @@ const Success = () => {
     }));
   };
 
-  const handleSubmit = async e => {
+const handleSubmit = async e => {
     e.preventDefault();
+
     const parseResult = formSchema.safeParse(formData);
     if (!parseResult.success) {
       parseResult.error.errors.forEach(err => toast.error(err.message));
@@ -54,24 +55,41 @@ const Success = () => {
     }
 
     try {
-      await axios.post('http://localhost:5000/send', formData);
-      toast.success('Дякуємо за заявку!');
-      setFormData({
-        name: '',
-        contact: '',
-        type: 'consultation',
+      const response = await fetch('/mailer.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
+
+      // Проверка содержимого ответа сервера
+      const textResponse = await response.text(); // Получаем ответ как текст
+      console.log('Response text:', textResponse); // Логируем его
+
+      // Преобразуем в JSON, если это возможно
+      const data = JSON.parse(textResponse);
+
+      if (response.ok) {
+        toast.success('Дякуємо за заявку!');
+        setFormData({
+          type: 'consultation',
+          name: '',
+          contact: '',
+        });
+      } else {
+        throw new Error(data.error || 'Упс! Щось пішло не так!');
+      }
     } catch (error) {
       console.error(error);
-      toast.error('Упс! Щось пішло не так! 😢');
+      toast.error(error.message);
     }
   };
+
   return (
     <SuccessContainer>
       <SuccessBlackText>Безкоштовна допомога</SuccessBlackText>
       <DarkContainer>
         <SuccessWhiteText>
-          по торгівлі онлайн та магазину секонд-хенд
+          по торгівлі онлайн та магазину секонд-хенд.
         </SuccessWhiteText>
         <SuccessWhiteSubText>
           Зрозуміти як правильно зробити, і На що дуже важливо звернути увагу

@@ -29,14 +29,14 @@ app.post('/send', (req, res) => {
       from: process.env.EMAIL,
       to: process.env.EMAIL,
       subject: 'Отправка новой формы',
-      text: `Имя: ${name}\nПочта: ${contact}\nСкачали прайс`
+      text: `Ім'я: ${name}\nНомер телефону: ${contact}\nСкачали прайс`
     };
   } else if (type === 'consultation') {
     mailOptions = {
       from: process.env.EMAIL,
       to: process.env.EMAIL,
       subject: 'Отправка новой формы',
-      text: `Имя: ${name}\nМобильный телефон: ${contact}\nЗапросил консультацию`
+      text: `Ім'я: ${name}\nНомер телефону: ${contact}\nЗапросив консультацію`
     };
   } else {
     return res.status(400).send('Некорректный тип формы');
