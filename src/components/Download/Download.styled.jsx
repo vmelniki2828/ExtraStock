@@ -233,7 +233,7 @@ export const SmallTextBox = styled.div`
     @media (max-width: 770px) {
       margin-bottom: 4.67px;
 
-      font-size: 6.21984px;
+      font-size: 8px;
       line-height: 8px;
     }
   }
@@ -256,10 +256,9 @@ export const SmallTextBox = styled.div`
       line-height: 14px;
     }
     @media (max-width: 770px) {
-      width: 56px;
-
-      font-size: 6px;
-      line-height: 6px;
+      width: 80px;
+      font-size: 8px;
+      line-height: 8px;
     }
   }
 `;
