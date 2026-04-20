@@ -27,13 +27,15 @@
       href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <title>EXTRASTOCK</title>
+    <title>Extra Stock - вигідний онлайн шопінг | Секонд хенд з бірками</title>
+    <meta name="description" content="Extra Stock - секонд хенд онлайн з бірками. Великий вибір одягу, нові речі та бренди за доступними цінами. Швидка доставка та вигідні покупки.">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <script type="text/javascript">
       (function (l) {
         if (l.search[1] === '/') {
@@ -51,34 +53,6 @@
           );
         }
       })(window.location);
-    </script>
-    <script>
-      (function () {
-        function updateMetaDescription(desc) {
-          let meta = document.querySelector("meta[name='description']");
-          if (meta) {
-            meta.setAttribute('content', desc);
-          } else {
-            meta = document.createElement('meta');
-            meta.name = 'description';
-            meta.content = desc;
-            document.head.appendChild(meta);
-          }
-        }
-
-        // Определяем текущий URL
-        const path = window.location.pathname.toLowerCase(); // Делаем регистронезависимый поиск
-
-        if (path.includes('екстрасток')) {
-          updateMetaDescription(
-            'Екстрасток - секонд-хенд і сток оптом. Телефон +380994088848.'
-          );
-        } else {
-          updateMetaDescription(
-            'Великий вибір товару секонд-хенд і сток за найкращими цінами.'
-          );
-        }
-      })();
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
   </head>

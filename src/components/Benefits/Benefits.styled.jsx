@@ -13,12 +13,29 @@ export const BenefitsMainContainer = styled.div`
   }
 `;
 
-export const BenefitsMainText = styled.h2`
+export const BenefitsHeading = styled.h2`
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+
+  @media (max-width: 1280px) {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+
+  @media (max-width: 766px) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+`;
+
+export const BenefitsMainText = styled.span`
+  display: block;
   font-family: 'Geologica', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
-  padding-top: 80px;
   margin: 0 0 20px 0;
   text-align: center;
 
@@ -27,13 +44,11 @@ export const BenefitsMainText = styled.h2`
   @media (max-width: 1280px) {
     font-size: 49.6px;
     line-height: 40px;
-    padding-top: 41px;
   }
 
   @media (max-width: 766px) {
     font-size: 21.3333px;
     line-height: 20px;
-    padding-top: 17px;
   }
 `;
 
@@ -41,7 +56,12 @@ export const YellowSpan = styled.span`
   color: #ffc300;
 `;
 
-export const BenefitsSubText = styled.p`
+export const PurpleSpanBen = styled.span`
+  color: #9c28ff;
+`;
+
+export const BenefitsSubText = styled.span`
+  display: block;
   font-family: 'Geologica', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -50,19 +70,16 @@ export const BenefitsSubText = styled.p`
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 80px;
   color: #000000;
 
   @media (max-width: 1280px) {
     font-size: 24.2833px;
     line-height: 26px;
-    padding-bottom: 41px;
   }
 
   @media (max-width: 766px) {
     font-size: 10.4444px;
     line-height: 11px;
-    padding-bottom: 17px;
   }
 `;
 
@@ -242,7 +259,7 @@ export const SmallCardLight = styled(SmallCardDark)`
   border: 1px solid #9c28ff;
 `;
 
-export const SmallCardDarkText = styled.h3`
+export const SmallCardDarkText = styled.p`
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 700;

@@ -94,7 +94,7 @@ const HeaderHero = () => {
     <HeaderHeroContainer>
       <HeaderHeroContainerLeft>
         <HeaderHeroMainTitle>
-          Секонд-хенд і сток оптом
+          Секонд-хенд і сток оптом 
           <br />
           <StrongSpan>
             <PurpleSpan>від 1€/КГ</PurpleSpan>

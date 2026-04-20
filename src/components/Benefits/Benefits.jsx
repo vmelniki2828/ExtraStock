@@ -1,5 +1,5 @@
-import { PurpleSpan } from 'components/HeaderMain/HeaderHero/HeaderHero.styled';
 import {
+  BenefitsHeading,
   BenefitsMainContainer,
   BenefitsMainText,
   BenefitsSubText,
@@ -9,6 +9,7 @@ import {
   BigCardText,
   CardBlock,
   CardContainer,
+  PurpleSpanBen,
   SmallCardDark,
   SmallCardDarkSubText,
   SmallCardDarkText,
@@ -32,13 +33,12 @@ import cp from '../../images/cp.png';
 const Benefits = () => {
   return (
     <BenefitsMainContainer>
-      <BenefitsMainText>9 ОСНОВНИХ ПЕРЕВАГ</BenefitsMainText>
-      <BenefitsSubText>
-        під час роботи з базою{' '}
-        <PurpleSpan>
-          Екстра<YellowSpan>Сток</YellowSpan>
-        </PurpleSpan>
-      </BenefitsSubText>
+      <BenefitsHeading>
+        <BenefitsMainText>9 ОСНОВНИХ ПЕРЕВАГ</BenefitsMainText>
+        <BenefitsSubText>
+          під час роботи з базою <PurpleSpanBen>Екстра<YellowSpan>Сток</YellowSpan></PurpleSpanBen>
+        </BenefitsSubText>
+      </BenefitsHeading>
       <CardContainer>
         <BigCard>
           <BigCardIcon src={handshake} />

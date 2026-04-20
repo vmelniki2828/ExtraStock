@@ -103,7 +103,7 @@ export const SuccessWhiteSubText = styled.p`
   }
 `;
 
-export const DownloadYellowText = styled.h3`
+export const DownloadYellowText = styled.h2`
   margin: 0;
   font-family: 'Geologica', sans-serif;
   font-style: normal;

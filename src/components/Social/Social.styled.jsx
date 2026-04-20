@@ -25,7 +25,7 @@ export const SocialContainer = styled.div`
   }
 `;
 
-export const SocialMainText = styled.h3`
+export const SocialMainText = styled.h2`
   font-family: 'Geologica', sans-serif;
   font-style: normal;
   font-weight: 600;

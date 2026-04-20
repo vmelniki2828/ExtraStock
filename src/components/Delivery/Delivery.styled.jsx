@@ -21,7 +21,28 @@ export const DeliveryBlock = styled.div`
   z-index: 2;
 `;
 
-export const DeliveryTopText = styled.p`
+export const DeliveryTopTitle = styled.h2`
+  margin: 0 0 15px 0;
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: #9c28ff;
+
+  @media (max-width: 1200px) {
+    font-size: 36.6833px;
+    line-height: 34px;
+  }
+
+  @media (max-width: 770px) {
+    font-size: 15.7778px;
+    line-height: 14px;
+  }
+`;
+
+export const DeliveryTopText = styled.div`
   font-family: 'Geologica', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -33,33 +54,17 @@ export const DeliveryTopText = styled.p`
 
   text-align: left;
 
-  span {
-    font-weight: 700;
-    font-size: 71px;
-    color: #9c28ff;
-  }
-
   @media (max-width: 1200px) {
     font-size: 27.3833px;
     line-height: 34px;
 
     margin: 0 0 40px 0;
-
-    span {
-      font-size: 36.6833px;
-      line-height: 34px;
-    }
   }
 
   @media (max-width: 770px) {
     font-size: 11.7778px;
     line-height: 14px;
     margin: 0 0 20px 0;
-
-    span {
-      font-size: 15.7778px;
-      line-height: 14px;
-    }
   }
 `;
 

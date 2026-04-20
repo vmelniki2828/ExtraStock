@@ -12,7 +12,7 @@ export const FAQMainContainer = styled.div`
   }
 `;
 
-export const FAQMainText = styled.h3`
+export const FAQMainText = styled.h2`
   font-family: 'Geologica', sans-serif;
   font-style: normal;
   font-weight: 600;

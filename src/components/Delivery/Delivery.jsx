@@ -5,6 +5,7 @@ import {
   DeliveryCenterText,
   DeliveryContainer,
   DeliveryTopText,
+  DeliveryTopTitle,
 } from './Delivery.styled';
 import bus from '../../images/bus.png';
 
@@ -13,8 +14,8 @@ const Delivery = () => {
     <DeliveryContainer>
       <DeliveryBlock>
         <DeliveryTopText>
-          <span>Доставка і передоплата</span>
-          <br />
+          <DeliveryTopTitle>Доставка і передоплата</DeliveryTopTitle>
+
           Доставка відбувається поштою <br />
           або можливо самостійно <br />
           забрати на складі

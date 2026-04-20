@@ -113,7 +113,7 @@ export const Number = styled.span`
   }
 `;
 
-export const Text = styled.p`
+export const Text = styled.h3`
   margin: 0;
   width: 855px;
   font-family: 'Geologica', sans-serif;
